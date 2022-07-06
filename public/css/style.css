@@ -7,4 +7,16 @@ colores {
 
 *{
     font-family: 'Raleway', sans-serif;
+    background-color: rgb(76,101,52);
 }
+
+.logo-logo{
+    width: 16vw;
+    height: 21vh;
+}
+
+.logo-footer{
+    width: 5vw;
+    height: 10vh;
+}
+
