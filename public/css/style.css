@@ -1,5 +1,5 @@
 colores {
-    color:f47421;
+    background-color:f47421;
     color:f2f2f2;
     color:04402f;
     color:F3D5BB; 
@@ -7,7 +7,6 @@ colores {
 
 *{
     font-family: 'Raleway', sans-serif;
-    background-color: rgb(76,101,52);
 }
 
 .logo-logo{
