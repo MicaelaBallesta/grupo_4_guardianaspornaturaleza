@@ -1,6 +1,7 @@
 *{ margin:0%;
     padding:0%;
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -81,8 +82,19 @@ header .boton-dona{
 
 
 .icono-carrito{
-    position:absolute;
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    top: 323px;
+    left: 390px;
+}
+
+@media (min-width: 460px){
+    header .menu-hamburguesa i{ 
+        display:none;
+    }
 }
 
 .cambio-de-idioma{
@@ -200,10 +212,10 @@ article div.comprar-carrito .boton-comprar{
     border: 1px black solid;
     background-color: green;
     color: white;
-    padding-left:10px;
+    padding-left:6px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 19px; 
+    padding-right: 6px; 
     box-shadow: 0,0,0,0.6;
 }
 
@@ -214,10 +226,10 @@ article div.comprar-carrito .agregar-al-carrito{
     border: 1px black solid;
     background-color: green;
     color: white;
-    padding-left:10px;
+    padding-left:6px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 23px; 
+    padding-right: 6px; 
     box-shadow: 0,0,0,0.6;
 }
 
@@ -240,13 +252,13 @@ article div.comprar-carrito .agregar-al-carrito{
 section.boton-donacion {
     position: absolute;
     left: 15px;
-    top: 1100px;
+    top: 1200px;
     border: 1px black solid;
     background-color: green;
-    padding-left:17px;
+    padding-left:6px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 17px; 
+    padding-right: 6px; 
     box-shadow: 0,0,0,0.6;
 }
 
@@ -265,30 +277,38 @@ section.boton-tienda {
     border: 1px black solid;
     background-color: green;
     color: white;
-    padding-left:10px;
+    padding-left:6px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 23px; 
+    padding-right: 6px; 
     box-shadow: 0,0,0,0.6;
 }
 
 /* footer--------------------------*/
 
 footer .logo-footer{
-    width: 10vw;
-    height: 30vh;
+    width: 15vw;
 }
 
 footer ul{
     display: none;
 }
 
-footer .ultima-caja{
+footer .ultima-caja img{
     position: absolute;
-    top: 1700px;
-
-
+    top: 1500px;
+    left:10px; 
 }
 
+.ultima-caja p.direccion{
+    position: absolute;
+    top: 1537px;
+    left: 76px; 
+}
+.ultima-caja p.copyright{
+    position: absolute;
+    top: 1537px;
+    left: 272px; 
+}
 
 
