@@ -5,7 +5,6 @@
 * {
     margin: 0;
     padding: 0;
-    background-color:blanchedalmond;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -219,20 +218,29 @@ article div.comprar-carrito .agregar-al-carrito{
     height: 100px;
 }
 
-section .boton-donacion {
+section.boton-donacion {
     position: absolute;
     left: 15px;
-    top: 1000px;
+    top: 1020px;
     border: 1px black solid;
     background-color: green;
-    color: white;
-    padding-left:10px;
+    padding-left:17px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 23px; 
+    padding-right: 17px; 
     box-shadow: 0,0,0,0.6;
+    z-index: 10;
 }
-section .boton-tienda {
+
+.pagina-donaciones{
+    color: white;
+}
+
+.pagina-tienda{
+    color:white;
+}
+
+section.boton-tienda {
     position: absolute;
     left: 15px;
     top: 1100px;
@@ -252,4 +260,17 @@ footer .logo-footer{
     width: 10vw;
     height: 30vh;
 }
+
+footer ul{
+    display: none;
+}
+
+footer .ultima-caja{
+    position: absolute;
+    top: 1200px;
+    
+
+}
+
+
 
