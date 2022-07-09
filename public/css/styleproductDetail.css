@@ -275,7 +275,7 @@ section.boton-tienda {
 /* footer--------------------------*/
 
 footer .logo-footer{
-    width: 10vw;
+    width: 18vw;
     height: 30vh;
 }
 
@@ -283,12 +283,27 @@ footer ul{
     display: none;
 }
 
-footer .ultima-caja{
+footer .ultima-caja img{
     position: absolute;
-    top: 1700px;
-
-
+    top: 1500px;
+    left:10px; 
 }
+
+.ultima-caja p.direccion{
+    position: absolute;
+    top: 1573px;
+    left: 76px; 
+}
+.ultima-caja p.copyright{
+    position: absolute;
+    top: 1573px;
+    left: 272px; 
+}
+
+.ultima-caja 
+<p class="direccion">Buenos Aires, Argentina </p>
+<img src="images/isologo verde.png" alt="logo" class="logo-footer">
+<p class="copyright"><i class="fa-regular fa-copyright"></i>2022 Guardianas por naturaleza </p>
 
 
 
