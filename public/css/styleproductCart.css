@@ -191,3 +191,21 @@ section.boton-tienda {
     color: rgb(19, 11, 138);
     font-weight: bold;
     }
+   
+
+
+.summary{
+  padding-top: 15px; padding-right: 15px;
+    padding-bottom: 15px; padding-left: 15px;
+border-radius: 0ex;
+}
+
+.summary {
+    align-items: flex-start;
+    }
+    .summary-total-items {
+    align-self: center;
+    }
+
+    
+   
