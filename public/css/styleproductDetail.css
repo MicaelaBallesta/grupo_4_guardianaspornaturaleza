@@ -50,6 +50,7 @@ header .boton-tienda{
     padding-bottom: 2px;
     padding-right: 10px;
     box-shadow: 0,0,0,0.6;
+    margin-right: 20px
 }
 
 a{
@@ -74,6 +75,7 @@ header .boton-dona{
     padding-bottom: 2px;
     padding-right: 23px; 
     box-shadow: 0,0,0,0.6;
+    margin-right:20px;
 }
 
 
@@ -113,7 +115,9 @@ header .buscador-de-productos{
 
 .volver a {
     color: grey;
-    font-weight: 30vw;
+    margin-top: 10px;
+    padding-top:10px;
+
 }
 
 main .icono-manito-redes-fijo-tabletypc {
@@ -125,7 +129,7 @@ main .icono-manito-redes-fijo-tabletypc {
 .div-nombre-producto{
     position: absolute;
     left: 10px;
-    top: 273px; 
+    top: 300px; 
 }
 
 article div.fotos .foto-principal {
@@ -268,7 +272,7 @@ footer ul{
 footer .ultima-caja{
     position: absolute;
     top: 1200px;
-    
+
 
 }
 
