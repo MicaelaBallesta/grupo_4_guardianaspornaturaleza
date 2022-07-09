@@ -81,8 +81,13 @@ header .boton-dona{
 
 
 .icono-carrito{
-    position:absolute;
+    display: flex;
+    justify-content: flex-end;
     display: none;
+}
+
+.icono-carrito i{
+    align-self: flex-start;
 }
 
 .cambio-de-idioma{
@@ -200,10 +205,10 @@ article div.comprar-carrito .boton-comprar{
     border: 1px black solid;
     background-color: green;
     color: white;
-    padding-left:10px;
+    padding-left:6px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 19px; 
+    padding-right: 6px; 
     box-shadow: 0,0,0,0.6;
 }
 
@@ -214,10 +219,10 @@ article div.comprar-carrito .agregar-al-carrito{
     border: 1px black solid;
     background-color: green;
     color: white;
-    padding-left:10px;
+    padding-left:6px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 23px; 
+    padding-right: 6px; 
     box-shadow: 0,0,0,0.6;
 }
 
@@ -240,13 +245,13 @@ article div.comprar-carrito .agregar-al-carrito{
 section.boton-donacion {
     position: absolute;
     left: 15px;
-    top: 1100px;
+    top: 1200px;
     border: 1px black solid;
     background-color: green;
-    padding-left:17px;
+    padding-left:6px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 17px; 
+    padding-right: 6px; 
     box-shadow: 0,0,0,0.6;
 }
 
@@ -265,18 +270,17 @@ section.boton-tienda {
     border: 1px black solid;
     background-color: green;
     color: white;
-    padding-left:10px;
+    padding-left:6px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 23px; 
+    padding-right: 6px; 
     box-shadow: 0,0,0,0.6;
 }
 
 /* footer--------------------------*/
 
 footer .logo-footer{
-    width: 18vw;
-    height: 30vh;
+    width: 15vw;
 }
 
 footer ul{
@@ -291,12 +295,12 @@ footer .ultima-caja img{
 
 .ultima-caja p.direccion{
     position: absolute;
-    top: 1573px;
+    top: 1537px;
     left: 76px; 
 }
 .ultima-caja p.copyright{
     position: absolute;
-    top: 1573px;
+    top: 1537px;
     left: 272px; 
 }
 
@@ -305,5 +309,13 @@ footer .ultima-caja img{
 <img src="images/isologo verde.png" alt="logo" class="logo-footer">
 <p class="copyright"><i class="fa-regular fa-copyright"></i>2022 Guardianas por naturaleza </p>
 
+@media (min-width: 460px){
+    .menu-hamburguesa {
+        display:none;
+    }
 
+    .icono-carrito{
+        display: contents;
+    }
+}
 
