@@ -1,4 +1,6 @@
+
 * { box-sizing: border-box }
+
 
 colores {
     color:f47421;
@@ -9,8 +11,56 @@ colores {
 
 *{
     font-family: 'Raleway', sans-serif;
-    background-color: rgb(229, 220, 217);
+    background-color: rgb(243, 196, 183);
 }
+
+header .logo-logo{
+    position: relative;
+    width: 10vw;
+    height: 25vh;
+}
+
+
+header .boton-tienda{
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    box-shadow: 0,0,0,0.6;
+    margin-right: 20px
+}
+
+a{
+  text-decoration: none;  
+}
+
+.boton-tienda{
+    padding: 1px, 5px, 1px, 5px;
+    text-align: center;
+
+}
+
+header .boton-dona{
+    position: absolute;
+    left: 400px;
+    top: 180px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 23px; 
+    box-shadow: 0,0,0,0.6;
+    margin-right:20px;
+}
+
 
 .logo-logo{
     width: 16vw;
@@ -38,7 +88,7 @@ display: flex;
 flex-wrap: wrap;
 align-items: baseline;
 border-top: 1px solid #ebebeb;
-position: relative;rgbrgb(149, 104, 104), 104, 104)04, 104)
+position: relative;
 padding: 15px;
 }
 
@@ -96,3 +146,48 @@ h1 {
 
    body { background-image: "images/footer"
 }
+
+
+
+section.boton-donacion {
+    position: absolute;
+    left: 15px;
+    top: 1020px;
+    border: 1px black solid;
+    background-color: green;
+    padding-left:17px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 17px; 
+    box-shadow: 0,0,0,0.6;
+    z-index: 10;
+}
+
+.pagina-donaciones{
+    color: white;
+}
+
+.pagina-tienda{
+    color:white;
+}
+
+section.boton-tienda {
+    position: absolute;
+    left: 15px;
+    top: 1100px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 23px; 
+    box-shadow: 0,0,0,0.6;
+}
+
+
+.summary {
+    font-size: medium;
+    color: rgb(19, 11, 138);
+    font-weight: bold;
+    }
