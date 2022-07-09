@@ -1,0 +1,255 @@
+*{ margin:0;
+    padding:0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color:blanchedalmond;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* -------------------------------------Header--------------------------------- */
+
+header .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+}
+
+header .logo-logo{
+    position: relative;
+    width: 10vw;
+    height: 25vh;
+}
+
+header .menu-hamburguesa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 15vw;
+    height: 15vh;
+    position: relative;
+}
+
+.menu-hamburguesa i{
+    position: absolute;
+    left: 200px;
+    top: -80px;
+}
+
+header .boton-tienda{
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    box-shadow: 0,0,0,0.6;
+}
+
+a{
+  text-decoration: none;  
+}
+
+.boton-tienda{
+    padding: 1px, 5px, 1px, 5px;
+    text-align: center;
+
+}
+
+header .boton-dona{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 23px; 
+    box-shadow: 0,0,0,0.6;
+}
+
+
+.icono-carrito{
+    position:absolute;
+    display: none;
+}
+
+.cambio-de-idioma{
+    position: absolute;
+    top: 64px;
+    margin-left: 5px;
+}
+
+.navegador-principal, .login-registrate {
+    display: none;
+    position: absolute;
+}
+
+header .buscador-de-productos{
+    position:absolute;
+    top:200px;
+    left: 70px;
+    display: flex;
+}
+
+.buscador-de-productos label {
+    margin-right: 5px;
+}
+
+.buscador-de-productos input {
+    box-shadow: 0, 0, 0, 0.5;
+    border: grey solid 1px;
+    width: max-content;
+    margin-right: 5px;
+}
+
+.volver a {
+    color: grey;
+    font-weight: 30vw;
+}
+
+main .icono-manito-redes-fijo-tabletypc {
+    display: flex;
+    flex-direction: column reverse;
+    align-self: flex-end;
+}
+
+.div-nombre-producto{
+    position: absolute;
+    left: 10px;
+    top: 273px; 
+}
+
+article div.fotos .foto-principal {
+    width:248px;
+    height:347px; 
+    position: absolute;
+    left: 121px;
+    top:309px;
+}
+
+.foto-2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 327px;
+}
+
+.foto-3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 443px;
+}
+
+.foto-4{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 551px;
+}
+
+
+article .descripcion{
+    position: absolute;
+    top: 667px;
+    left:10px;
+}
+    
+article .price{
+    position: absolute;
+    top: 700px;
+    left:10px;
+}
+
+
+article div.comprar-carrito .boton-comprar{
+    position: absolute;
+    left: 10px;
+    top: 730px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 19px; 
+    box-shadow: 0,0,0,0.6;
+}
+
+article div.comprar-carrito .agregar-al-carrito{
+    position: absolute;
+    left: 150px;
+    top: 730px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 23px; 
+    box-shadow: 0,0,0,0.6;
+}
+
+.otras-artesanias{
+    position: absolute;
+    top:802px;
+    left: 10px;
+}
+
+.otras-artesanias p{
+    top:802px;
+    margin-bottom: 10px;
+}
+
+.otras-artesanias img{
+    width: 100px;
+    height: 100px;
+}
+
+section .boton-donacion {
+    position: absolute;
+    left: 15px;
+    top: 1000px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 23px; 
+    box-shadow: 0,0,0,0.6;
+}
+section .boton-tienda {
+    position: absolute;
+    left: 15px;
+    top: 1100px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 23px; 
+    box-shadow: 0,0,0,0.6;
+}
+
+/* footer--------------------------*/
+
+footer .logo-footer{
+    width: 10vw;
+    height: 30vh;
+}
+
