@@ -1,14 +1,14 @@
-*{ margin:0;
-    padding:0px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
+*{ margin:0%;
+    padding:0%;
     font-family: 'Raleway', sans-serif;
 }
 
+
 /* -------------------------------------Header--------------------------------- */
+
+header{
+    position: relative;
+}
 
 header .logo{
     display: flex;
@@ -19,28 +19,28 @@ header .logo{
 
 header .logo-logo{
     position: relative;
-    width: 10vw;
-    height: 25vh;
+    width: 15vw;
+    height: 22vh;
 }
 
-header .menu-hamburguesa{
+header div.menu-hamburguesa{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 15vw;
-    height: 15vh;
-    position: relative;
+    position: absolute;
 }
 
 .menu-hamburguesa i{
     position: absolute;
-    left: 200px;
+    left: 160px;
     top: -80px;
+    width: 20vw;
+    height: 15vh;
 }
 
 header .boton-tienda{
     position: absolute;
-    left: 400px;
+    left: 250px;
     top: 70px;
     border: 1px black solid;
     background-color: green;
@@ -50,7 +50,8 @@ header .boton-tienda{
     padding-bottom: 2px;
     padding-right: 10px;
     box-shadow: 0,0,0,0.6;
-    margin-right: 20px
+    margin-right: 10px
+
 }
 
 a{
@@ -65,7 +66,7 @@ a{
 
 header .boton-dona{
     position: absolute;
-    left: 400px;
+    left: 250px;
     top: 100px;
     border: 1px black solid;
     background-color: green;
@@ -86,7 +87,7 @@ header .boton-dona{
 
 .cambio-de-idioma{
     position: absolute;
-    top: 64px;
+    top: 70px;
     margin-left: 5px;
 }
 
@@ -95,15 +96,11 @@ header .boton-dona{
     position: absolute;
 }
 
-header .buscador-de-productos{
+header div.buscador-de-productos{
     position:absolute;
     top:200px;
-    left: 70px;
-    display: flex;
-}
-
-.buscador-de-productos label {
-    margin-right: 5px;
+    left: 30px;
+    margin: 10px;
 }
 
 .buscador-de-productos input {
@@ -113,23 +110,39 @@ header .buscador-de-productos{
     margin-right: 5px;
 }
 
+.buscador-de-productos i {
+    border: grey solid 1px;
+    background-color: green;
+}
+
+.volver {
+    position: absolute;
+    margin: 10px;
+    padding: 10px;
+}
+
 .volver a {
     color: grey;
-    margin-top: 10px;
-    padding-top:10px;
-
+    position: relative;
+    top: 140px;
 }
 
 main .icono-manito-redes-fijo-tabletypc {
     display: flex;
-    flex-direction: column reverse;
-    align-self: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top: 160px;
+    z-index: 3;
 }
 
+.icono-manito-redes-fijo-tabletypc{
+    display: inline;
+}
 .div-nombre-producto{
     position: absolute;
     left: 10px;
-    top: 300px; 
+    top: 320px; 
 }
 
 article div.fotos .foto-principal {
@@ -137,7 +150,7 @@ article div.fotos .foto-principal {
     height:347px; 
     position: absolute;
     left: 121px;
-    top:309px;
+    top: 377px;
 }
 
 .foto-2{
@@ -145,7 +158,7 @@ article div.fotos .foto-principal {
     height: 100px;
     position: absolute;
     left: 10px;
-    top: 327px;
+    top: 377px;
 }
 
 .foto-3{
@@ -153,7 +166,7 @@ article div.fotos .foto-principal {
     height: 100px;
     position: absolute;
     left: 10px;
-    top: 443px;
+    top: 487px;
 }
 
 .foto-4{
@@ -161,19 +174,21 @@ article div.fotos .foto-principal {
     height: 100px;
     position: absolute;
     left: 10px;
-    top: 551px;
+    top: 597px;
 }
 
 
 article .descripcion{
     position: absolute;
-    top: 667px;
+    top: 703px;
     left:10px;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
     
 article .price{
     position: absolute;
-    top: 700px;
+    top: 769px;
     left:10px;
 }
 
@@ -181,7 +196,7 @@ article .price{
 article div.comprar-carrito .boton-comprar{
     position: absolute;
     left: 10px;
-    top: 730px;
+    top: 800px;
     border: 1px black solid;
     background-color: green;
     color: white;
@@ -195,7 +210,7 @@ article div.comprar-carrito .boton-comprar{
 article div.comprar-carrito .agregar-al-carrito{
     position: absolute;
     left: 150px;
-    top: 730px;
+    top: 800px;
     border: 1px black solid;
     background-color: green;
     color: white;
@@ -208,7 +223,7 @@ article div.comprar-carrito .agregar-al-carrito{
 
 .otras-artesanias{
     position: absolute;
-    top:802px;
+    top:880px;
     left: 10px;
 }
 
@@ -225,7 +240,7 @@ article div.comprar-carrito .agregar-al-carrito{
 section.boton-donacion {
     position: absolute;
     left: 15px;
-    top: 1020px;
+    top: 1100px;
     border: 1px black solid;
     background-color: green;
     padding-left:17px;
@@ -233,7 +248,6 @@ section.boton-donacion {
     padding-bottom: 2px;
     padding-right: 17px; 
     box-shadow: 0,0,0,0.6;
-    z-index: 10;
 }
 
 .pagina-donaciones{
@@ -247,7 +261,7 @@ section.boton-donacion {
 section.boton-tienda {
     position: absolute;
     left: 15px;
-    top: 1100px;
+    top: 1300px;
     border: 1px black solid;
     background-color: green;
     color: white;
@@ -271,7 +285,7 @@ footer ul{
 
 footer .ultima-caja{
     position: absolute;
-    top: 1200px;
+    top: 1700px;
 
 
 }
