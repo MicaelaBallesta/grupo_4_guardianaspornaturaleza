@@ -1,6 +1,7 @@
 *{ margin:0%;
     padding:0%;
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -82,12 +83,18 @@ header .boton-dona{
 
 .icono-carrito{
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
     justify-content: flex-end;
-    display: none;
+    position: absolute;
+    top: 323px;
+    left: 390px;
 }
 
-.icono-carrito i{
-    align-self: flex-start;
+@media (min-width: 460px){
+    header .menu-hamburguesa i{ 
+        display:none;
+    }
 }
 
 .cambio-de-idioma{
@@ -304,18 +311,4 @@ footer .ultima-caja img{
     left: 272px; 
 }
 
-.ultima-caja 
-<p class="direccion">Buenos Aires, Argentina </p>
-<img src="images/isologo verde.png" alt="logo" class="logo-footer">
-<p class="copyright"><i class="fa-regular fa-copyright"></i>2022 Guardianas por naturaleza </p>
-
-@media (min-width: 460px){
-    .menu-hamburguesa {
-        display:none;
-    }
-
-    .icono-carrito{
-        display: contents;
-    }
-}
 
