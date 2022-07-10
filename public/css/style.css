@@ -36,10 +36,17 @@
   background-color: #424242;
   width: 1500px;
 }
+<<<<<<< HEAD
 .navbar .logo {
   display: flex;
   justify-content: center;
   background-image: url();
+=======
+ .logo {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/isologo\ verde.png);
+>>>>>>> 4a2c651e7a4c63e71cd2aeb3206a4e8f0bb2b8c8
   padding-top: 2.8vh;
 }
 .navbar > div {
@@ -208,6 +215,7 @@ section h2 {
 /* ------------------------------------CARRUSEL------------------------------- */
 .carrusel{
   background-image: url(..//images/carrusel.jpg);
+<<<<<<< HEAD
   background-repeat: no-repeat;  
   width: 1300px;
   height: 500px;
@@ -219,6 +227,24 @@ section h2 {
 
 .carrusel ,h1 {
   font-size: 50px;
+=======
+  background-repeat: no-repeat; 
+  width: 1500px;
+  height: 600px;
+  
+  display: block;
+  
+  margin: 0px auto;
+  margin-left: auto; 
+  max-width: 50%;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+  margin-right: auto;
+
+  
+}
+.carrusel ,h1 {
+  font-size: 15px;
+>>>>>>> 4a2c651e7a4c63e71cd2aeb3206a4e8f0bb2b8c8
   margin-bottom: 1rem;
   text-align: center;
 
@@ -261,6 +287,7 @@ body {
 }
 
 .card--1 .card__img, .card--1 .card__img--hover {
+<<<<<<< HEAD
     background-image: url(..//images/artesania-ceramica.jpg);
 }
 
@@ -269,6 +296,16 @@ body {
 }
 .card--2 .card__img, .card--3 .card__img--hover {
   background-image: url(..//images/artesania1.jpg);
+=======
+    background-image: url(../images/bowl.jpg);
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url(../images/bowl.jpg);
+}
+.card--2 .card__img, .card--3 .card__img--hover {
+  background-image: url(../images/bowl.jpg);
+>>>>>>> 4a2c651e7a4c63e71cd2aeb3206a4e8f0bb2b8c8
 }
 .card__like {
     width: 18px;
@@ -328,7 +365,11 @@ top: 0;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
     width: 33.3%;
+<<<<<<< HEAD
   position: relativeab;
+=======
+  position: relative;
+>>>>>>> 4a2c651e7a4c63e71cd2aeb3206a4e8f0bb2b8c8
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
@@ -337,7 +378,10 @@ top: 0;
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
     transform: scale(1.10, 1.10);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 4a2c651e7a4c63e71cd2aeb3206a4e8f0bb2b8c8
 }
 
 .card__info {
@@ -393,6 +437,7 @@ border-bottom-right-radius: 12px;
 /* -------------------------------------Calculadora--------------------------------- */
 .calculadora{
 
+<<<<<<< HEAD
 background-image: url(..//images/Calculadora.jpg);
 background-repeat: no-repeat; ;
 width: 1000px;
@@ -407,6 +452,24 @@ width: 1000px;
 
 
 
+=======
+  background-image: url(../images/calculadora.jpg);
+  background-repeat: no-repeat;  
+  width: 1100px;
+  height: 600px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  padding-right: 100px;
+  box-shadow: 0px 13px 10px -7px rgba(133, 140, 133, 0.1);
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 23px 10px -7px rgba(0, 0, 0,0.1);
+  
+>>>>>>> 4a2c651e7a4c63e71cd2aeb3206a4e8f0bb2b8c8
 
 
 
@@ -565,6 +628,7 @@ footer a
 {color: rgb(161, 240, 221);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 footer .capa-footer
 {color: rgb(16, 15, 15);
   font-size: 13px;
@@ -595,8 +659,13 @@ footer ul.social-botons li a{
 footer ul.social-botons li a:hover, ul.social-botons li a:focus, ul.social-botons li a:active{
   background-color: #5ABD5E;}
 =======
+=======
+>>>>>>> 4a2c651e7a4c63e71cd2aeb3206a4e8f0bb2b8c8
 
 
 
 
+<<<<<<< HEAD
 >>>>>>> dc99f15 (home)
+=======
+>>>>>>> 4a2c651e7a4c63e71cd2aeb3206a4e8f0bb2b8c8
