@@ -11,14 +11,14 @@ header{
     position: relative;
 }
 
-header .logo{
+header .logo-header{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     position: relative;
 }
 
-header .logo-logo{
+header .logo-img{
     position: relative;
     width: 15vw;
     height: 22vh;
@@ -52,7 +52,6 @@ header .boton-tienda{
     padding-right: 10px;
     box-shadow: 0,0,0,0.6;
     margin-right: 10px
-
 }
 
 a{
@@ -62,7 +61,6 @@ a{
 .boton-tienda{
     padding: 1px, 5px, 1px, 5px;
     text-align: center;
-
 }
 
 header .boton-dona{
@@ -91,22 +89,39 @@ header .boton-dona{
     left: 390px;
 }
 
-@media (min-width: 460px){
-    header .menu-hamburguesa i{ 
-        display:none;
-    }
-}
-
 .cambio-de-idioma{
     position: absolute;
     top: 70px;
     margin-left: 5px;
 }
 
+
 .navegador-principal, .login-registrate {
     display: none;
-    position: absolute;
+    
 }
+
+@media (min-width: 460px) {
+    header div.menu-hamburguesa { 
+        display:none
+    }
+    .icono-carrito{
+        position: absolute;
+        top:323px;
+        left:90%;
+    }
+    nav.navegador-principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ;
+    }
+    .navegador-prin
+
+    }
+}
+
+
 
 header div.buscador-de-productos{
     position:absolute;
@@ -136,7 +151,7 @@ header div.buscador-de-productos{
 .volver a {
     color: grey;
     position: relative;
-    top: 140px;
+    top: -25%;
 }
 
 main .icono-manito-redes-fijo-tabletypc {
@@ -145,7 +160,7 @@ main .icono-manito-redes-fijo-tabletypc {
     align-items: flex-end;
     position: relative;
     top: 160px;
-    z-index: 3;
+    left: -350px;
 }
 
 .icono-manito-redes-fijo-tabletypc{
@@ -312,3 +327,14 @@ footer .ultima-caja img{
 }
 
 
+
+
+    header nav.navegador-principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+}
