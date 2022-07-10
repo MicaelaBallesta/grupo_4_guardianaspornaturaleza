@@ -139,9 +139,7 @@ header .buscador-de-productos{
         justify-content: space-between;
     }
 
-    .navegador-principal
-
-    }
+    .navegador-principal{
 }
 /*-----------------*/
     .login-registrate{
@@ -154,6 +152,10 @@ header .buscador-de-productos{
         justify-content: center;
         
     }
+
+}
+/*media terminado */
+
 
 .volver {
    position: absolute;
@@ -255,6 +257,76 @@ article div.comprar-carrito .agregar-al-carrito{
     padding-bottom: 2px;
     padding-right: 6px; 
     box-shadow: 0,0,0,0.6;
+}
+
+@media (min-width:460px){
+    div.div-nombre-producto{
+        position: absolute;
+        top: 390px;
+        left: 70%;     
+    }
+
+    article .descripcion{
+        position: absolute;
+        top: 400px;
+        left:70%;
+        margin-top:30px;
+        margin-bottom: 10px;
+    }
+        
+    article .price{
+        position: absolute;
+        top: 500px;
+        left:70%;
+    }
+    
+    article div.comprar-carrito .agregar-al-carrito{
+        position: absolute;
+        top: 600px;
+        left:70%;
+    }
+
+
+    article div.comprar-carrito .boton-comprar{
+        position: absolute;
+        top: 600px;
+        left:85%;
+    }
+
+
+    article div.fotos .foto-principal {
+        width:350px;
+        height:400px; 
+        position: absolute;
+        left: 30%;
+        top: 377px;
+    }
+
+    div.fotos .foto-2{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 20%;
+        top: 377px;
+    }
+    
+    .foto-3{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 20%;
+        top: 487px;
+    }
+    
+    .foto-4{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 20%;
+        top: 597px;
+    }
+    
+
 }
 
 .otras-artesanias{
