@@ -1,0 +1,22 @@
+{
+  "name": "grupo_4_guardianaspornaturaleza",
+  "version": "1.0.0",
+  "description": "Proyecto de artesanías",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicaelaBallesta/grupo_4_guardianaspornaturaleza.git"
+  },
+  "author": "grupo 4 - Macarena Pagniez - Micaela Ballesta - Leonardo Ferreyra - Juan Solari.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MicaelaBallesta/grupo_4_guardianaspornaturaleza/issues"
+  },
+  "homepage": "https://github.com/MicaelaBallesta/grupo_4_guardianaspornaturaleza#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
