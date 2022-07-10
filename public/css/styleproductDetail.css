@@ -110,13 +110,13 @@ header .boton-dona{
         top:323px;
         left:90%;
     }
-    nav.navegador-principal {
+    .navegador-principal {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         ;
     }
-    .navegador-prin
+    .navegador-principal
 
     }
 }
