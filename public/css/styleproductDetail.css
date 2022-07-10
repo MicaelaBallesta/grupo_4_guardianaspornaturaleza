@@ -98,7 +98,7 @@ header .boton-dona{
 }
 
 
-.navegador-principal, .login-registrate {
+nav, .login-registrate {
     display: none;
     
 }
@@ -135,7 +135,8 @@ header .buscador-de-productos{
     header .navegador-principal {
         display: flex;
         flex-direction: row;
-        position: absolute;   
+        justify-content: space-between;
+        align-self: flex-start;   
     }
 
 
