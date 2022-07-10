@@ -102,8 +102,6 @@ header .boton-dona{
     
 }
 
-
-
 header .buscador-de-productos{
     margin-left: 3%;
     margin-top: 3%;
@@ -133,18 +131,35 @@ header .buscador-de-productos{
 
     /*no se implementa el navegador*/
 
-    .navegador-principal {
+    header .navegador-principal {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        position: absolute;   
     }
 
-    .navegador-principal{
-}
-/*-----------------*/
-    .login-registrate{
-        position: absolute;
 
+    /*-----------------*/
+
+    header .boton-dona{
+        position: relative;
+        top: -40px;
+        left: 800px;
+    }
+
+    header .boton-tienda{
+        position: relative;
+        top: -40px;
+        left: 800px;
+    }
+
+
+    .login-registrate{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left:80%;
+        color:blue;
     }
 
     .buscador-de-productos{
@@ -174,6 +189,7 @@ header .buscador-de-productos{
     position: relative;
     top: 72px;
     left: -46px;
+    z-index: 2;
 }
 
 .div-nombre-producto{
@@ -405,17 +421,4 @@ footer .ultima-caja img{
     position: absolute;
     top: 1537px;
     left: 272px; 
-}
-
-
-
-
-    header nav.navegador-principal {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    
 }
