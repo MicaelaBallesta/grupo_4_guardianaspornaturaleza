@@ -196,8 +196,9 @@ section.boton-tienda {
 
 .summary{
   padding-top: 15px; padding-right: 15px;
-    padding-bottom: 15px; padding-left: 15px;
-border-radius: 0ex;
+    padding-bottom: 15px; 
+    padding-left: 15px;
+    border-radius: 0ex;
 }
 
 .summary {
@@ -207,8 +208,15 @@ border-radius: 0ex;
     align-self: center;
     }
 
-    @media (max-width: 460px) and (orientation: landscape){
-        body {
-        background: rgb(183, 183, 200);
+    body {
+        background: none;
         }
+        @media (min-width: 460px)  and (orientation: landscape){
+        /* Tablets */
         }
+        @media (min-width: 768px){
+        /* Laptop */
+        }
+    
+
+    
