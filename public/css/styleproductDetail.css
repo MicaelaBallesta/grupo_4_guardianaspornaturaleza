@@ -86,7 +86,8 @@ header .boton-dona{
     justify-content: flex-end;
     position: absolute;
     top: 323px;
-    left: 390px;
+    left: 90%;
+    color:green;
 }
 
 .cambio-de-idioma{
@@ -101,40 +102,23 @@ header .boton-dona{
     
 }
 
-@media (min-width: 460px) {
-    header div.menu-hamburguesa { 
-        display:none
-    }
-    .icono-carrito{
-        position: absolute;
-        top:323px;
-        left:90%;
-    }
-    .navegador-principal {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .navegador-principal
 
-    }
+
+header .buscador-de-productos{
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
 }
 
 
-
-header div.buscador-de-productos{
-    position:absolute;
-    top:200px;
-    left: 30px;
-    margin: 10px;
-}
 
 .buscador-de-productos input {
     box-shadow: 0, 0, 0, 0.5;
     border: grey solid 1px;
     width: max-content;
     margin-right: 5px;
+    margin-left: 5px;
 }
 
 .buscador-de-productos i {
@@ -142,34 +126,59 @@ header div.buscador-de-productos{
     background-color: green;
 }
 
+@media (min-width: 460px) {
+    header div.menu-hamburguesa { 
+        display:none
+    }
+
+    /*no se implementa el navegador*/
+
+    .navegador-principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navegador-principal
+
+    }
+}
+/*-----------------*/
+    .login-registrate{
+        position: absolute;
+
+    }
+
+    .buscador-de-productos{
+        display: flex;
+        justify-content: center;
+        
+    }
+
 .volver {
-    position: absolute;
-    margin: 10px;
-    padding: 10px;
+   position: absolute;
+   top:310px;
+   margin-left: 5px;
 }
 
 .volver a {
     color: grey;
-    position: relative;
-    top: -25%;
 }
 
-main .icono-manito-redes-fijo-tabletypc {
+.icono-manito-redes{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    top: 160px;
-    left: -350px;
+    top: 72px;
+    left: -46px;
 }
 
-.icono-manito-redes-fijo-tabletypc{
-    display: inline;
-}
 .div-nombre-producto{
-    position: absolute;
-    left: 10px;
-    top: 320px; 
+   display: flex;
+   position: absolute;
+    left: 80px;
+    top: 347px;  
 }
 
 article div.fotos .foto-principal {
