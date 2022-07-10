@@ -1,0 +1,222 @@
+
+* { box-sizing: border-box }
+
+
+colores {
+    color:f47421;
+    color:f2f2f2;
+    color:04402f;
+    color:F3D5BB; 
+}
+
+*{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+header .logo-logo{
+    position: relative;
+    width: 10vw;
+    height: 25vh;
+}
+
+
+header .boton-tienda{
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    box-shadow: 0,0,0,0.6;
+    margin-right: 20px
+}
+
+a{
+  text-decoration: none;  
+}
+
+.boton-tienda{
+    padding: 1px, 5px, 1px, 5px;
+    text-align: center;
+
+}
+
+header .boton-dona{
+    position: absolute;
+    left: 400px;
+    top: 180px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 23px; 
+    box-shadow: 0,0,0,0.6;
+    margin-right:20px;
+}
+
+
+.logo-logo{
+    width: 16vw;
+    height: 21vh;
+}
+
+.logo-footer{
+    width: 5vw;
+    height: 10vh;
+}
+
+body{
+    letter-spacing: 20          
+    }
+
+ 
+.price{
+font-size: 16px;
+width: 25%;
+}
+
+article div.main-article{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: baseline;
+border-top: 1px solid #ebebeb;
+position: relative;
+padding: 15px;
+}
+
+div.summary{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: baseline;
+border-top: 1px solid #ebebeb;
+position: relative;
+padding: 15px;
+}
+
+main section article{
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+
+main section div.products article{
+width: 45%;
+}
+
+
+h1 {
+    position: i;
+    left: 100px;
+    top: 150px;
+  }
+
+
+  .icono-carrito {
+    position: relative;
+    left:10px;
+    top: 15px;
+   }
+   
+   .carrito texto{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+   }
+
+   .buscador-productos {
+    color:rgb(136, 23, 23);
+   }
+
+   body { background-image: "images/footer"
+}
+
+
+
+section.boton-donacion {
+    position: absolute;
+    left: 15px;
+    top: 1020px;
+    border: 1px black solid;
+    background-color: green;
+    padding-left:17px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 17px; 
+    box-shadow: 0,0,0,0.6;
+    z-index: 10;
+}
+
+.pagina-donaciones{
+    color: white;
+}
+
+.pagina-tienda{
+    color:white;
+}
+
+section.boton-tienda {
+    position: absolute;
+    left: 15px;
+    top: 1100px;
+    border: 1px black solid;
+    background-color: green;
+    color: white;
+    padding-left:10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 23px; 
+    box-shadow: 0,0,0,0.6;
+}
+
+
+.summary {
+    font-size: medium;
+    color: rgb(19, 11, 138);
+    font-weight: bold;
+    }
+   
+
+
+.summary{
+  padding-top: 15px; padding-right: 15px;
+    padding-bottom: 15px; 
+    padding-left: 15px;
+    border-radius: 0ex;
+}
+
+.summary {
+    align-items: flex-start;
+    }
+    .summary-total-items {
+    align-self: center;
+    }
+
+    body {
+        background: none;
+        }
+        @media (min-width: 460px)  and (orientation: landscape){
+        /* Tablets */
+        }
+        @media (min-width: 768px){
+        /* Laptop */
+        }
+    
+
+    

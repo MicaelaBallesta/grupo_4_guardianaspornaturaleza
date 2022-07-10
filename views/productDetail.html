@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Guardianas x naturaleza</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleproductDetail.css">
     <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,29 +14,29 @@
 </head>
 <body>
 
-    <header class="header">
-        
-                <div class="logo">
-                         <img src="images/isologo verde.png" alt="Guardianas por naturaleza" class="logo-logo">
+    <header>
+            <div class="header-celu">
+                <div class="logo-header">
+                         <img src="images/isologo verde.png" alt="Guardianas por naturaleza" class="logo-img">
                 </div>
         
                 <div class="menu-hamburguesa">
                     <i class="fa-solid fa-bars"></i>
                 </div>    
 
-
                 <div>
-                    <a href="#" class="boton-tienda">Tienda</a>
+                    <a href="/tienda" class="boton-tienda">TIENDA</a>
                 
-                    <a href="#" class="boton-dona">Doná</a>
+                    <a href="/donaciones" class="boton-dona">DONÁ</a>
                 </div>       
-
+            </div>
+            
          <div class="icono-carrito">
             <i class="fa-solid fa-cart-shopping"></i>
          </div>
 
          <div class="cambio-de-idioma">
-                <form action="" method="get">
+                <form class="cambio-de-idioma" action="/productDetail" method="get">
                     <select name="idiomas" id="idiomas">
                     <option value="Eligió español"> Español </option>
                     <option value="Eligió inglés"> English </option>
@@ -46,31 +46,36 @@
 
         <nav class="navegador-principal">
             <ul>
-                <li> <a href="/"></a> Inicio </li>
-                <li> <a href="#"></a> Nosotros </li>
-                <li> <a href="#"></a> Impacto </li>
-                <li> <a href="#"></a> Conocé tu huella </li>
-                <li> <a href="#"></a> Catálogo</li>
-                <li> <a href="/register"></a> Crea una cuenta</li>
-                <li> <a href="/login"></a> Inicia sesión en Guardianas</li>
-
+                <li class="home"> <a href="/"> HOME </li></a>
+                <li class="nosotros"> <a href="/nosotros"> NOSOTROS </li></a>
+                <li class="impacto"> <a href="/impacto"> IMPACTO </li></a>
+                <li class="conoce-tu-huella"> <a href="/tuhuella"> CONOCÉ TU HUELLA </li></a>
+                <li class="catalogo"> <a href="/catalogo"> CATÁLOGO</li></a>
             </ul>
         </nav>
 
+            <div>
+                <ul class="login-registrate">
+                    <li> <a href="/login"></a> Log in </li>
+                    <li> <a href="/register"></a> Crea tu cuenta en guardianas </li>
+                </ul>
+            </div>
+
+           
         <div class="buscador-de-productos">
-            <label for="buscador-productos"> ¿Qué artesanía estás buscando? </label>
-            <input type="text" name="buscador-productos" id="buscador" placeholder="Buscá más productos"><i class="fa-solid fa-magnifying-glass"></i>
+            <label for="buscador-productos"> Artesanías únicas </label>
+            <input type="text" name="buscador-productos" id="buscador" placeholder="   Carteras,ollas,tazas"><i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
     </header>
-
     
         <div class="volver">
-            <a href="/views/index.html"> Volvé al Inicio</a>
+            <a href="/views/index.html"> HOME/ #Nombre del producto elegido</a>
         </div>
 
+
     <main>
-        <div class="icono-manito-redes-fijo-tabletypc">
+        <div class="icono-manito-redes">
             <i class="fa-solid fa-hand-dots"></i>
             <a href="#"> <i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -78,46 +83,51 @@
             <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
 
-        <div class="encabezado-ruta">
-            <p class="ruta"> #Inicio/#Nombre del producto </p>
+        <div class="div-nombre-producto">
+            <p class="nombre-producto"> Bowl cerámica </p>
         </div>
 
         <article class="producto">
-            <img src="/images/bowl.jpg" width="300px" height="400px"  alt="producto a">
-            <img src="/images/2.jpg" alt="bowl" width="100px" height="100px">
-            <img src="/images/3.jpg" alt="bowl" width="100px" height="100px">
-            <img src="/images/4.jpg" alt="bowl" width="100px" height="100px">
+            <div class="fotos">
+                <img src="/images/bowl.jpg"  alt="producto a" class="foto-principal">
+                <img src="/images/2.jpg" alt="bowl" class="foto-2">
+                <img src="/images/3.jpg" alt="bowl" class="foto-3">
+                <img src="/images/4.jpg" alt="bowl" class="foto-4">
+            </div>
            
-            <p>faltan los iconos de puntos para dar funcionalidad a las imagenes</p>
+        
             <div class="puntos-debajo-de-foto-principal"> 
                 <i class="fa-regular fa-circle-small"></i>
                 <i class="fa-regular fa-circle-small"></i>
             </div>
-
-            <p> Bowl de cerámica </p>
-            <p> Descripción breve del producto para celular 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsam hic architecto atque magni maxime, ipsum et, dolorem pariatur reprehenderit amet vero quam voluptatem error fugit voluptates quo esse quas.
-            </p>
-            <p> $1500 </p>
+        <div class="desc-price">
+            <p class="descripcion"> Descripcion corta del producto </p>
+            <p class="price"> $1500 </p>
+        </div>
             <!--hacer botones css-->
-            <a href="#"> Agregar al carrito </a>
-            <a href="#"> Comprar</a>
+            <div class="comprar-carrito">
+                <a href="#" class="agregar-al-carrito"> Agregar al carrito </a>
+                <a href="#" class="boton-comprar"> Comprar</a>
+            </div>
 
         </article>
     </main>
 
-        <p class="otras-artesanias"> ¡Artesanías únicas de la naturaleza a tu mano! </p>
+        <div class="otras-artesanias">
+        <p> ¡Artesanías únicas de la naturaleza a tu mano! </p>
         <!--Tienen que ir pasando de a una por pantalla a medida que crece la pantalla se ajusta al tamaño >>--> 
-        <img src="/images/2.jpg" width="200px" heigh="200" alt="foto1">
-        <img src="/images/4.jpg"  width="200px" heigh="200" alt="foto2">
-        <img src="" alt="foto 3">
-        <img src="" alt="foto 4">
-        <img src="" alt="foto 5">
+        <img src="/images/2.jpg" width="200px" heigh="200" alt="foto1" class="mas-productos">
+        <img src="/images/4.jpg"  width="200px" heigh="200" alt="foto2" class="mas-productos2">
+        <img src="/images/artesania-ceramica.jpg" alt="foto 3" class="mas-productos3">
+        <img src="/images/bowl.jpg" alt="foto 4" class="mas-productos4">
+        </div>
 
-        <section>
-            <a  href="#" class="pagina-donaciones">Sumate con tu donación</a>  
+        <section class="boton-donacion">
+            <a  href="/donaciones" class="pagina-donaciones">Sumate con tu donación</a>  
             <!--boton con css -->
+        </section>
 
+        <section class="boton-tienda">
             <a  href="#" class="pagina-tienda"> Conocé nuestra tienda
                  ¡No te pierdas nada! </a>
              <!--hacer boton con css-->
@@ -142,7 +152,7 @@
 
         </ul>
     
-        <div>
+        <div class="ultima-caja">
             <p class="direccion">Buenos Aires, Argentina </p>
             <img src="images/isologo verde.png" alt="logo" class="logo-footer">
             <p class="copyright"><i class="fa-regular fa-copyright"></i>2022 Guardianas por naturaleza </p>

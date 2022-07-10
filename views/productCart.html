@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Guardianas x naturaleza</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleproductCart.css">
     <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
 
+  
+</head>
+<title>Viewport</title>
+<meta name= 'viewport' content= 'with=device-wid th, initial-scale=1'>
 </head>
 <body>
+<marquee> <h2>Guardianas por naturaleza</h2></marquee>
+</body>
+<body>
 
+  
     <header class="header">
         
                 <div class="logo">
@@ -41,30 +49,23 @@
 
         <nav class="navegador-principal">
             <ul>
-                <li> <a href="/"></a> Inicio </li>
-                <li> <a href="/"></a> Nosotros </li>
-                <li> <a href="/"></a> Impacto </li>
-                <li> <a href="/"></a> Catálogo</li>
-                <li> <a href="/"></a> Tienda </li>
-                <li> <a href="/"></a> Donar </li>
+                <li> <a href="/"> Inicio </li></a>
+                <li> <a href="/">Nosotros </li></a> 
+                <li> <a href="/">Impacto </li></a> 
+                <li> <a href="/productDetail"> Catálogo</li></a>
+                <li> <a href="/productDetail">Tienda </li></a> 
+                <li> <a href="/"> Donar </li></a>
+                <li> <a href="/login"> Ingresa </li></a>
+                <li> <a href="/register"> Regístrate </li></a>
             </ul>
         </nav>
-        <div class="icono-carrito">
-            <i class="fa-solid fa-cart-shopping"></i>
-         </div>
-
-        <div class="buscador-de-productos">
-            <label for="buscador-productos"> Busca tu artesania </label>
-            <input type="text" name="buscador-productos" id="buscador" placeholder="Buscá más productos"><i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-
+      
+         <div class="volver">
+          <a href="/views/index.html"> Volvé al Inicio</a>
+     
     </header>
-
     
-        <div class="volver">
-            <a href="/views/index.html"> Volvé al Inicio</a>
-        </div>
-
+       
     <main>
         <div class="icono-manito-redes-fijo-tabletypc">
             <i class="fa-solid fa-hand-dots"></i>
@@ -73,16 +74,54 @@
             <a href="#"><i class="fa-solid fa-envelope"></i></a>
             <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
+  
 
+<!-- 
+div class="primero"> Primer DIV</div>
+    <div class="segundo"> Segundo DIV </div>
+
+.icono-carrito {
+ position: relative;
+ left:20px;
+ top: 30px;
+}
+
+.carrito texto{
+ position: absolute;
+ right: 30px;
+ bottom: 20px;
+}
+-->
+
+        <div class="icono-carrito">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="carrito texto"><h2>Carrito de compras</h2>
+       </div>
+       
+      </div>
+      <div class="buscador-de-productos">
+          <label for="buscador-productos"> Busca tu artesania </label>
+          <input type="text" name="buscador-productos" id="buscador" placeholder="Buscá más productos">
+          <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+
+      
+
+<!-- 
         <div class="encabezado-ruta">
             <p class="ruta"> #Inicio/#Nombre del producto </p>
         </div>
+-->
+
         <div class="basket">
             <div class="basket-module">
               <label for="promo-code">Código de promoción</label>
               <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
               <button class="promo-code-cta">Aplicar</button>
             </div>
+
+    <!-- 
             <div class="basket-labels">
               <ul>
                 <li class="item item-heading">Producto</li>
@@ -91,22 +130,36 @@
                 <li class="subtotal">Subtotal</li>
               </ul>
             </div>
+-->
+
+
+<div class="tu carrito">
+  <h3> Tu carrito </h3>
+  
+<!-- 
             <div class="basket-product">
+             
+              -->
+              
               <div class="item">
-                
-                <div class="products">
+                  <div class="products">
                   <article>
-                      <img src="images/img-cafetera-moulinex.jpg" alt="Panera" class="product_img">
+                    <!--   
+                    <img src="images/img-cafetera-moulinex.jpg" alt="Panera" class="product_img">
+                    -->
                       <div class="main-article">
-                          <i class="fas fa-truck"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
                           <h3 class="description">Panera de Carandillo</h3>
                       </div>
                   </article>
                   <div class="product-image">
-                    <img src="http://placehold.it/120x166" alt="Imagen buscar" class="product-frame">
+                    <img src="/images/paneraCarandillo.jpg" alt="Imagen buscar" class="product-frame" width= "270px" height="250">
                   </div>
+<!--
+                  <img src="/images/bowl.jpg" width="300px" height="400"  alt="producto a">
+-->
                         <p>Código de producto - 265</p>
-                        <div class="price">$ 4.840</div>
+                        <div class="price">$ 1.970</div>
                 </div>
               </div>
           <div class="quantity">
@@ -115,11 +168,24 @@
                 <div class="remove">
                 <button>Quitar producto</button>
               </div>
+
+             <i class="fa-solid fa-trash-can"></i>
+
                   <article>
-                      <img src="images/img-macbook-pro-2019.jpg" alt="Canasto" class="product_img">
+                    <!--   
+                    <img src="images/img-macbook-pro-2019.jpg" alt="Canasto" class="product_img">
+                    -->
+
                       <div class="main-article">
-                          <i class="fas fa-truck"></i>
-                          <h3 class="description">Canasto Artesanal</h3>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                          <h3 class="description">Bowl de cerámica</h3>
+
+                        </article>
+                        <div class="product-image">
+                          <img src="/images/2.jpg" alt="Imagen buscar" class="product-frame" width="270px" height="250" >
+                           
+                        </div>
+
                       </div>
                       <p>Código de producto - 1568</p>
                     </div>
@@ -133,44 +199,80 @@
     
                     <button>Quitar producto</button>
                   </div>
+                  <i class="fa-solid fa-trash-can"></i>
 
                   </article>
+                  
                   <article>
-                      <img src="images/img-samsung-galaxy-s10.jpg" alt="Cartera de Chaguar" class="product_img">
-                      <div class="main-article">
-                          <i class="fas fa-truck"></i>
-                    <h3 class="description">Cartera de Chaguar</h3>
+                 <div class="main-article">
+                  <i class="fa-solid fa-cart-shopping"></i>        
+                     <h3 class="description">Cartera de Chaguar</h3>
                       </div>
+                                       
+                    </article>
+                    <div class="product-image">
+                      <img src="/images/carteraChaguar1.jpg" alt="Imagen buscar" class="product-frame" width="270px" height="250" >
+                  </div>
+
                   </article>
                 </div>
                 <p>Código de producto - 1568</p>
               </div>
             </div>
-            <div class="price">$ 1.800</div>
+            <div class="price">$ 2.850</div>
             <div class="quantity">
               <input type="number" value="1" min="1" class="quantity-field">
             </div>    
+            <div class="remove">
+                  <button>Quitar producto</button>
+            </div>
+
+            <i class="fa-solid fa-trash-can"></i>
                   
              <div class="basket-product">
               <div class="item">
-                               
-          </div>
-          <aside>
+                     
+                <article>
+                  <div class="main-article">
+                   <i class="fa-solid fa-cart-shopping"></i>        
+                      <h3 class="description">Finalizar la compra</h3>
+                       </div>
+                       
+                       <div class="finalizar">
+                                            
+                      <button type="button" onclick="alert('¿Seguro quieres finalizar la compra?')">Finalizar Compra</button>
+                    </div>
+                  </div>
 
+             
+                      <aside>
             <div class="summary">
               <div class="summary-total-items"><span class="total-items"></span> Items en tu carrito</div>
+           
+            
+              <div class="basket">
+                <div class="basket-module">
+                 </div>
+
+                 <div class="subtotal">
+                  <button>$        </button>
+                </div>
+              
               <div class="summary-subtotal">
                 <div class="subtotal-title">Subtotal</div>
-                <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+                <div class="subtotal-value final-value" id="basket-subtotal"></div>
                 <div class="summary-promo hide">
-                  <div class="promo-title">Promoción</div>
+                  <!-- <div class="promo-title">Promoción</div>
+                  -->
                   <div class="promo-value final-value" id="basket-promo"></div>
                 </div>
               </div>
               <div class="summary-delivery">
+                <i class="fas fa-truck"></i> 
                 <select name="delivery-collection" class="summary-delivery-selection">
+                 
                     <option value="0" selected="selected">Elegí la forma de entrega</option>
-                   <option value="collection">Retiro</option>
+                   <option value="collection">Retiro en local</option>
                    <option value="first-class">Búsqueda en sucursal de correo</option>
                    <option value="second-class">Envío a domicilio</option>
                    <option value="signed-for">Envío especial rápido</option>
@@ -178,7 +280,7 @@
               </div>
               <div class="summary-total">
                 <div class="total-title">Total</div>
-                <div class="total-value final-value" id="basket-total">130.00</div>
+                <div class="total-value final-value" id="basket-total"></div>
               </div>
               <div class="summary-checkout">
                 <button class="checkout-cta">Cerrar cesión</button>
@@ -187,7 +289,7 @@
           </aside>
         </main>
       </body>
-      
+      <!-- 
         <article class="producto">
             <img src="/images/bowl.jpg" width="300px" height="400"  alt="producto a">
             <img src="" alt="/images/artesania-ceramica.jpg">
@@ -195,6 +297,7 @@
                 <i class="fa-regular fa-circle-small"></i>
                 <i class="fa-regular fa-circle-small"></i>
             </div>
+            -->
            
             <div class="icono-pasar-imagenes">
             <i class="fa-thin fa-scrubber"></i>
@@ -204,20 +307,20 @@
     
             <!--hacer botones css-->
 
-            <a href="#"> Agregar al carrito </a>
-            <a href="#"> Comprar</a>
+          
 
         </article>
     </main>
 
         <p class="otras-artesanias"> ¡Artesanías únicas de la naturaleza a tu mano! </p>
         <!--Tienen que ir pasando de a una por pantalla a medida que crece la pantalla se ajusta al tamaño >>--> 
-        <img src="" alt="foto1">
+        <!-- <img src="" alt="foto1">
         <img src="" alt="foto2">
         <img src="" alt="foto 3">
         <img src="" alt="foto 4">
         <img src="" alt="foto 5">
-
+        -->
+        
         <section>
             <a  href="#" class="pagina-donaciones">Sumate con tu donación</a>  
             <!--boton con css -->
