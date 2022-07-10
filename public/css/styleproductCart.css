@@ -207,4 +207,8 @@ border-radius: 0ex;
     align-self: center;
     }
 
- 
+    @media (max-width: 460px) and (orientation: landscape){
+        body {
+        background: rgb(183, 183, 200);
+        }
+        }
