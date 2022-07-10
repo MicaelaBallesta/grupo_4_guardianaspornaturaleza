@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-image: "images/fondo";
+}
 .register{
     width: 400px ;
     background: #24303c;
@@ -31,7 +34,7 @@
 .register p {
     height: 40px;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 40px;
 }
 .register a {
