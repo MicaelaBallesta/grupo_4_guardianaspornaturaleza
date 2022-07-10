@@ -7,7 +7,7 @@ We are all Argentinian developers.
 _Juan: años, amante de la naturaleza y de los viajes. Desarrollador fullstack._
 _Mica: 27 años, apasionada por la cocina y desarrolladora fullstack._ 
 _Maca: 36 años, sommelier amateur y desarrolladora fullstack._ 
-_Leo:  años, músico, fan del enano y desollador fullsatck._
+_Leo: 43años, músico, fan de su hijo y desollador fullsatck._
 
 We use Scrum methodology.
 
