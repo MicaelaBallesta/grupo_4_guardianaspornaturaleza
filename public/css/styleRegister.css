@@ -8,7 +8,7 @@
     height:100vh;
 }
 body {
-    background-image: url(../images/fondo.jpg);
+    background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,13 +16,13 @@ body {
 }
 @media only screen and (max-device-width: 767px) {
     body {
-         background-image: url(../images/fondo.jpg);
+         background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
          color: #FFF;
      }
 }
 @media only screen and (max-width: 767px) {
     body {
-         background-image: url(../images/fondo.jpg);
+         background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
          color: #FFF;
          }
 }
