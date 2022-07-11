@@ -36,10 +36,17 @@
   background-color: #424242;
   width: 1500px;
 }
+<<<<<<< HEAD
  .logo {
   display: flex;
   justify-content: center;
   background-image: url(../img/isologo\ verde.png);
+=======
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  background-image: url();
+>>>>>>> refs/remotes/origin/main
   padding-top: 2.8vh;
 }
 .navbar > div {
@@ -208,6 +215,7 @@ section h2 {
 /* ------------------------------------CARRUSEL------------------------------- */
 .carrusel{
   background-image: url(..//images/carrusel.jpg);
+<<<<<<< HEAD
   background-repeat: no-repeat; 
   width: 1500px;
   height: 600px;
@@ -224,6 +232,19 @@ section h2 {
 }
 .carrusel ,h1 {
   font-size: 15px;
+=======
+  background-repeat: no-repeat;  
+  width: 1300px;
+  height: 500px;
+  display: block;
+  margin: 0px auto;
+  padding-left: 70px;
+  box-shadow: 0px 0px 10px #000;
+  }
+
+.carrusel ,h1 {
+  font-size: 50px;
+>>>>>>> refs/remotes/origin/main
   margin-bottom: 1rem;
   text-align: center;
 
@@ -266,6 +287,7 @@ body {
 }
 
 .card--1 .card__img, .card--1 .card__img--hover {
+<<<<<<< HEAD
     background-image: url(../images/bowl.jpg);
 }
 
@@ -274,6 +296,16 @@ body {
 }
 .card--2 .card__img, .card--3 .card__img--hover {
   background-image: url(../images/bowl.jpg);
+=======
+    background-image: url(..//images/artesania-ceramica.jpg);
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url(..//images/bowl.jpg);
+}
+.card--2 .card__img, .card--3 .card__img--hover {
+  background-image: url(..//images/artesania1.jpg);
+>>>>>>> refs/remotes/origin/main
 }
 .card__like {
     width: 18px;
@@ -333,7 +365,11 @@ top: 0;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
     width: 33.3%;
+<<<<<<< HEAD
   position: relative;
+=======
+  position: relativeab;
+>>>>>>> refs/remotes/origin/main
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
@@ -341,6 +377,11 @@ top: 0;
 .card:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
     transform: scale(1.10, 1.10);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
 }
 
 .card__info {
@@ -396,6 +437,7 @@ border-bottom-right-radius: 12px;
 /* -------------------------------------Calculadora--------------------------------- */
 .calculadora{
 
+<<<<<<< HEAD
   background-image: url(../images/calculadora.jpg);
   background-repeat: no-repeat;  
   width: 1100px;
@@ -412,6 +454,22 @@ border-bottom-right-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 23px 10px -7px rgba(0, 0, 0,0.1);
   
+=======
+background-image: url(..//images/Calculadora.jpg);
+background-repeat: no-repeat; ;
+width: 1000px;
+  height: 500px;
+  display: block;
+  margin: 0px auto;
+  padding left: 70px;
+  box-shadow: 0px 0px 10px #000;
+  }
+
+
+
+
+
+>>>>>>> refs/remotes/origin/main
 
 
 
@@ -480,70 +538,134 @@ colores {
     color:f2f2f2;
     color:04402f;
     color:F3D5BB; 
+>>>>>>> dc99f15 (home)
 }
 
-*{
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
     font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
 }
 
-.logo-logo{
-    width: 16vw;
-    height: 21vh;
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
 }
 
-.logo-footer{
-    width: 5vw;
-    height: 10vh;
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
-body{
-    letter-spacing: 20          
-    }
-
- 
-.price{
-font-size: 16px;
-width: 25%;
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
 }
 
-article div.main-article{
-width: 100%;
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+
+
+/* -------------------------------------Calculadora--------------------------------- */
+.calculadora{
+
+
+width: 1300px;
+height: 600px;
 display: flex;
-flex-wrap: wrap;
-align-items: baseline;
-border-top: 1px solid #ebebeb;
-position: relative;
-padding: 15px;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 13px 10px -7px rgba(133, 140, 133, 0.1);
+
+
+
+
 }
 
-div.summary{
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-align-items: baseline;
-border-top: 1px solid #ebebeb;
-position: relative;
-padding: 15px;
-}
+hr{
 
-main section article{
-display: block;
-font-size: 16px;
-padding: 5px;
-width: 30px;
-height: 30px;
-border: 1px solid #39b54a;
-background-color: #FFF;
-border-radius: 50%;
-position: absolute;
-right: 20px;
-top: -15px;
-}
+color: #ffffff;
 
-main section div.products article{
-width: 45%;
 }
 
 
+/* -------------------------------------Footer--------------------------------- */
+
+footer{
+  
+  text-align: center;
+  padding-top: 100px;
+  background-color: #D2DBDD;
+  min-height: 300px;}
 
 
+footer a
+{color: rgb(161, 240, 221);
+}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+footer .capa-footer
+{color: rgb(16, 15, 15);
+  font-size: 13px;
+  padding: 60px 20px;}
+footer .capa-footer h3
+{margin-bottom: 10px;}
+footer ul.quick-link li
+{display: inline-block;
+  margin: 0 10px 10px 0;}
+footer ul.quick-link li a
+{color: #fff;font-size: 15px;
+  font-weight: bold;}
+footer ul.social-botons{
+  margin-top: 70px;}
+footer ul.social-botons li{
+  display: inline-block;}
+footer ul.social-botons li a{
+  padding-top: 15px;
+  display: block;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  font-size: 37px;
+  line-height: 2;color: #ffffff;
+  background-color: #464646;
+  transition-duration: 0.3s;
+  margin-right: 8px;}
+footer ul.social-botons li a:hover, ul.social-botons li a:focus, ul.social-botons li a:active{
+  background-color: #5ABD5E;}
+=======
+>>>>>>> refs/remotes/origin/main
+
+
+
+
+<<<<<<< HEAD
+=======
+>>>>>>> dc99f15 (home)
+>>>>>>> refs/remotes/origin/main
