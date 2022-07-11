@@ -2,11 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+}
+.html,body{
+    height:100vh;
 }
 body {
-    background-image: "images/fondo";
+    background-image: url(../images/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-.register{
+@media only screen and (max-device-width: 767px) {
+    body {
+         background-image: url(../images/fondo.jpg);
+         color: #FFF;
+     }
+}
+@media only screen and (max-width: 767px) {
+    body {
+         background-image: url(../images/fondo.jpg);
+         color: #FFF;
+         }
+}
+.register {
     width: 400px ;
     background: #24303c;
     padding: 30px;
@@ -17,7 +37,7 @@ body {
     color: white;
     box-shadow: 7px 13px 37px #000;
 }
- .register h4 {
+.register h4 {
     font-size: 22px;
     margin-bottom: 20px;
 }
@@ -30,6 +50,7 @@ body {
     border: 1px solid #1f53c5;
     font-family: "Noto sans", sans-serif ;
     font-size: 18px;
+    color: white;
 }
 .register p {
     height: 40px;
