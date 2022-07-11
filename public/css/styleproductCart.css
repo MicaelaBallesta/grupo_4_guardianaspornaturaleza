@@ -1,25 +1,17 @@
 
 * { box-sizing: border-box }
 
-
-colores {
-    color:f47421;
-    color:f2f2f2;
-    color:04402f;
-    color:F3D5BB; 
-}
-
 *{
     font-family: 'Raleway', sans-serif;
-    
 }
+
+
 
 header .logo-logo{
     position: relative;
     width: 10vw;
     height: 25vh;
 }
-
 
 header .boton-tienda{
     position: absolute;
@@ -37,13 +29,12 @@ header .boton-tienda{
 }
 
 a{
-  text-decoration: none;  
-}
+    text-decoration: none;  
+  }
 
-.boton-tienda{
+  .boton-tienda{
     padding: 1px, 5px, 1px, 5px;
     text-align: center;
-
 }
 
 header .boton-dona{
@@ -148,7 +139,6 @@ h1 {
 }
 
 
-
 section.boton-donacion {
     position: absolute;
     left: 15px;
@@ -164,11 +154,14 @@ section.boton-donacion {
 }
 
 .pagina-donaciones{
-    color: white;
+    color: rgb(62, 15, 15);
+    font-size: large;
 }
 
 .pagina-tienda{
-    color:white;
+    color:rgb(101, 42, 42);
+    font-size: large;
+
 }
 
 section.boton-tienda {
@@ -177,7 +170,7 @@ section.boton-tienda {
     top: 1100px;
     border: 1px black solid;
     background-color: green;
-    color: white;
+    color: rgb(30, 99, 18);
     padding-left:10px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -209,8 +202,12 @@ section.boton-tienda {
     }
 
     body {
-        background: none;
+        background: rgb(248, 226, 216)
+             /* otras declaraciones */
         }
+     
+            /* url(/images/fondo.jpg)  */
+        
         @media (min-width: 460px)  and (orientation: landscape){
         /* Tablets */
         }
@@ -218,5 +215,8 @@ section.boton-tienda {
         /* Laptop */
         }
     
+        body {
+        background-repeat: no repeat;
+        }
 
-    
+      
