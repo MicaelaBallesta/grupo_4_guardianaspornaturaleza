@@ -21,9 +21,9 @@ app.listen(3000, ()=>{
 
 app.use ('/productos', rutasProductos);
 
-// app.get('/', (req,res)=>{
-//   res.render(__dirname + '/views/index.ejs');
-// }); 
+app.get('/', (req,res)=>{
+	res.render(__dirname + '/views/index.ejs');
+	 }); 
 
 // app.get("/login", (req,res) => {
 // let login = path.join(__dirname, '/views/login.html') 
