@@ -29,7 +29,7 @@ res.sendFile(productDetail) });
 app.get("/register", (req,res) => {
 let register = path.join(__dirname, '/views/register.html') 
 res.sendFile(register) }); 
-
+ 
 
 //servidor //
 app.listen(3000, ()=>{
