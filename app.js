@@ -1,13 +1,15 @@
+//paquetes requeridos // 
 const express = require('express');
 const app = express();
-const path = require('path')
+const path = require('path');
+
+
+//middlewares //
 app.use(express.static('public'));
+app.use("view engine", "ejs");
 
 
-app.listen(3000, ()=>{
-    console.log('Servidor funcionando');
-});
-
+//rutas//
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/index.html');
 });
@@ -27,4 +29,9 @@ res.sendFile(productDetail) });
 app.get("/register", (req,res) => {
 let register = path.join(__dirname, '/views/register.html') 
 res.sendFile(register) }); 
-    
+
+
+//servidor //
+app.listen(3000, ()=>{
+    console.log('Servidor funcionando');
+});

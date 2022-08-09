@@ -12,7 +12,7 @@
     
 
   
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css"> 
 	
 	<!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -27,22 +27,14 @@
 
 </head>
 <body class="home-page">
-<div class="capa-body">
+
 
 <!--///////////////////Header Guardianas///////-->
+<header>
+	<%- include ("./partials/headear") %>
+</header>
 
 
-<label for="menu-guardianas" class="menu-guardianas">Mostrar Menu</label>
-	<input type="checkbox" id="menu-guardianas" role="button">
-		<ul id="menu">
-			
-		<li><a href="/">Inicio</li></a>
-		<li><a href="#">Impacto </li></a>
-		<li><a href="#">Porfolio</li></a>
-		<li><a href="/productCart">Carrito</li></a>
-		<li><a href="#">Contacto</li></a>
-		
-	</ul>
 
 <!--///////////////////carrusel Guardianas///////-->
 
@@ -149,28 +141,7 @@
 
 
 <footer>
-	<div class='embed-container maps' style="margin: 0; padding: 0;">
-		
-	</div>
-	<div class="capa-footer">
-		<div class="grilla">
-			<div class="row">
-				<h3>Contacto</h3>
-				<span>Telefono/ 11 22 11111 </span></br>
-				<span>Email / contacto@guardianaspornaturaleza.com.ar  </span></br>
-				<span>Direccion / Argentina </span></br>
-				<span><strong>Copyright 2022 - Hecho por Grupo4 <a href="#">Grupo4</a></strong></span>
-				<ul class="social-botons">
-					<li><a href="#"><i class="fab fa-twitter"></i></a>
-					</li>
-					<li><a href="#"><i class="fab fa-facebook"></i></a>
-					</li>
-					<li><a href="#"><i class="fab fa-linkedin"></i></i></a>
-					
-				</ul>
-			</div>
-		</div>
-	</div>
+		<%- include ("./partials/footer") %>
 </footer>
 
 
