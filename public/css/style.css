@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-/* -------------------------------------Header Menu --------------------------------- */
+/* -------------------------------------Header Menu --------------------------------- 
 
 ul {
 
@@ -16,14 +16,14 @@ padding-bottom: 50px;
 
 }
 
-/*Crea la listahorizontal con espacio*/
+/*Crea la listahorizontal con espacio
 li {
 display:inline-block;
 float: left;
 margin-right: 1px;
 }
 
-/* Estilos para los link */
+/* Estilos para los link 
 li a {
 display:block;
 min-width:140px;
@@ -38,12 +38,12 @@ border-radius: 5px;
 transition:all 0.5s ease;
 }
 
-/* estados hover de los link */
+/* estados hover de los link 
 li:hover a {
 background: #565757;
 }
 
-/* estilos del dropdown */
+/* estilos del dropdown 
 li:hover ul a {
 background: #f3f3f3;
 color: #2f3036;
@@ -51,36 +51,36 @@ height: 40px;
 line-height: 40px;
 }
 
-/* estilos del estado hover del dropdown*/
+/* estilos del estado hover del dropdown
 li:hover ul a:hover {
 background: #555555;
 color: #fff;
 }
 
-/*Oculta el dropdown*/
+/*Oculta el dropdown
 li ul {
 display: none;
 }
 
-/* Pone el dropdown en vertical */
+/* Pone el dropdown en vertical 
 li ul li {
 display: block;
 float: none;
 }
 
-/* Previene el texto wrapping */
+/* Previene el texto wrapping 
 li ul li a {
 width: auto;
 min-width: 100px;
 padding: 0 20px;
 }
 
-/* Aparace el dropdown en hover*/
+/* Aparace el dropdown en hover
 ul li a:hover + .hidden, .hidden:hover {
 display: block;
 }
 
-/* Estilo de .muestra-menu */
+/* Estilo de .muestra-menu 
 .menu-guardianas {
 float: none;
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -94,16 +94,16 @@ display: none;
 }
 
 
-/*Oculta el checkbox*/
+/*Oculta el checkbox
 input[type=checkbox]{
   display: none;
 }
 
-/* muestra el menu cuando el checkbox is checked*/
+/* muestra el menu cuando el checkbox is checked
 input[type=checkbox]:checked ~ #menu{
   display: block;
 }
-
+*/
 
 /* estilos responsive */
 
@@ -360,7 +360,7 @@ footer{
 
 text-align: center;
 padding-top: 100px;
-background color: #D2DBDD;
+background-color: #D2DBDD;
 min-height: 300px;}
 
 

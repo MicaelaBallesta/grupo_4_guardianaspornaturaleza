@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header <%- include ("./partials/headear") %>>
         
         <div class="logo-header">
                  <img src="images/isologo verde.png" alt="Guardianas por naturaleza" class="logo-img"> 
@@ -85,37 +85,7 @@
         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
     
-    <footer>
-
-        <ul>
-            <li> <a href="/"></a> Inicio </li>
-            <li> <a href="/nosotros"></a> Nosotros </li>
-            <li> <a href="/impacto"></a> Impacto </li>
-            <li> <a href="/conoce-tu-huella"></a> Conocé tu huella </li>
-            <li> <a href="/catalogo"></a> Catálogo</li>
-            <li> <a href="/register"></a> Crea una cuenta</li>
-            <li> <a href="/tienda"></a> Tienda</li>
-            <li> <a href="/donaciones"></a> Donaciones</li>
-        </ul>
-
-        <ul>
-                
-                <li><a href="#"> Ventas mayoristas </a></li>
-                <li><a href="#"> Regalos corporativos </a></li>
-                <li><a href="#"> Contacto </a></li>
-                <li><a href="#">Envíos y devoluciones</a></li>
-                <li><a href="#">Preguntas frecuentes </a> </li>
-                <li><a href="#">Medios de pago </a> </li>
-
-        </ul>
-        
-    
-        <div>
-            <p class="direccion">Buenos Aires, Argentina </p>
-            <img src="images/isologo verde.png" alt="logo" class="logo-footer" width="270px" height="250">
-            <p class="copyright"><i class="fa-regular fa-copyright"></i>2022 Guardianas por naturaleza </p>
-        </div>
-
+    <footer <%- include ("./partials/footer") %>>
 
     </footer>
 

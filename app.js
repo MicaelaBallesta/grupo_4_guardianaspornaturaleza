@@ -3,10 +3,9 @@
 const express = require('express');
 const app = express();
 const path = require('path')
-app.use(express.static('public'));
 
 
-//middlewares 
+
 app.set ('view engine', 'ejs'); 
 
 //servidor// 
@@ -18,6 +17,10 @@ app.listen(3000, ()=>{
 //    res.sendFile(__dirname + '/views/index.html');
 // }); 
 
+// middlewares
+app.use(express.static('public'));
+
+//rutas 
 app.get('/', (req,res)=>{
    res.render(__dirname + '/views/index.ejs');
 }); 
