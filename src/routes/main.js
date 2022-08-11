@@ -4,7 +4,9 @@ var controller = require ("../controllers/indexController");
 
 
 /* get home page */
-router.get ("/", indexController.index);
+router.get ("index", indexController.index);
+
+router.get("/")
 
 module.exports = router;
 

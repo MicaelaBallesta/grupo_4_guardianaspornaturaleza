@@ -3,20 +3,20 @@ const express = require ("express");
 
 const indexController = {
     index:(req,res) => {
-        res.send ("index")
+        res.render ("index")
     },
     catalogo:(req,res) => {
-        res.send ("catalogo")
+        res.render ("catalogo")
 
     },
     tienda: (req,res) => {
-        res.send ("tienda")
+        res.render ("tienda")
     },
     impacto: (req,res) => {
-        res.send ("impacto")
+        res.render ("impacto")
     },
     nosotras: (req,res) => {
-        res.send ("nosotras")
+        res.render ("nosotras")
     },
 }
 

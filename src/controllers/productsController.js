@@ -3,7 +3,7 @@ const express = require ("express");
 
 const productController = {
     index:(req,res) => {
-        res.send ("tienda")
+        res.render ("tienda")
     },
     catalogo:(req,res) => {
         res.send ("catalogo")
