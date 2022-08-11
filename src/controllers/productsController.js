@@ -2,27 +2,25 @@ const express = require ("express");
 
 
 const productController = {
-    index:(req,res) => {
-        res.render ("tienda")
-    },
-    catalogo:(req,res) => {
-        res.send ("catalogo")
 
-    },
-    detail: (req,res) => {
+    listado: (req,res) => {
         res.send ("productDetail")
 
     },
+    detail: (req,res) => {
+        res.render ("productDetail")
+
+    },
     cart: (req,res) => {
-        res.send ("productCart")
+        res.render ("productCart")
 
     },
     create:(req,res) => {
-        res.send ("creacionProducto")
+        res.render ("creacionProducto")
 
     },
     edit:(req,res) => {
-        res.send ("edicionProducto")
+        res.render ("edicionProducto")
 
     },
 

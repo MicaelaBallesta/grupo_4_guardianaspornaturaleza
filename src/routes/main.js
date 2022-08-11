@@ -11,7 +11,9 @@ router.get ("/catalogo", indexController.catalogo);
 
 router.get("/tienda", indexController.tienda);
 
-router.get("/")
+router.get("/nosotras", indexController.nosotras);
+
+router.get("/impacto", indexController.impacto);
 
 
 module.exports = router;

@@ -5,10 +5,10 @@ const express = express();
 const usersController = {
 
     login:(req,res) => {
-        res.send ("login")
+        res.render ("login")
     },
     registracion:(req,res) => {
-        res.send ("register")
+        res.render ("register")
     },
     
  
