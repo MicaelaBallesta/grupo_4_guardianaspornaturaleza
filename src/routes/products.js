@@ -4,9 +4,9 @@ const productController = require("../controllers/productsController");
 
 /* get home page 
 
-router.get("/detail/:idProducto", productsController.detail);
+router.get("/detail/:idProducto", productController.detail);
 
-router.get("/productCart", productsController.cart)
+router.get("/productCart", productController.cart)
 
 module.exports = router;
 

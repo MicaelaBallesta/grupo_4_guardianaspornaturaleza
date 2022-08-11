@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 const path = require('path');
+const methodOverride = require ("method-override");
 
 
 /*requerimiento de rutas */ 
@@ -29,7 +30,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set ('view engine', 'ejs'); 
 
 
-
 // middlewares
 app.use(express.static('public'));
+app.use(methodOverride("_method"));
 

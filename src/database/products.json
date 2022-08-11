@@ -1,0 +1,53 @@
+[ {
+    
+    "id":1,
+    "nombreProducto":"Chalina Wichi",
+    "descripcion": " Hermosa chalina 1x60 colores ",
+    "image": "chalina_tejida_wichi.jpg",
+    "comunidad": "wichi",
+    "categoria": "textil",
+    "caracteristicas":"1x60 colores ",
+    "precio": 1800
+
+},
+
+{
+    "id":2,
+    "nombreProducto":"Panera Wichi",
+    "descripcion": " Hermosa panera fsfsfsffssf",
+    "image": "panera_tejida.jpg",
+    "comunidad": "wichi",
+    "categoria": "textil",
+    "caracteristicas":"1x60 colores ",
+    "precio": 1500
+
+},
+
+{
+    "id":3,
+    "nombreProducto":"Bolsa de compras tejido chaguar",
+    "descripcion": " Hermosa bolso tejido a chaguar  ",
+    "image": "bolso_chaguar.jpg",
+    "comunidad": "wichi",
+    "categoria": "textil",
+    "caracteristicas":"1x60 colores ",
+    "precio": 2000
+
+},
+
+{
+    "id":4,
+    "nombreProducto":"Chalina tejida",
+    "descripcion": " Hermosa chalina 1x60 colores ",
+    "image": "",
+    "comunidad": "wichi",
+    "categoria": "textil",
+    "caracteristicas":"1x60 colores ",
+    "precio": 1800
+
+}
+
+
+]
+
+

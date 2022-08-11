@@ -1,19 +1,19 @@
 var express = require ("express");
-const indexController = require("../controllers/indexController");
 var router = express.Router();
 var controller = require ("../controllers/indexController");
 
 
-/* get home page */
-router.get ("/", indexController.index);
+/* get home page */ // recordar que el nombre del controller es como la variable que lo requiere 
 
-// router.get ("/catalogo", indexController.catalogo);
+router.get ("/", controller.index);
 
-// router.get("/tienda", indexController.tienda);
+// router.get ("/catalogo", controller.catalogo);
 
-// router.get("/nosotras", indexController.nosotras);
+// router.get("/tienda", controller.tienda);
 
-// router.get("/impacto", indexController.impacto);
+// router.get("/nosotras", controller.nosotras);
+
+// router.get("/impacto", controller.impacto);
 
 
 module.exports = router;

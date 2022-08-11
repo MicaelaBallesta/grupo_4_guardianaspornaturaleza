@@ -13,10 +13,10 @@
 
     <p>Crea tu artesanía</p>
     <form action="/creacionProducto" method="post">
-        <label for="NombreProducto"> Nombre de la artesanía</label>
-        <input type="text" name="NombreProducto" maxlength="20" required>
-        <label for="Descripcion"> Descripción </label>
-        <input type="text" name="Descripcion" maxlength="200" required>
+        <label for="nombreProducto"> Nombre de la artesanía</label>
+        <input type="text" name="nombreProducto" maxlength="20" required>
+        <label for="descripcion"> Descripción </label>
+        <input type="text" name="descripcion" maxlength="200" required>
         <label for="image">Carga de imagenes</label>
         <input type="image" name="image" accept=".jpg" multiple>
         <select name="comunidad" id="comunidad">
@@ -24,15 +24,15 @@
             <option value="diaguita">Diaguita</option>  
             <option value="guarani">Guaraní</option>
             <option value="quom">Quom</option>
-            <option value="Toba">Toba</option>
+            <option value="toba">Toba</option>
         </select>
         <label for="categoria"> Categoría</label>
         <select name="categoria" id="categoria">
-            <option value="Madera">Madera</option>
-            <option value="Madera">Cerámica</option>  
-            <option value="Madera">Tejido</option>
-            <option value="Madera">Barro</option>
-            <option value="Madera">Cuero</option>
+            <option value="madera">Madera</option>
+            <option value="ceramica">Cerámica</option>  
+            <option value="tejido">Tejido</option>
+            <option value="barro">Barro</option>
+            <option value="cuero">Cuero</option>
         </select>
         <label for="caracteristicas">Características</label>
         <input type="text" name="caracteristicas" maxlength="200" required>
