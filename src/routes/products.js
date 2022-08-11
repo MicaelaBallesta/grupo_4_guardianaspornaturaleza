@@ -1,6 +1,6 @@
 var express = require ("express");
 var router = express.Router();
-const {body, check} = require ("express-validator");
+/*
 const productController = require("../controllers/productsController");
 
 /* get home page */
