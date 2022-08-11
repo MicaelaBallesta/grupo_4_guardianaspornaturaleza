@@ -7,13 +7,13 @@ var controller = require ("../controllers/indexController");
 /* get home page */
 router.get ("/", indexController.index);
 
-router.get ("/catalogo", indexController.catalogo);
+// router.get ("/catalogo", indexController.catalogo);
 
-router.get("/tienda", indexController.tienda);
+// router.get("/tienda", indexController.tienda);
 
-router.get("/nosotras", indexController.nosotras);
+// router.get("/nosotras", indexController.nosotras);
 
-router.get("/impacto", indexController.impacto);
+// router.get("/impacto", indexController.impacto);
 
 
 module.exports = router;

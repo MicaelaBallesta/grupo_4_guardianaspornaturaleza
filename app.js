@@ -2,13 +2,14 @@
 
 const express = require('express');
 const app = express();
+const router = express.Router();
 const path = require('path');
 
 
 /*requerimiento de rutas */ 
-var routeMain = require ("./routes/main");
-var routeProduct = require ("./routes/products");
-var routeUsers = require ("./routes/users");
+var routeMain = require ("./src/routes/main");
+var routeProduct = require ("./src/routes/products");
+var routeUsers = require ("./src/routes/users");
 
 //servidor// 
 app.listen(3000, ()=>{
