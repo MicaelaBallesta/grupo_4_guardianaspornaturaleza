@@ -4,7 +4,7 @@ const express = require ("express");
 const productController = {
 
     listado: (req,res) => {
-        res.send ("productDetail")
+        res.render ("productDetail")
 
     },
     detail: (req,res) => {

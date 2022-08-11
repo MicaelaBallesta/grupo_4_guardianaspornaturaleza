@@ -18,6 +18,9 @@ const indexController = {
     nosotras: (req,res) => {
         res.render ("nosotras")
     },
+    search: (req,res) => {
+        //codigo 
+    },
 }
 
 module.exports = indexController;
