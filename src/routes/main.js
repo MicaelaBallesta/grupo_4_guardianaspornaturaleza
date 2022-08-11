@@ -4,5 +4,7 @@ var controller = require ("../controllers/indexController");
 const {body, check} = require ("express-validator")
 
 /* get home page */
-router.get ("/", controller.index);
-router.post()
+router.get ("/", indexController.index);
+
+module.exports = router;
+

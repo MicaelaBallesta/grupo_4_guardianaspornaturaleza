@@ -3,8 +3,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const cookieParser = require ("cookie-parser");
-const session = require ("express-session")
+
 
 /*requerimiento de rutas */ 
 var routeMain = require ("./routes/main.js");

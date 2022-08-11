@@ -9,9 +9,6 @@ const productController = {
         res.send ("catalogo")
 
     },
-    cart: (req,res) => {
-        res.send ("productCart")
-    },
     detail: (req,res) => {
         res.send ("productDetail")
 
@@ -20,14 +17,20 @@ const productController = {
         res.send ("productCart")
 
     },
-    edit:(req,res) => {
-        res.send ("edicionProducto")
-
-    },
     create:(req,res) => {
         res.send ("creacionProducto")
 
     },
+    edit:(req,res) => {
+        res.send ("edicionProducto")
+
+    },
+
+    delete:(req,res) => {
+        res.redirect("index")
+    },
 
 
 }
+
+module.exports = productController;
