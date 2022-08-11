@@ -37,15 +37,39 @@
 
 {
     "id":4,
-    "nombreProducto":"Chalina tejida",
-    "descripcion": " Hermosa chalina 1x60 colores ",
-    "image": "",
+    "nombreProducto":"Vasija Cerámica",
+    "descripcion": " Vasija de cerámica hecha a mano, pintada con ...  ",
+    "image": "artesania-ceramica.jpg",
+    "comunidad": "wichi",
+    "categoria": "ceramica",
+    "caracteristicas":"distintos tamaños, colores",
+    "precio": 2000
+
+},
+{
+    "id":5,
+    "nombreProducto":"Tejido toba decorativo",
+    "descripcion": "Hermoso tejido por Luisa ",
+    "image": "mesa_tejido_toba.jpg",
+    "comunidad": "toba",
+    "categoria": "textil",
+    "caracteristicas":"1x60 colores ",
+    "precio": 3000
+
+},
+
+{
+    "id":6,
+    "nombreProducto":"Tabla de madera naturaleza marina",
+    "descripcion": " Diseños distintos  ",
+    "image": "tabla_madera_toba.jpg",
     "comunidad": "wichi",
     "categoria": "textil",
     "caracteristicas":"1x60 colores ",
     "precio": 1800
 
 }
+
 
 
 ]
