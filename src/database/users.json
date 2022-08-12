@@ -1,0 +1,15 @@
+[ 
+    {
+       "id": 1,
+       "categoria":2,
+       "nombre": "Tamara",
+       "apellido": "Rodriguez",
+       "correo": "tamararodriguez@gmail.com",
+       "celular":1188776600,
+       "telefono":,
+       "contraseña":bycrypt,
+       "confirmacionContraseña": bycrypt,
+
+    }
+]
+

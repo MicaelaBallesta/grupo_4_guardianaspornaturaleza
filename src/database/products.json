@@ -2,7 +2,7 @@
     
     "id":1,
     "nombreProducto":"Chalina Wichi",
-    "descripcion": " Hermosa chalina 1x60 colores ",
+    "historia": " Hecha a mano por María y Estela",
     "image": "chalina_tejida_wichi.jpg",
     "comunidad": "wichi",
     "categoria": "textil",
@@ -14,7 +14,7 @@
 {
     "id":2,
     "nombreProducto":"Panera Wichi",
-    "descripcion": " Hermosa panera fsfsfsffssf",
+    "historia": " Hermosa panera fsfsfsffssf",
     "image": "panera_tejida.jpg",
     "comunidad": "wichi",
     "categoria": "textil",
@@ -26,7 +26,7 @@
 {
     "id":3,
     "nombreProducto":"Bolsa de compras tejido chaguar",
-    "descripcion": " Hermosa bolso tejido a chaguar  ",
+    "historia": " Hermosa bolso tejido a chaguar  ",
     "image": "bolso_chaguar.jpg",
     "comunidad": "wichi",
     "categoria": "textil",
@@ -38,7 +38,7 @@
 {
     "id":4,
     "nombreProducto":"Vasija Cerámica",
-    "descripcion": " Vasija de cerámica hecha a mano, pintada con ...  ",
+    "historia": " Vasija de cerámica hecha a mano, pintada con ...  ",
     "image": "artesania-ceramica.jpg",
     "comunidad": "wichi",
     "categoria": "ceramica",
@@ -49,7 +49,7 @@
 {
     "id":5,
     "nombreProducto":"Tejido toba decorativo",
-    "descripcion": "Hermoso tejido por Luisa ",
+    "historia": "Hermoso tejido por Luisa ",
     "image": "mesa_tejido_toba.jpg",
     "comunidad": "toba",
     "categoria": "textil",
@@ -61,7 +61,18 @@
 {
     "id":6,
     "nombreProducto":"Tabla de madera naturaleza marina",
-    "descripcion": " Diseños distintos  ",
+    "historia": " Diseños distintos  ",
+    "image": "tabla_madera_toba.jpg",
+    "comunidad": "toba",
+    "categoria": "madera",
+    "caracteristicas":"1x60 colores ",
+    "precio": 1800
+
+},
+{
+    "id":6,
+    "nombreProducto":"Tabla de madera naturaleza marina",
+    "historia": " Diseños distintos  ",
     "image": "tabla_madera_toba.jpg",
     "comunidad": "wichi",
     "categoria": "textil",
@@ -69,6 +80,7 @@
     "precio": 1800
 
 }
+
 
 
 
