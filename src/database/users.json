@@ -10,6 +10,81 @@
        "contraseña":bycrypt,
        "confirmacionContraseña": bycrypt,
 
-    }
+    },
+
+    {
+        "id": 2,
+        "categoria":2,
+        "nombre": "Lucas",
+        "apellido": "Moreno",
+        "correo": "lucasmoreno@gmail.com",
+        "celular":1122556644,
+        "telefono":42665533,
+        "contraseña":bycrypt,
+        "confirmacionContraseña": bycrypt,
+ 
+     },
+     {
+        "id": 3,
+        "categoria":2,
+        "nombre": "Sofia",
+        "apellido": "Saenz",
+        "correo": "sofiasaenz@gmail.com",
+        "celular":1177889966,
+        "telefono":,
+        "contraseña":bycrypt,
+        "confirmacionContraseña": bycrypt,
+ 
+     },
+     {
+        "id": 4,
+        "categoria":2,
+        "nombre": "Tomas",
+        "apellido": "Rodriguez",
+        "correo": "tomasrodriguez@gmail.com",
+        "celular":1155663344,
+        "telefono":42665533,
+        "contraseña":bycrypt,
+        "confirmacionContraseña": bycrypt,
+ 
+     },
+     {
+        "id": 5,
+        "categoria":2,
+        "nombre": "Carlos",
+        "apellido": "Tema",
+        "correo": "carlostema@gmail.com",
+        "celular":1177889966,
+        "telefono":46553322,
+        "contraseña":bycrypt,
+        "confirmacionContraseña": bycrypt,
+ 
+     },
+     {
+        "id": 6,
+        "categoria":2,
+        "nombre": "Tobias",
+        "apellido": "Soler",
+        "correo": "solertobias@gmail.com",
+        "celular":1188556633,
+        "telefono":,
+        "contraseña":bycrypt,
+        "confirmacionContraseña": bycrypt,
+ 
+     },
+     {
+        "id": 7,
+        "categoria":2,
+        "nombre": "Micaela",
+        "apellido": "Torres",
+        "correo": "micaelatorres@gmail.com",
+        "celular":1188776600,
+        "telefono":,
+        "contraseña":bycrypt,
+        "confirmacionContraseña": bycrypt,
+ 
+     }
+
+
 ]
 
