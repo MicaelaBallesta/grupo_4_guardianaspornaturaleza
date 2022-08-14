@@ -41,6 +41,11 @@ const productController = {
         res.render ("creacionProducto")
 
     },
+
+    save:(req,res) => { 
+        
+    },
+
     edit:(req,res) => {
         res.render ("edicionProducto")
 
