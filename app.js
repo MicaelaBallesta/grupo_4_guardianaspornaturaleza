@@ -33,4 +33,6 @@ app.set ('view engine', 'ejs');
 // middlewares
 app.use(express.static('public'));
 app.use(methodOverride("_method"));
+app.use(express.urlencoded({ extendend:false}));
+app.use(express.json());
 

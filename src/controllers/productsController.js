@@ -8,14 +8,36 @@ const productController = {
 
     },
     detail: (req,res) => {
+        
+        
+        
+        
         res.render ("productDetail")
 
     },
-    cart: (req,res) => {
-        res.render ("productCart")
-
-    },
+    
     create:(req,res) => {
+        let productoNuevo = {
+                nombreProducto:req.body.nombre,
+                historia: req.body.historia,
+                image: re.body.image,
+                comunidad: req.body.categoria,
+                categoria: req.body.categoria,
+                caracteristicas:req.boy.caracteristicas,
+                precio: req.body.precio
+        };
+        res.send(/creacionProducto, (productoNuevo = {
+            nombreProducto:req.body.nombre,
+            historia: req.body.historia,
+            image: re.body.image,
+            comunidad: req.body.categoria,
+            categoria: req.body.categoria,
+            caracteristicas:req.boy.caracteristicas,
+            precio: req.body.precio
+    })
+
+
+
         res.render ("creacionProducto")
 
     },

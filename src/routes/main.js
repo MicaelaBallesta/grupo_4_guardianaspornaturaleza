@@ -1,6 +1,6 @@
 var express = require ("express");
 var router = express.Router();
-var controller = require ("../controllers/indexController");
+var controller = require ("../conttretrerollers/indexController");
 
 
 /* get home page */ // recordar que el nombre del controller es como la variable que lo requiere 
