@@ -1,12 +1,24 @@
-const express = require ("express");
+const fs = require('fs');
+const path = require('path');
+
+const productsFilePath = path.join(__dirname, '../database/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 
-const productController = {
 
-    listado: (req,res) => {
-        res.render ("tienda")
+const controller = {
 
-    },
+    // Root - Show all products
+	index: (req, res) => {
+		res.render('/tienda', {
+			products,
+			toThousand
+		})
+	},
+    
+
     detail: (req,res) => {
         
         
@@ -43,7 +55,7 @@ const productController = {
     },
 
     save:(req,res) => { 
-        
+
     },
 
     edit:(req,res) => {
