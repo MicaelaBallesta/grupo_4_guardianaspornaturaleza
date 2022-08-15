@@ -27,36 +27,29 @@ const controller = {
         res.render ("productDetail")
 
     },
-    
-    create:(req,res) => {
-        let productoNuevo = {
-                nombreProducto:req.body.nombre,
-                historia: req.body.historia,
-                image: re.body.image,
-                comunidad: req.body.categoria,
-                categoria: req.body.categoria,
-                caracteristicas:req.boy.caracteristicas,
-                precio: req.body.precio
-        };
-        res.send(/creacionProducto, (productoNuevo = {
-            nombreProducto:req.body.nombre,
-            historia: req.body.historia,
-            image: re.body.image,
-            comunidad: req.body.categoria,
-            categoria: req.body.categoria,
-            caracteristicas:req.boy.caracteristicas,
-            precio: req.body.precio
-    })
-
-
-
-        res.render ("creacionProducto")
-
-    },
-
-    save:(req,res) => { 
-
-    },
+    // Create - Form to create
+	create: (req, res) => {
+		res.render('product-create-form')
+	},
+	
+	// Create -  Method to store
+	store: (req, res) => {
+		let image
+		console.log(req.files);
+		if(req.files[0] != undefined){
+			image = req.files[0].filename
+		} else {
+			image = 'default-image.png'
+		}
+		let newProduct = {
+			id: products[products.length - 1].id + 1,
+			...req.body,
+			image: image
+		};
+		products.push(newProduct)
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
+		res.redirect('/');
+	},
 
     edit:(req,res) => {
         res.render ("edicionProducto")
