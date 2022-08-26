@@ -1,30 +1,39 @@
+ /*requerimiento de paquetes y rutas*/
+
 const express = require('express');
 const app = express();
-const path = require('path')
-app.use(express.static('public'));
+const router = express.Router();
+const path = require('path');
+const methodOverride = require ("method-override");
 
 
+/*requerimiento de rutas */ 
+var routeMain = require ("./src/routes/main");
+var routeProduct = require ("./src/routes/products");
+var routeUsers = require ("./src/routes/users");
+
+//servidor// 
 app.listen(3000, ()=>{
     console.log('Servidor funcionando');
 });
 
-app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/index.html');
-});
 
-app.get("/login", (req,res) => {
-let login = path.join(__dirname, '/views/login.html') 
-res.sendFile(login) }); 
+/*rutas raices */
+app.use ("/", routeMain);
+app.use ("/products", routeProduct);
+app.use ("/users", routeUsers);
 
-app.get("/productCart", (req,res) => {
-let productCart = path.join(__dirname, '/views/productCart.html') 
-res.sendFile(productCart) }); 
 
-app.get("/productDetail", (req,res) => {
-let productDetail = path.join(__dirname, '/views/productDetail.html') 
-res.sendFile(productDetail) }); 
 
-app.get("/register", (req,res) => {
-let register = path.join(__dirname, '/views/register.html') 
-res.sendFile(register) }); 
+/*view engine setup*/ 
+app.set("views", path.join(__dirname, "views"));
+app.set ('view engine', 'ejs'); 
+
+
+// middlewares
+app.use(express.static('public'));
+app.use(methodOverride("_method"));
+app.use(express.urlencoded({ extended:false}));
+app.use(express.json());
+
     
