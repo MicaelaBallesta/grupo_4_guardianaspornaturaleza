@@ -1,4 +1,4 @@
-const fs = require('fs');
+/*const fs = require('fs');
 const path = require('path');
 
 const productsFilePath = path.join(__dirname, '../database/products.json');
@@ -18,15 +18,6 @@ const controller = {
 		})
 	},
     
-
-    detail: (req,res) => {
-        
-        
-        
-        
-        res.render ("productDetail")
-
-    },
     // Create - Form to create
 	create: (req, res) => {
 		res.render('product-create-form')
@@ -50,17 +41,58 @@ const controller = {
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
 		res.redirect('/');
 	},
+    // Detail - Detail from one product
+	detail: (req, res) => {
+		let id = req.params.id
+		let product = products.find(product => product.id == id)
+		res.render('detail', {
+			product,
+			toThousand
+		})
+	},
+    // Update - Form to edit
+	edit: (req, res) => {
+		let id = req.params.id
+		let productToEdit = products.find(product => product.id == id)
+		res.render('product-edit-form', {productToEdit})
+	},
+	// Update - Method to update
+	update: (req, res) => {
+		let id = req.params.id;
+		let productToEdit = products.find(product => product.id == id)
+		let image
 
-    edit:(req,res) => {
-        res.render ("edicionProducto")
+		if(req.files[0] != undefined){
+			image = req.files[0].filename
+		} else {
+			image = productToEdit.image
+		}
 
-    },
+		productToEdit = {
+			id: productToEdit.id,
+			...req.body,
+			image: image,
+		};
+		
+		let newProducts = products.map(product => {
+			if (product.id == productToEdit.id) {
+				return product = {...productToEdit};
+			}
+			return product;
+		})
 
-    delete:(req,res) => {
-        res.redirect("index")
-    },
+		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
+		res.redirect('/');
+	},
+
+	// Delete - Delete one product from DB
+	destroy : (req, res) => {
+		let id = req.params.id;
+		let finalProducts = products.filter(product => product.id != id);
+		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
+		res.redirect('/');
+	}
+};
 
 
-}
-
-module.exports = productController;
+module.exports = controller;
