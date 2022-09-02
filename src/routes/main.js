@@ -1,20 +1,21 @@
-var express = require ("express");
+const express = require('express');
+
+const mainController = require('../controllers/mainController');
+// const { get } = require('./users');
+
 var router = express.Router();
-var controller = require ("../controllers/indexController");
 
+router.get('/' , mainController.index);
+router.get('/head' , mainController.head);
+router.get('/header' , mainController.header);
+router.get('/footer' , mainController.footer);
 
-/* get home page */ // recordar que el nombre del controller es como la variable que lo requiere 
-
-router.get ("/", controller.index);
-
-// router.get ("/catalogo", controller.catalogo);
-
-// router.get("/tienda", controller.tienda);
-
-// router.get("/nosotras", controller.nosotras);
-
-// router.get("/impacto", controller.impacto);
-
+// router.get('/pruebaSession', function(req, res){
+//     if(req.session.numeroVistas == undifined){
+//         req.session.numeroVistas = 0;
+//     }
+//     req.session.numeroVistas++;
+//     res.send('Session tiene el numero:' + req.session.numeroVistas);
+// });
 
 module.exports = router;
-

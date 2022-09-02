@@ -1,18 +1,36 @@
-var express = require ("express");
-var router = express.Router();
-const productController = require("../controllers/productsController");
+const express = require('express');
+const router = express.Router();
+const path = require("path");
+const multer = require('multer');
+const productsController = require('../controllers/productsController');
 
+const storage = multer.diskStorage({
+    destination:function(req,file,cb){
+        cb(null, 'public/images/products')
+    },
+    filename: function(req,file,cb){
+        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+    }
+})
+var upload = multer({storage: storage})
 
+//---------------RUTAS CARRITO DE COMPRAS Y DETALLE PRODUCTO-------------------------------------------------//
+router.get('/carritodecompras' , productsController.carritoCompra);
+router.get('/detalle/:id' , productsController.detalleproducto);
 
+//--------------FORMULARIO CREAR PRODUCTOS-----------------------//
+router.get('/create', productsController.create); 
+router.post('/create', upload.any(), productsController.store);
 
+//--------------------FORMULARIO EDITAR PRODUCTOS-------------------//
+router.get('/edit/:id', productsController.edit); // formulario edit
+router.put('/edit/:id', upload.any(), productsController.update);
 
-/*router.get("/tienda", productController.index)
+//-----------------------ELIMINAR PRODUCTOS---------------------------//
+router.delete('/delete/:id', productsController.delete)
 
-router.get("/products/create", productController.create)
-router.post("/products/create", productController.store)
-
-router.get("/products/:id", productController.detail)
-
+router.get('/:category' , productsController.showProductCategory);
+router.get('/:category/:subcategory' , productsController.showProductSubcategory);
 
 module.exports = router;
 

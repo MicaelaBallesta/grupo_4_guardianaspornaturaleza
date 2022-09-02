@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+   
+    <%- include('./src/views/partials/head.ejs')  %>
+    <link rel="stylesheet" href="/css/home.css"/>
+  </head>
+
+<body>
+
+  <%- include('./src/views/partials/header.ejs')  %>     
+
+
+  <main>
+
+    <div class="main-home">
+     <div id="juan-slider">
+        <span class="fa fa-chevron-left" onclick="mostrarSlide(-1)"></span>
+        <ul class="slider">
+          <li id="slide1" class="slider-item active">
+            <div></div>
+            <div>
+              <h1>FELICIDADES A CAMERON SMITH</h1>
+              <h2>EN SU PRIMERA VICTORIA DEL CIRCUITO PGA TOUR<br>GANADOR DEL THE OPEN</h2>
+              <a href="/productos/cameronSmith" class="button-slide">COMPRA SU EQUIPO AQUÍ</a>
+            </div>
+          </li>
+          <li id="slide2" class="slider-item">
+            <div>
+              <h1>ARMA TU BOLSA COMO LOS PROFESIONALES</h1>
+              <a href="products/3" class="button-slide">COMPRE AHORA AQUÍ</a>
+            </div>
+            <div>
+              
+            </div>
+          </li>
+          <li id="slide3" class="slider-item">
+           <div>
+              <h1>LA MEJOR COMODIDAD PARA SALIR AL CAMPO DE JEUGO</h1>
+              <h2>TODASLAS MARCAS DEL TOUR ARGENTINO</h2>
+              <a href="/products/7/23" class="button-slide">COMPRE AHORA AQUÍ</a>
+            </div>
+          </li>
+          <li id="slide4" class="slider-item">
+            <div></div>
+            <div>
+              <h1>HIERROS Y MAS...</h1>
+              <h2>LO MEJOR PARA TU JUEGO</h2>
+              <button>COMPRE AHORA AQUÍ</button>
+            </div>
+            
+            </li>
+            <li id="slide5" class="slider-item">
+              <div></div>
+              <div>
+                <h1>¿QUE ESTA DE MODA?</h1>
+                <h2>LUCIR DE LA MENOR MANERA FUERA Y DENTRO DEL CAMPO</h2>
+                <a href="/products/6/15" class="button-slide">COMPRE ROPA HOMBRE</a>
+                <a href="/products/6/16" class="button-slide">COMPRE ROPA MUJER</a>
+              </div>
+            </li>
+            <li id="slide6" class="slider-item">
+              <div></div>
+              <div>
+                <h1>PELOTAS</h1>
+                <h2>LAS MAS ELEGIDAS POR LOS PROFESIONALES DEL PGA TOUR</h2>
+                <button type="button">COMPRE AHORA AQUÍ</button>
+              </div>
+            </li>
+        </ul>
+        <ul class="menu-de-a">
+          <li><a id="slide_1" class="slider-item active" href="#" onclick="mostrarSlide(1)"></a></li>
+          <li><a id="slide_2" class="slider-item" href="#" onclick="mostrarSlide(2)"></a></li>
+          <li><a id="slide_3" class="slider-item" href="#" onclick="mostrarSlide(3)"></a></li>
+          <li><a id="slide_4" class="slider-item" href="#" onclick="mostrarSlide(4)"></a></li>
+          <li><a id="slide_5" class="slider-item" href="#" onclick="mostrarSlide(5)"></a></li>
+          <li><a id="slide_6" class="slider-item" href="#" onclick="mostrarSlide(6)"></a></li>
+        </ul>
+        <span class="fa fa-chevron-right" onclick="mostrarSlide(0)"></span>
+      </div>
+   </div>
+   <section class="productos-nuevos">
+    <div class="palos-titleist">
+      <div>
+        <img src="/images/logos-listos.webp/logo-cobra-black.webp" alt="">
+        <br>
+        <br>
+        <h4>EL MEJOR EQUIPO Y LAS MEJORES MARCAS</h4>
+        <a href="products/3">COMPRA AHORA</a>
+      </div>
+      <div>
+        <img src="/images/cobra-banner.webp" alt="">
+      </div>
+    </div>
+    <div class="bushnells">
+      <div>
+        <img src="/images/logos-listos.webp/logo-bushnnell-black.webp" alt="">
+        <h4>AHORRA 30% EN TECNOLOGIAS</h4>
+        <a href="/products/5/21">COMPRA AHORA</a>
+      </div>
+      <div>
+        <img src="/images/bushnell-golf.webp" alt="Bushnells Rangefinders">
+      </div>
+    </div>
+    <div class="bushnells">
+      <div>
+        <img src="/images/logos-listos.webp/Titleist-BLACK.webp" alt="">
+        <h4>AHORRA 20% EN BOLSAS</h4>
+        <a href="/products/2/1">COMPRA AHORA</a>
+      </div>
+      <div>
+        <img src="/images/BOLSAS-BANNER-HOME.webp" alt="Bushnells Rangefinders">
+      </div>
+    </div>
+    <div class="golf-coleccion">
+      <div>
+        <img src="/images/logos-listos.webp/logo-taylormade-black.webp" alt="">
+        <h4>2 POR $ 11.500 - TAYLORMADE DISTANCE +</h4>
+        <a href="/products/4/13">COMPRA AHORA</a>
+      </div>
+      <div>
+        <img src="/images/TAYLORMADE-BANNER-HOME.webp" alt="">
+      </div>
+    </div>
+    <div class="golf-coleccion">
+      <div>
+        <img src="/images/logos-listos.webp/puma-black.webp" alt="puma">
+        <h4>AHORRE UN 15% - TODAS LAS MARCAS EN ZAPATOS</h4>
+        <a href="/products/7">COMPRA AHORA</a>
+      </div>
+      <div>
+        <img src="/images/PUMA-BANNER-HOME.webp" alt="">
+      </div>
+    </div>
+    <div class="nike-coleccion">
+      <div>
+        <img src="/images/logos-listos.webp/LOGO-NIKE-GOLF2.png" alt="">
+        <h4>GRAN VARIEDAD EN INDUMENTARIA</h4>
+        <a href="/productos/vestir">COMPRA AHORA</a>
+      </div>
+      <div>
+        <img src="/images/NIKE-BANNER-HOME.webp" alt="">
+      </div>
+    </div>
+    <div class="clases-golf">
+      <div>
+        <img src="/images/logo.png" alt="">       
+        <h4>NUEVO PAQUETE CLASES</h4>
+        <h5>PERSONALIZADAS Y GRUPALES</h5>
+        <a href="/lecciones">COMPRA AHORA</a>
+      </div>
+      <div>
+        <img src="/images/gold-2-1.webp" alt="">
+      </div>
+    </div>
+   </section>   
+   <div class="bloques-productos">
+    <div class="indumentaria-home">
+      <img src="/images/indumentaria-vestir.webp" alt="" />
+      <div class="text-col1">
+        <a href="/products/6/15"><span class ="text-col1">LO MEJOR EN INDUMENTARIA</span></a>
+      </div>
+      <div class="col1">
+        <a href="/products/1/5"><img src="/images/logos-listos.webp/logo-taylormade.webp" alt=""></a>
+        <a href="/products/1/5"><img src="/images/logos-listos.webp/logo-ping-golf.webp" alt=""></a>
+        <a href="/products/1/5"><img src="/images/logos-listos.webp/logo-srixon-golf.webp" alt=""></a>   
+     </div> 
+        <div class="col2">
+          <a href="/products/6/15"><img src="/images/logos-listos.webp/logo-nike-golf.webp" alt=""></a>
+          <a href="/products/1/5"><img src="/images/logos-listos.webp/logo-cobra-golf.webp" alt=""></a>
+          <a href="/products/6/16"><img src="/images/logos-listos.webp/logo-adidas-golf.webp" alt=""></a>
+        </div>  
+        <div class="col3">
+          <a href="/products/6/15"><img src="/images/logos-listos.webp/logo-callaway.webp" alt=""></a>
+          <a href="/products/6/16"><img src="/images/logos-listos.webp/logo-puma-golf.webp"  alt=""></a>
+          <a href="/products/6/15"><img src="/images/logos-listos.webp/logo-under-golf.webp" alt=""></a>  
+        </div>
+        <div class="col4">
+          <a href="/products/6/16"><img src="/images/logos-listos.webp/logo-cleveland-golf.webp" alt=""></a>
+          <a href="/products/1/5"><img src="/images/logos-listos.webp/logo-mizuno-golf.webp" alt=""></a>
+          <a href="/products/6/15"><img src="/images/logos-listos.webp/logo-titleist-golf.webp" alt=""></a>  
+        </div>
+      </div>
+    <div class="carros-home">
+      <img src="/images/bolsas y carrosjpeg.jpeg" alt="">
+      <a href="/products/2"><span>BOLSAS Y CARROS</span></a>
+    </div>
+    <div class="palos-home">
+        <img src="/images/Callaway_JawsRaw_banner_HeroDv1-SLIDER-HOME.webp" alt="">
+        <a href="/products/3/24"><span> CALLAWAY JAWS RAW</span></a>
+    </div>
+  </div>  
+   <div class="marcas">
+     <img src="/images/logos-listos.webp/logo-adidas-golf.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-Bridgestone-golf.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-callaway.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-cleveland-golf.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-clicgear.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-cobra-golf.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/Logo-FootJoy-White.webp"width="80px" height="50px"  alt="">
+     <img src="/images/logos-listos.webp/logo-mizuno-golf.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-nike-golf.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-ping-golf.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-puma-golf.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-srixon-golf.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-taylormade.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-titleist-golf.webp" width="80px" height="50px" alt="">
+     <img src="/images/logos-listos.webp/logo-under-golf.webp" width="80px" height="50px" alt="">
+   </div>
+   <div class="final-home"></div>
+   
+   </main>
+
+<%- include('./src/views/partials/footer.ejs')  %>
+
+
+
+</body>
+</html>

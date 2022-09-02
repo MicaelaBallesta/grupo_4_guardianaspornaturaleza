@@ -1,20 +1,13 @@
-/*const express = require ("express");
-const express = express();
-
+const path = require('path');
+const validationResults= require('express-validator');
 
 const usersController = {
-
-    index: "perfil"
-
-    login:(req,res) => {
-        res.render ("login")
+    index: (req, res)  => {
+        res.render(path.join(__dirname, '../views/iniciosesion.ejs'))
     },
-    registracion:(req,res) => {
-        res.render ("register")
-    },
-    
- 
-}
+    login: (req, res) => {
 
+    }
+};
 
 module.exports = usersController;

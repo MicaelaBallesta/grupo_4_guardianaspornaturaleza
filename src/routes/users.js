@@ -1,12 +1,10 @@
-var express = require ("express");
+const express = require('express');
+const usersController = require('../controllers/usersController');
+
 var router = express.Router();
-var controller = require ("../controllers/usersController");
 
-// const {body, check} = require ("express-validator")
-
-/* get home page 
-router.get ("/", usersController.index);
+router.get('/iniciosesion' , usersController.index);
+router.post('/iniciosesion' , usersController.login);
 
 module.exports = router;
 
-*/
