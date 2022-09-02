@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="header.css" />
-    <script
-      src="https://kit.fontawesome.com/ff0b18be1c.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap"
-      rel="stylesheet"
-    />
+    
+    <link rel="stylesheet" href="/public/css/header.css" />
+    
   </head>
   <body>
+
+
     <header>
-      <div class="logo-titulo">
-        <img src="isologo verde.png" alt="logo" />
-        <h4><strong> Guardianas <br> por naturaleza </strong></h4>
-        <div class="contenedor-idioma">
-          <form class="cambio-de-idioma" action="/productDetail" method="get">
-            <select name="idiomas" id="idiomas">
-              <option value="Eligió español">Español</option>
-              <option value="Eligió inglés">English</option>
-            </select>
-          </form>
-        </div>
-      </div>
+    <div class="logo-titulo">
+      <div class="logo">
+        <img src="My project-1.png" alt="logo" />
+      </div>  
+      <div>
+      <h4 class="titulo"><strong> Guardianas por naturaleza </strong></h4>
+      </div>  
+    </div>
 
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="/" class="home"> HOME </a></li>
-          <a href="/nosotros" class="nosotras"> NOSOTRAS </a>
-          <a href="/impacto" class="impacto"> IMPACTO </a>
-          <a href="/tuhuella" class="huella"> CONOCÉ TU HUELLA </a>
-          <a href="/catalogo" class="catalogo"> CATÁLOGO</a>
-          <a href="/tienda" class="boton-tienda">TIENDA</a>
-          <a href="/donaciones" class="boton-dona">DONÁ</a>
-        </div>
-      </div>
-      
-      <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-      </script>
-
-      <div class="nav-completo-fullscreen">  
-          <a href="/" class="home"> HOME </a></li>
-          <a href="/nosotros" class="nosotras"> NOSOTRAS </a>
-          <a href="/impacto" class="impacto"> IMPACTO </a>
-          <a href="/tuhuella" class="huella"> CONOCÉ TU HUELLA </a>
-          <a href="/catalogo" class="catalogo"> CATÁLOGO</a>
-          <a href="/tienda" class="boton-tienda">TIENDA</a>
-          <a href="/donaciones" class="boton-dona">DONÁ</a>
-      </div>
-
-      <div class="botones">
-          <a class="tienda-boton" href="">Tienda</a>
-          <a class="dona-boton" href=""> Doná</a>
+      <div class="box-nav-completo-fullscreen">  
+        <a href="/"> HOME </a></li>
+        <a href="/nosotros" > NOSOTRAS </a>
+        <a href="/impacto" > IMPACTO </a>
+        <a href="/tuhuella" > CONOCÉ TU HUELLA </a>
+        <a href="/catalogo" > CATÁLOGO</a>
+        <a href="/tienda" class="boton-tienda">TIENDA</a>
+        <a href="/donaciones" class="boton-dona">DONÁ</a>
+        <form class="cambio-de-idioma" action="/productDetail" method="get">
+          <select name="idiomas" id="idiomas">
+            <option value="Eligió español">Español</option>
+            <option value="Eligió inglés">English</option>
+          </select>
+        </form>
       </div>
   
-
-      <div class="registro">
-        <a class="registroDeUsuario" href="/resgister">Registrate</a>
-        <a class="login" href="/login">Ingresá</a>
+      <div class="register">
+        <a href="/resgister">Registrate</a>
+        <a  href="/login">Ingresá</a>
         <i class="fa-solid fa-user"></i>
       </div>
     
+      <section class="p-menu1">
+        <nav id="navbar" class="navigation" role="navigation">
+          <input id="toggle1" type="checkbox" />
+          <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+          </label>
+        
+          <nav class="menu1">
+            <a class="link1" href="">HOME</a>
+            <a class="link1" href="">CATÁLOGO</a>
+            <a class="link1" href="">IMPACTO</a>
+            <a class="link1" href="">DONÁ</a>
+            <a class="lin1 kbutton-nav" href="">TIENDA</a>
+          </nav>
+      </nav>
+      </section>
+
+       <!--<div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="/" > HOME </a></li>
+            <a href="/nosotros" > NOSOTRAS </a>
+            <a href="/impacto" > IMPACTO </a>
+            <a href="/tuhuella" > CONOCÉ TU HUELLA </a>
+            <a href="/catalogo" > CATÁLOGO</a>
+            <a href="/tienda" >TIENDA</a>
+            <a href="/donaciones" >DONÁ</a>
+          </div>
+        </div>
+        
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+        --> 
+
     </header>
 
     

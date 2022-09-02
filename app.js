@@ -4,7 +4,7 @@ const path = require("path"); //  MODULO PATH
 app.use(express.static("./public")); // CSS
 var methodOverride = require('method-override');
 
-app.listen(3030, () => {
+app.listen(4000, () => {
   console.log("Servidor funcionando");
 });
 
@@ -19,17 +19,17 @@ app.set('views', path.join(__dirname, '/src/views')); // Define la ubicación de
 
 // Main Routes
 
-const rutasMain = require("../src/routes/main.js");
+const rutasMain = require("./src/routes/main.js");
 app.use('/', rutasMain);
 
 // Users Routes
-const rutasUsers = require("../src/routes/users.js");
+const rutasUsers = require("./src/routes/users.js");
 app.use('/users', rutasUsers);
 //Registro Routes
-const rutasRegistro = require("../src/routes/registro.js");
+const rutasRegistro = require("./src/routes/registro.js");
 app.use('/registro', rutasRegistro);
 //Products Routes
-const rutasProductos = require("../src/routes/products.js");
+const rutasProductos = require("./src/routes/products.js");
 app.use('/products', rutasProductos);
 
 

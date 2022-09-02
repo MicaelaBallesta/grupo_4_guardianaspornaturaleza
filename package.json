@@ -25,6 +25,8 @@
     "express-router": "^0.0.1",
     "express-session": "^1.17.3",
     "express-validator": "^6.14.2",
+    "file-system": "^2.2.2",
+    "fs": "^0.0.1-security",
     "method-override": "^3.0.0",
     "methods": "^1.1.2",
     "modules": "^0.4.0",

@@ -1,4 +1,4 @@
-const express = require('express');
+/* const express = require('express');
 const router = express.Router();
 const path = require("path");
 const multer = require('multer');
@@ -33,4 +33,4 @@ router.get('/:category' , productsController.showProductCategory);
 router.get('/:category/:subcategory' , productsController.showProductSubcategory);
 
 module.exports = router;
-
+*/

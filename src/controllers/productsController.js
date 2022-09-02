@@ -1,4 +1,4 @@
-const path = require('path');
+/* const path = require('path');
 const fs = require('fs');
 const { render } = require('ejs');
 
@@ -320,4 +320,4 @@ const productsController = {
         res.redirect('/products/create');
     }
 };
-module.exports = productsController;
+module.exports = productsController; */

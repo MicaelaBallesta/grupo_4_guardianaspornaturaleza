@@ -1,5 +1,5 @@
-const path = require('path');
-const validationResults= require('express-validator');
+/* const path = require('path');
+const validationResults = require('express-validator');
 
 const usersController = {
     index: (req, res)  => {
@@ -10,4 +10,4 @@ const usersController = {
     }
 };
 
-module.exports = usersController;
+module.exports = usersController; */
