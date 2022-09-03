@@ -1,0 +1,300 @@
+
+.listado-redes ul li{
+    display: block;
+    color:black;
+    width: 20px;
+    position: fixed;
+    top: 20%;
+    left:20%;
+  }
+  .fa-brands {
+    color:black;
+    width: 20px;
+    
+  
+  }
+  
+  .carousel {
+      width: 100%;
+      margin-top:15vh;
+  }
+  
+  ul.slides {
+      display: block;
+      position: relative;
+      height: 800px;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      list-style: none;
+  }
+  
+  .slides * {
+      user-select: none;
+      -ms-user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+  }
+  
+  ul.slides input {
+      display: none; 
+  }
+  
+  
+  .slide-container { 
+      display: block; 
+  }
+  
+  .slide-image {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      opacity: 0;
+      transition: all .7s ease-in-out;
+  }   
+  .slide-image .text-1{
+  font-size: 24px;
+  color: rgb(19, 16, 16);
+  text-align: center;
+  z-index: 50;
+  position:absolute;
+  top:25%;
+  left:20%;
+  text-transform: uppercase;
+  
+  }
+  
+  .slide-image .text-2{
+      font-size: xx-large;
+      color: rgb(0, 0, 0);
+      z-index: 50;
+      position:absolute;
+      top:25%;
+      left: 5%;
+  
+  
+      }
+  
+      .slide-image .text-3{
+      font-size: xx-large;
+      color: rgb(0, 0, 0);
+      z-index: 50;
+      position:absolute;
+      top:50%;
+      left:30%;
+      }
+  
+  
+  .slide-image img {
+      width: auto;
+      min-width: 100%;
+      height: 100%;
+  }
+  
+  .carousel-controls {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      font-size: 100px;
+      line-height: 600px;
+      color: #fff;
+  }
+  
+  .carousel-controls label {
+      display: none;
+      position: absolute;
+      padding: 0 20px;
+      opacity: 0;
+      transition: opacity .2s;
+      cursor: pointer;
+  }
+  
+  .slide-image:hover + .carousel-controls label{
+      opacity: 0.5;
+  }
+  
+  .carousel-controls label:hover {
+      opacity: 1;
+  }
+  
+  .carousel-controls .prev-slide {
+      width: 49%;
+      text-align: left;
+      left: 0;
+  }
+  
+  .carousel-controls .next-slide {
+      width: 49%;
+      text-align: right;
+      right: 0;
+  }
+  
+  .carousel-dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 20px;
+      z-index: 999;
+      text-align: center;
+  }
+  
+  .carousel-dots .carousel-dot {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0.5;
+      margin: 10px;
+  }
+  
+  input:checked + .slide-container .slide-image {
+      opacity: 1;
+      transform: scale(1);
+      transition: opacity 1s ease-in-out;
+  }
+  
+  input:checked + .slide-container .carousel-controls label {
+       display: block; 
+  }
+  
+  input#img-1:checked ~ .carousel-dots label#img-dot-1,
+  input#img-2:checked ~ .carousel-dots label#img-dot-2,
+  input#img-3:checked ~ .carousel-dots label#img-dot-3,
+  input#img-4:checked ~ .carousel-dots label#img-dot-4,
+  input#img-5:checked ~ .carousel-dots label#img-dot-5,
+  input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+      opacity: 1;
+  }
+  
+  
+  input:checked + .slide-container .nav label { display: block; }
+  
+  /* se termino el slide */
+  
+  a:link{
+      text-decoration: none;
+  
+  }
+  
+  .div-tienda-online {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 150px;
+      background-color: antiquewhite;
+  
+  }
+  .div-tienda-online img{
+      position: relative;
+      top: -30%;
+      left: -5%;
+  }
+  
+  .div-tienda-online a {
+      color:black;
+      font-size: 28px;
+      align-self: center;
+      margin-bottom: 10px;
+  }
+  
+  .div-tienda-online .tienda{
+      width: 90px;
+      text-align: center;
+      background-color: orange;
+      color:white;
+      padding: 3px 0px;
+      text-transform: uppercase;
+      font-size: medium;
+      margin-left: 40px;
+    }
+  
+  p, a {
+      display: inline-block;
+  }
+  
+  .historias-nosotras{
+      margin-top:30px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      background-color:rgb(244, 244, 244);
+      margin-bottom: 30px;
+  }
+  
+  .historias-nosotras img{
+      width: 25vw;
+      height: 35vh;
+      margin-right: 20px;
+  }
+  
+  .box-flex-2{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .box-flex-2 a{
+      color: wheat;
+      background-color: rgb(191, 129, 28);
+      padding: 1px 3px 1px 3px;
+      font-size: 23px;
+  
+  }
+  
+  .box-flex-2 a:hover{
+  background-color: white;
+  color:black;
+  }
+  
+    
+  .titulo-catalogo{
+    margin-left: 10px;
+    color:black;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+  }
+  
+  .cards{
+    display: flex;
+    justify-content: center;
+   
+    width: 100%;
+    margin-bottom:5%;
+  
+  }
+  
+  .card_link:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+      transform: scale(1.10, 1.10);
+    }
+  
+  
+  .card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .card__category, .card__title {
+    color:black;
+  }
+  
+  .card{
+    padding: 20px 10px 20px 10px;
+    margin-right: 2%;
+  }
+  
+  .map {
+  align-content: center;
+    background-color: rgb(224, 203, 165);
+    margin-left:10%;
+    margin-right:10%;
+   
+  }
