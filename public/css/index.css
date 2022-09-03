@@ -57,8 +57,8 @@
       transition: all .7s ease-in-out;
   }   
   .slide-image .text-1{
-  font-size: 24px;
-  color: rgb(19, 16, 16);
+  font-size: 36px;
+  color: rgb(255, 254, 254);
   text-align: center;
   z-index: 50;
   position:absolute;
@@ -69,8 +69,8 @@
   }
   
   .slide-image .text-2{
-      font-size: xx-large;
-      color: rgb(0, 0, 0);
+      font-size: 36px;
+      color: rgb(12, 12, 12);
       z-index: 50;
       position:absolute;
       top:25%;
@@ -80,8 +80,8 @@
       }
   
       .slide-image .text-3{
-      font-size: xx-large;
-      color: rgb(0, 0, 0);
+      font-size: 36px;
+      color: rgb(247, 243, 243);
       z-index: 50;
       position:absolute;
       top:50%;
@@ -292,9 +292,10 @@
   }
   
   .map {
-  align-content: center;
-    background-color: rgb(224, 203, 165);
-    margin-left:10%;
-    margin-right:10%;
+  background-color: rgb(224, 203, 165);
+  margin-left:10%;
+  margin-right:10%;
    
   }
+  
+  
