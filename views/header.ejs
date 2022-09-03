@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./src/views/head.ejs')  %>
+<head>
+   <link rel="stylesheet" href="/public/css/header.css">
+
+  </head>
+  <body>
+
+
+    <header>
+    <div class="logo-titulo">
+      <div class="logo">
+        <img src="My project-1.png" alt="logo" />
+      </div>  
+      <div>
+      <h4 class="titulo"><strong> Guardianas por naturaleza </strong></h4>
+      </div>  
+    </div>
+
+      <div class="box-nav-completo-fullscreen">  
+        <a href="/"> HOME </a></li>
+        <a href="/nosotros" > NOSOTRAS </a>
+        <a href="/impacto" > IMPACTO </a>
+        <a href="/tuhuella" > CONOCÉ TU HUELLA </a>
+        <a href="/catalogo" > CATÁLOGO</a>
+        <a href="/tienda" class="boton-tienda">TIENDA</a>
+        <a href="/donaciones" class="boton-dona">DONÁ</a>
+        <form class="cambio-de-idioma" action="/productDetail" method="get">
+          <select name="idiomas" id="idiomas">
+            <option value="Eligió español">Español</option>
+            <option value="Eligió inglés">English</option>
+          </select>
+        </form>
+      </div>
+  
+      <div class="register">
+        <a href="/resgister">Registrate</a>
+        <a  href="/login">Ingresá</a>
+        <i class="fa-solid fa-user"></i>
+      </div>
+    
+      <section class="p-menu1">
+        <nav id="navbar" class="navigation" role="navigation">
+          <input id="toggle1" type="checkbox" />
+          <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+          </label>
+        
+          <nav class="menu1">
+            <a class="link1" href="">HOME</a>
+            <a class="link1" href="">CATÁLOGO</a>
+            <a class="link1" href="">IMPACTO</a>
+            <a class="link1" href="">DONÁ</a>
+            <a class="lin1 kbutton-nav" href="">TIENDA</a>
+          </nav>
+      </nav>
+      </section>
+
+       <!--<div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="/" > HOME </a></li>
+            <a href="/nosotros" > NOSOTRAS </a>
+            <a href="/impacto" > IMPACTO </a>
+            <a href="/tuhuella" > CONOCÉ TU HUELLA </a>
+            <a href="/catalogo" > CATÁLOGO</a>
+            <a href="/tienda" >TIENDA</a>
+            <a href="/donaciones" >DONÁ</a>
+          </div>
+        </div>
+        
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+        --> 
+
+    </header>
+
+    
+  </body>
+</html>

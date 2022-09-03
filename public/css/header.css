@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  header {
+    width: 100%;
+    height: 15vh;
+    position:fixed;
+    z-index: 50;
+    background-color:transparent;
+    border-bottom: 2px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  /* mobile */ 
+  
+  .p-menu1{
+    display: none;
+  }
+  
+  .logo img {
+    margin-left: 4px;
+    margin-top:4px;
+    width: 8vw;
+    height: 14vh;
+  }
+  
+  .titulo h4 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .logo-titulo{
+    display: flex;
+    justify-content:baseline;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    position:absolute;
+  }
+  
+  .cambio-de-idioma, .botones, .registro{
+    cursor:pointer;
+  }
+  
+  a:link {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+  }
+  .cambio-de-idioma{
+    border-radius: 2em;
+    display: inline-block;
+  }
+  
+  .box-nav-completo-fullscreen{
+    margin-left:20%;
+    margin-right:20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top:72%;
+  
+  }
+  
+  .box-nav-completo-fullscreen a.boton-dona, a.boton-tienda{
+    width: 70px;
+    text-align: center;
+    background-color: orange;
+    color:white;
+    padding: 3px 0px;
+    text-transform: uppercase;
+    font-size: medium;
+    margin-bottom: 2px;
+  }
+  .box-nav-completo-fullscreen a.boton-dona:hover{ 
+    background-color:rgb(60, 250, 60);
+  }
+  
+  .box-nav-completo-fullscreen  a.boton-tienda:hover{
+    background-color: rgb(60, 250, 60);
+  }
+  
+  
+  .box-nav-completo-fullscreen a:hover{
+    color:rebeccapurple;
+  }
+  
+  .register {
+  position:relative;
+  right:-80%;
+   
+  }
+  
+  
+  
+  .register a{
+    font-size: 16px;
+    width: 70px;
+    padding: 5px;
+    text-decoration: underline;
+    color: #19194e;
+    margin-right:4px;
+  }
+  
+  .fa-user {
+    color: blue;
+   
+  }
+  
+  @media (max-width:600px) {
+    .box-nav-completo-fullscreen, .register{
+      display: none;
+    }
+  
+}
+    .p-menu1 {
+      display: flex;
+    }
+    body{
+      overflow: auto;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .p-menu1{
+       height: 100%;
+    }
+    
+    
+    
+    
+    /* Hamburger */
+    .hamburger1 {
+      height: 10px;
+      margin-left: 30px;
+      margin-top:80px;
+      display: -ms-grid;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      justify-items: center;
+      z-index: 120;
+    }
+    
+    .hamburger1 div {
+      background-color: rgb(10, 9, 2);
+      position: relative;
+      width: 20px;
+      height: 5px;
+      margin-top: 7px;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+    
+    #toggle1 {
+      display: none;
+    }
+    
+    #toggle1:checked + .hamburger1 .top {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      margin-top: 22.5px;
+    }
+    
+    #toggle1:checked + .hamburger1 .meat {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      margin-top: -5px;
+    }
+    
+    #toggle1:checked + .hamburger1 .bottom {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    
+    #toggle1:checked ~ .menu1 {
+      height: 340px;
+    }
+    
+    
+    /* Menu */
+    .menu1 {
+      width: 100%;
+      background-color: #e6ae61;
+      margin: 0;
+      display: -ms-grid;
+      display: grid;
+      grid-template-rows: 1fr repeat(4, 0.5fr);
+      grid-row-gap: 25px;
+
+
+      padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+  
+  .menu1 a:last-child {
+    margin-bottom: 40px;
+  }
+  
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 700 20px 'Oswald', sans-serif;
+  }
+  
+  .link1:hover {
+    background-color: rgb(225, 206, 158);
+    color:white;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
