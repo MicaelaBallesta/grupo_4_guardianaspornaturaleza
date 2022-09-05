@@ -12,6 +12,16 @@ const controller = {
 	index: (req, res) => {
 		res.render('index');
 	},
+
+	head: (req,res) => {
+        res.render(path.join(__dirname, '../views/head.ejs'))
+    },
+    header: (req,res) => {
+        res.render(path.join(__dirname, '../views/header.ejs'))
+    },
+    footer: (req,res) => {
+        res.render(path.join(__dirname, '../views/footer.ejs'))
+    },
 	search: (req, res) => {
 		res.render('results')
 	},
