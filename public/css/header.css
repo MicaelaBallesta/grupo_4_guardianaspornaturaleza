@@ -30,9 +30,10 @@
     height: 14vh;
   }
   
-  .titulo h4 {
-    font-size: 40px;
+  .titulo{
+    font-size: 30px;
     text-align: center;
+    color: white;
   }
   
   .logo-titulo{
