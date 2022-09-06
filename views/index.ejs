@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="es">
+	<%- include('./head.ejs')  %>
+<!-- <head>
+
+  <link rel="stylesheet" href="/public/css/index.css"/>
+</head> --> 
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Inicia sesión en Guardianas</title>
+      <link rel="stylesheet" href="css/index.css">
+      <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
+  </head>
+
+
+
+<body>
+
+  <%- include('./header.ejs')  %>     
+
+
+ 
+    <main>
+
+        <div class="listado-redes">
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+
+          </ul>
+        </div>
+        <div>
+            <div class="carousel">
+              <ul class="slides">
+                <input type="radio" name="radio-buttons" id="img-1" checked />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <h2 class="text-1">
+                    Guardianas de saberes y <br>
+                     de nuestra tierra</h2>
+                    <img src="images/banner_1.png">
+                    
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-3" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-2" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-2" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <h2 class="text-2"> De objetos únicos y milenarios. 
+                    </h2>
+                    <img src="images/banner_2.png">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-1" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-3" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-3" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <h2 class="text-3"> <hr>
+                    Somos guardianas de un mundo + JUSTO <br> Somos GUARDIANAS POR NATURALEZA </h2>
+                    <img src="images/bannner.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-2" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-1" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <div class="carousel-dots">
+                  <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                  <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                  <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+<div class="div-tienda-online">
+    <img src="images/Artesania2.jpeg" alt="dibujo de artesania" width="200px" height="250px">
+   <a href="/tienda"> Conocé la tienda </a>
+   <a href="/tienda" class="tienda">TIENDA </a>
+</div>
+
+
+    <div class="historias-nosotras">
+        <img src="images/Maria_cortada.jpg" alt="María, artesana" >
+        <div class="box-flex-2">
+            <p> Ella es María, mestiza, mitad nórdica mitad mapuche, <br>
+            María aprendió a realizar artesanías en platería de mano <br>
+            de su madre, Silvia Rinke, originaria de la comunidad mapuche <br>
+            de Los Toldos, Provincia de Buenos Aires. 
+    <br> 
+    <br>
+            Trabajan con alpaca y, agrega, con mucho amor, <br>
+            tratando de conservar la simbología y las técnicas tradicionales <br>
+             pero adecuando los modelos para que sean accesibles a todos los <br>
+            “La artesanía enriquece mucho a la cultura, nosotros hacemos arte. Esto tiene <br>
+             un precio espiritual, la platería mapuche simboliza la femineidad, <br>
+              ya que las retrafes siempre fueron mujeres</p>
+            <a href="/nosotras"> Conocé a nuestras GUARDIANAS</a>
+
+        </div>
+    </div>
+
+
+        <h2> <a href="/catalogo" class="titulo-catalogo"> Nuestro Catálogo</h2></a>
+
+    <section class="cards">
+          
+      
+          <div class="card"></div>
+          <a href="/tienda" class="card_link">
+          <span class="card__category"> JUJUY</span>
+          <h3 class="card__title">Hechas a Mano</h3>
+          <div>
+            <img src="images/banner_1.png" width= "400px" height="400px" alt="">
+          </div>
+
+          <div class="card"></div>
+          <a href="/tienda" class="card_link">
+          <span class="card__category"> SALTA</span>
+          <h3 class="card__title">Madera</h3>
+          <div>
+            <img src="images/banner_2.png" width= "400px" height="400px" alt="">
+          </div>
+
+          <div class="card"></div>
+          <a href="/tienda" class="card_link">
+          <span class="card__category"> WICHIS</span>
+          <h3 class="card__title">NATURALEZA</h3>
+          <div>
+            <img src="images/banner_3.jpg" width= "400px" height="400px" alt="">
+          </div>
+          
+    
+          </section>
+<!--              maps-->
+          <div class= "map">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.44366929015!2d-58.503337949736085!3d-34.61566245898787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1662212682285!5m2!1ses-419!2sar" width="800" height="600"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          </div>
+
+
+		  <%- include('./footer.ejs')  %>
+
+
+
+</html>
