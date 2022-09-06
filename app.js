@@ -82,3 +82,10 @@ app.get("/register", (req,res) => {
      app.get('/create', (req,res)=>{
         res.render(__dirname + '/views/product-create-edit-form.ejs');
          }); 
+
+
+
+         
+app.get("/productos", (req,res) => {
+    let listadoProductos = path.join(__dirname, '/views/listadoProductos.ejs') 
+    res.render(listadoProductos) }); 
