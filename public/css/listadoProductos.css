@@ -1,0 +1,47 @@
+* CSS DE PRODUCTOS */
+.cuadro{   
+    max-width: 1100px;
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 15px 5px;
+}
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    text-align: center;
+    border: 3px solid #98ff96;
+    border-radius: 25px;
+    margin-bottom: 2%;
+}
+.subcatalogo{
+    display: block;
+    width: 90%;
+    padding: 5px 0 0;
+    margin-bottom: 10px;
+}
+.product-list{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-item{
+    border: 1px solid rgb(204, 198, 198);
+    width: 22%;
+    margin: 1%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.indiv img{
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 4%;
+    border: 1px solid rgb(204, 198, 198) 
+}

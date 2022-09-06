@@ -10,11 +10,11 @@
     height: 15vh;
     position:fixed;
     z-index: 50;
-    background-color:transparent;
+    background-color:#24303c;
     border-bottom: 2px;
     box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
     transform: translateY(100%, 0);
-    transition-duration: 0.6s, 50%;
+    transition-duration: 0.6s,
 
   }
   /* mobile */ 
@@ -50,7 +50,7 @@
   
   a:link {
     text-decoration: none;
-    color: black;
+    color: white;
     display: inline-block;
   }
   .cambio-de-idioma{
@@ -81,11 +81,11 @@
     margin-bottom: 2px;
   }
   .box-nav-completo-fullscreen a.boton-dona:hover{ 
-    background-color:rgb(60, 250, 60);
+    background-color:rgb(104, 60, 250);
   }
   
   .box-nav-completo-fullscreen  a.boton-tienda:hover{
-    background-color: rgb(60, 250, 60);
+    background-color: rgb(104, 60, 250);
   }
   
   
@@ -106,12 +106,12 @@
     width: 70px;
     padding: 5px;
     text-decoration: underline;
-    color: #19194e;
+    color: #ffffff;
     margin-right:4px;
   }
   
   .fa-user {
-    color: blue;
+    color: white;
    
   }
   

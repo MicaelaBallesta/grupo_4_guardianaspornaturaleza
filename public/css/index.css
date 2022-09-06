@@ -1,22 +1,8 @@
 
-.listado-redes ul li{
-    display: block;
-    color:black;
-    width: 20px;
-    position: fixed;
-    top: 20%;
-    left:20%;
-  }
-  .fa-brands {
-    color:black;
-    width: 20px;
-    
-  
-  }
   
   .carousel {
       width: 100%;
-      margin-top:0;
+      margin-top:5%;
   }
   
   ul.slides {
