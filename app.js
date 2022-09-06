@@ -25,6 +25,17 @@ app.get('/', (req,res)=>{
 	res.render(__dirname + '/views/index.ejs');
 	 }); 
 
+ 
+
+app.get("/productsCreateForm", (req,res) => {
+    let productsCreateForm = path.join(__dirname, '/views/productsCreateForm.ejs') 
+    res.render(productsCreateForm) }); 
+        
+
+app.get("/productsEditForm", (req,res) => {
+        let productsEditForm = path.join(__dirname, '/views/productsEditForm.ejs') 
+        res.render(productsEditForm) }); 
+
 // app.get("/login", (req,res) => {
 // let login = path.join(__dirname, '/views/login.html') 
 // res.sendFile(login) }); 
@@ -79,6 +90,8 @@ app.get("/register", (req,res) => {
      res.render(impacto) }); 
 
 
+<<<<<<< HEAD
+=======
      app.get('/create', (req,res)=>{
         res.render(__dirname + '/views/product-create-edit-form.ejs');
          }); 
@@ -89,3 +102,4 @@ app.get("/register", (req,res) => {
 app.get("/productos", (req,res) => {
     let listadoProductos = path.join(__dirname, '/views/listadoProductos.ejs') 
     res.render(listadoProductos) }); 
+>>>>>>> 5abcf6bc034b48a4aa1a708b89db68080aa1cbb1
