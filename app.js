@@ -77,3 +77,8 @@ app.get("/register", (req,res) => {
 app.get("/register", (req,res) => {
      let register = path.join(__dirname, '/views/impacto.ejs') 
      res.render(impacto) }); 
+
+
+     app.get('/create', (req,res)=>{
+        res.render(__dirname + '/views/product-create-edit-form.ejs');
+         }); 
