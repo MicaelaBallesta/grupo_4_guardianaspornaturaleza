@@ -18,8 +18,9 @@ const path = require ('path');
 //  });
 
 
+
 // ************ Controller Require ************
-const productsController = require('../controllers/productsController');
+/*const productsController = require('../controllers/productsController');
 
 
 const storage = multer.diskStorage({
