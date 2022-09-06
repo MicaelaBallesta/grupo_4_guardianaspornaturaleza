@@ -89,6 +89,10 @@ app.get("/register", (req,res) => {
      res.render(impacto) }); 
 
 
+     app.get('/create', (req,res)=>{
+        res.render(__dirname + '/views/product-create-edit-form.ejs');
+         }); 
+
 
 
          
