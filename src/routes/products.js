@@ -1,8 +1,8 @@
-let express = require ('express');
+/*let express = require ('express');
 let router = express.Router ();
 const multer = require ('multer');
 const path = require ('path');
-
+*/
 // router.get ('/idProducto', function (req, res) {
  //   res.send ("Bienvenidos al detalle del producto" +
  //   req.params.idProducto);
@@ -35,24 +35,24 @@ var upload = multer ({storage: storage})
 
 
 /*** GET ALL PRODUCTS ***/ 
-router.get('/', productsController.index); 
+/*router.get('/', productsController.index); 
 
 /*** CREATE ONE PRODUCT ***/ 
-router.get('/create/', productsController.create); 
+/*router.get('/create/', productsController.create); 
 router.post('/', upload.any(), productsController.store); 
 
 
 /*** GET ONE PRODUCT ***/ 
-router.get('/:id/', productsController.detail); 
+/*router.get('/:id/', productsController.detail); 
 
 /*** EDIT ONE PRODUCT ***/ 
-router.get('/:id/edit', productsController.edit); 
+/*router.get('/:id/edit', productsController.edit); 
 router.put('/:id', upload.any () ,productsController.update); 
 
 
 /*** DELETE ONE PRODUCT ***/ 
-router.delete('/:id', productsController.destroy); 
+/*router.delete('/:id', productsController.destroy); 
 
 
 
-  module.exports = router;
+  module.exports = router;*/

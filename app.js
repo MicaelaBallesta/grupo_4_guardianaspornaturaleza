@@ -3,7 +3,7 @@ const app = express();
 const path = require('path')
 app.use(express.static('public'));
 
-let rutasProductos = require ('./routes/products.js');
+/*let rutasProductos = require ('./src/routes/products');*/
 
 app.set ('view engine', 'ejs'); 
 
@@ -19,7 +19,7 @@ app.listen(3000, ()=>{
 // para cada uno de los archivos de rutas que vayamos haciendo. ej Productos/crear reaccionan aca. 
 // No olvidar app.use y el requiere correspondiente: ej: let rutasProductos = require ('./routes/productos.js');
 
-app.use ('/productos', rutasProductos);
+/*app.use ('/productos', rutasProductos);*/
 
 app.get('/', (req,res)=>{
 	res.render(__dirname + '/views/index.ejs');
