@@ -14,18 +14,27 @@
 <body>
  
     <section class="register">
-        <h4>Formulario de Registro</h4>
-        <input class="controls" type="text" name="nombres y apellidos" id="nombres y apellidos" placeholder="Nombre y apellido">
-        <input class="controls" type="email" name="correo" id="correo" placeholder="E-mail">
-        <input class="controls" type="number" name="numero de contacto" id="numero de contacto" placeholder="Telefono de contacto">
-        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
-        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Confirmar contraseña">
+        <h4>Registrate en guardianas</h4>
+        <form action="/login" method="post">
+            <label for="nombres y apellidos"></label>
+            <input class="controls" type="text" name="nombres y apellidos" id="nombres y apellidos" placeholder="Nombre y apellido">
+            <label for="correo"></label>
+            <input class="controls" type="email" name="correo" id="correo" placeholder="E-mail">
+            <label for="numero de contacto"></label>
+            <input class="controls" type="number" name="numero de contacto" id="numero de contacto" placeholder="Telefono de contacto">
+            <label for="contraseña"></label>
+            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+            <label for="contraseña"></label>
+            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Confirmar contraseña">
         <!--confirmar la contraseña-->
-        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-        <input class="boton" type="submit" value="Registrarse">
+            <p>Estoy de acuerdo con los <a href="#">Términos y Condiciones</a></p>
+            <input class="boton" type="submit" value="Registrarse">
         <!--boton para registrarse que cambie de color y redireccione-->
-        <p><a href="#">Ya tengo cuenta</a></p>
+            <p><a href="/login">Ya tengo cuenta</a></p>
+        </form>
     </section>
+
+
 </body>
          <!--footer-->
 </html>
