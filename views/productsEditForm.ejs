@@ -6,13 +6,12 @@
 
   <link rel="stylesheet" href="/public/css/index.css"/>
 </head> --> 
-
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Inicia sesión en Guardianas</title>
-      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/styleRegister.css">
       <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,45 +21,36 @@
 <body>
 
     <header>
-
     </header>
 
     <div class="principal">
         <div class="row">
-            <h2 class="title-form-create">Estás editando el libro: <%=product.nombreLibro%></h2>
+            <h2 class="title-form-create">Estás editando la artesanía: <"product.nombreProducto"></h2>
         </div>
     </div>
     <div class="title-form-create">
-        <form method="POST" action="<>
-            <div class="/edit">
+		<form method="POST" action="/productsEditForm">
+
+      
+           
+			<div class="/edit">
                 <div class="form-container-label">
-                    <label for="titulo" class="form-label">Nombre de la artesania:</label>
-                    <input type="text" id="titulo" class="form-input" name="titulo" placeholder="<%=product.nombreLibro%>">
+                    <label for="nombreProducto" class="form-label">Nombre de la artesanía:</label>
+                    <input type="text" id="nombreProducto" class="form-input" name="nombreProducto" placeholder="product.nombreProducto">
                 </div>
             <div class="form-container-label">
-                    <label for="autor" class="form-label">Autor del Libro:</label>
-                    <input type="text" id="autor" class="form-input" name="autor" placeholder="<%=product.autor%>">
+                    <label for="comunidad" class="form-label">Comunidad:</label>
+                    <input type="text" id="autor" class="form-input" name="comunidad" placeholder="product.comunidad">
             </div>
             <div class="form-container-label">
-                <label for="editorial" class="form-label">Editorial:</label>
-                <input type="text" id="editorial" class="form-input" name="editorial" placeholder="<%=product.editorial%>">
-            </div>
-            <div class="form-container-label">
-                <label for="origen" class="form-label">Origen:</label>
-                <input type="text" id="origen" class="form-input" name="origen"  placeholder="<%=product.origen%>">
+                <label for="categoria" class="form-label">Categoría:</label>
+                <input type="text" id="categoria" class="form-input" name="categoria" placeholder="product.categoria">
             </div>
             <div class="form-container-label">
                 <label for="precio" class="form-label">Precio:</label>
-                <input type="text" id="price" class="form-input" name="price"  placeholder="<%=product.precio%>">
+                <input type="text" id="precio" class="form-input" name="precio"  placeholder="product.precio">
             </div>
-            <div class="form-container-label">
-                <label for="numero de paginas" class="form-label">Numero de páginas:</label>
-                <input type="text" id="paginas" class="form-input" name="paginas" placeholder="<%=product.numeropaginas%>">
-            </div>
-            <div class="form-container-label">
-                <label for="fecha-publicacion" class="form-label">Fecha de publicación:</label>
-                <input type="text" id="fecha" class="form-input" name="fecha" placeholder="<%=product.fechapublicacion%>">
-            </div>
+           
             <div class="form-container-label">
                 <label for="categoria" class="form-label">SELECCIONE CATEGORIA</label>
                 <select name="categoria" class="form-input" id="categoria" style="width: 100%; border: 2px solid #464646;">
@@ -70,8 +60,8 @@
                 </select>
             </div>
             <div class="form-container-label">
-                <label for="description">Descripción del libro:</label>
-                <textarea name="description" class="form-text" id="description"  style="width: 100%; border: 2px solid #464646;" placeholder="<%=product.reseña%>"></textarea>
+                <label for="Caracteristicas">Caracteristica de la artesanía:</label>
+                <textarea name="Caracteristicas" class="form-text" id="Caracteristicas"  style="width: 100%; border: 2px solid #464646;" placeholder="product.Caracteristicas"></textarea>
             </div>
             <div>
                 <label for="image" class="form-label" style="font-size: 1.0em;
@@ -91,7 +81,7 @@
 </div>
 
     <footer>
-        <%- include('./partials/footer') %>
+		<%- include('./footer.ejs')  %>
     </footer>
 
 </body>
