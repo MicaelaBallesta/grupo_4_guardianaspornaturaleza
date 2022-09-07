@@ -1,5 +1,5 @@
 * CSS DE PRODUCTOS */
-.cuadro{   
+.listado-producto-div{   
     max-width: 1100px;
     width: 90%;
     height: 85%;
@@ -17,19 +17,14 @@
     border-radius: 25px;
     margin-bottom: 2%;
 }
-.subcatalogo{
-    display: block;
-    width: 90%;
-    padding: 5px 0 0;
-    margin-bottom: 10px;
-}
-.product-list{
+
+.product-item-div{
     width: 82%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.product-item{
+.product-item-div{
     border: 1px solid rgb(204, 198, 198);
     width: 22%;
     margin: 1%;
