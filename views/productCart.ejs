@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Guardianas x naturaleza</title>
-    <link rel="stylesheet" href="css/styleproductCart.css">
+   <!-- <link rel="stylesheet" href="css/styleproductCart.css"> -->
+    <link rel="stylesheet" href="css/styleRegister.css">
     <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,21 +14,36 @@
 
   
 </head>
+
+<!-- 
 <title>Viewport</title>
-<meta name= 'viewport' content= 'with=device-wid th, initial-scale=1'>
+<meta name= 'viewport' content= 'with=device-wid th, initial-scale=1'> 
+-->
+
 </head>
+
+
 <body>
-<marquee> <h2>Guardianas por naturaleza</h2></marquee>
+<!-- <marquee> <h2>Guardianas por naturaleza</h2></marquee>
+-->
 </body>
 <body>
 
-  
+ 
+
     <header class="header">
-        
+      <%- include('./header.ejs')  %>   
+      
+      
+  
+  <!-- 
+
                 <div class="logo">
                          <img src="images/isologo verde.png" alt="Guardianas por naturaleza" class="logo-logo">
                 </div>
-        
+        -->
+
+        <!-- 
                 <div class="menu-hamburguesa">
                     <i class="fa-solid fa-bars"></i>
                 </div>    
@@ -36,8 +52,10 @@
                     <a href="#" class="boton-tienda">Tienda</a>
                 
                     <a href="#" class="boton-dona">Doná</a>
-                </div>       
-         </div>
+                </div>   
+                
+              --> 
+        <!--  </div>
          <div class="cambio-de-idioma">
                 <form action="" method="get">
                     <select name="idiomas" id="idiomas">
@@ -46,7 +64,9 @@
                     </select>
                 </form>    
         </div>
+      -->
 
+      <!-- 
         <nav class="navegador-principal">
             <ul>
                 <li> <a href="/"> Inicio </li></a>
@@ -59,13 +79,17 @@
                 <li> <a href="/register"> Regístrate </li></a>
             </ul>
         </nav>
+      -->
+
+      <!--
+
       
          <div class="volver">
           <a href="/views/index.html"> Volvé al Inicio</a>
-     
+     -->
     </header>
     
-       
+       <!-- 
     <main>
         <div class="icono-manito-redes-fijo-tabletypc">
             <i class="fa-solid fa-hand-dots"></i>
@@ -75,6 +99,7 @@
             <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
   
+-->
 
 <!-- 
 div class="primero"> Primer DIV</div>
@@ -93,11 +118,20 @@ div class="primero"> Primer DIV</div>
 }
 -->
 
+<br> <br>
+
+
+<br> <br>
+
+<br> <br>
+
         <div class="icono-carrito">
           <i class="fa-solid fa-cart-shopping"></i>
           <div class="carrito texto"><h2>Carrito de compras</h2>
        </div>
        
+       <br> <br>
+
       </div>
       <div class="buscador-de-productos">
           <label for="buscador-productos"> Busca tu artesania </label>
@@ -106,13 +140,15 @@ div class="primero"> Primer DIV</div>
       </div>
 
       <hr/>
-      
+   
 
 <!-- 
         <div class="encabezado-ruta">
             <p class="ruta"> #Inicio/#Nombre del producto </p>
         </div>
 -->
+
+<br> <br>
 
         <div class="basket">
             <div class="basket-module">
@@ -341,6 +377,10 @@ div class="primero"> Primer DIV</div>
         </section>
 
     <footer>
+
+      <%- include('./footer.ejs')  %>
+
+      <!-- 
         <ul>
                 
                 <li><a href="#"> Ventas mayoristas </a></li>
@@ -364,6 +404,7 @@ div class="primero"> Primer DIV</div>
             <img src="images/isologo verde.png" alt="logo" class="logo-footer">
             <p class="copyright"><i class="fa-regular fa-copyright"></i>2022 Guardianas por naturaleza </p>
         </div>
+-->
 
     </footer>
 </body>
