@@ -1,5 +1,10 @@
 
-  
+  *{ margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
   .carousel {
       width: 100%;
       margin-top:5%;

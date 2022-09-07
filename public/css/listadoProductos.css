@@ -1,39 +1,72 @@
-* CSS DE PRODUCTOS */
-.listado-producto-div{   
+*{ margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.listado-producto-div{
+    display: flex;  
+    flex-direction: column;
     max-width: 1100px;
-    width: 90%;
-    margin-top:20%;
-    background-color: antiquewhite;
+    width: 80%;
+    margin-top:10%;
 }
 
 .product-list-div{
     display: flex;
     justify-content: space-between;
-    align-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 2%;
-}
-
-.product-item-div{
-    display: flex;
-    flex-direction: column;
-    align-items: ;
 
 }
 
+
 .product-item-div{
-    border: 1px solid rgb(204, 198, 198);
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
     width: 22%;
+    height: 40%;
     margin: 1%;
     margin-bottom: 10px;
+    background-color:#24303c ;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
-.indiv img{
+
+.product-item-div:hover{
+    transform: scale(1.10, 1.10);
+}
+
+.image-producto {
     width: 100%;
-    margin-left: 20%;
-    margin-top: 4%;
-    border: 1px solid rgb(204, 198, 198) 
+    height: 50%;
+}
+
+
+.fa-solid, .fa-solid, .nombre, .precio {
+    color:white;
+
+}
+
+.nombre, .precio {
+    color:white;
+    margin-bottom: 8%;
+    display: inline-block;
+}
+
+.agregar-carrito{
+background-color: green;
+padding:2px;
+margin-left: 4px;
+margin-right: 4px;
+color:white; 
+display: inline-block;
 }
