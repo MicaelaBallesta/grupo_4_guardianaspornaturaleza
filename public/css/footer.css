@@ -9,15 +9,17 @@ footer{
     min-height: 300px;}
     
 
-footer ul.social-botons li{
+.menu-footer{
     display: inline;
-    border-radius: 50%;
-    font-size: 50px;
+    font-size: 16px;
     align-items: center;
-    line-height: 2;color: #ffffff;
+    color: #ffffff;
     background-color: #464646;
     margin-right: 10px;}
     
     
-    footer ul.social-botons li a:hover{
-    background-color: #bda45a;}
+.botoner-redes ul li:hover{
+    background-color: #bda45a;
+    border-radius: 50%;
+    transition: 6ms;
+}
