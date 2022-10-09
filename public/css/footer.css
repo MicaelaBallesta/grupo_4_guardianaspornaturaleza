@@ -1,25 +1,30 @@
 /* -------------------------------------Footer--------------------------------- */
 
 footer{
-
-    text-align: center;
-    padding-top: 10px;
     background-color: #24303c;
-    color: white;
-    min-height: 300px;}
-    
+    margin: 0;
+    box-sizing: 0;
+}
 
 .menu-footer{
-    display: inline;
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
-    align-items: center;
+    align-content: center;
     color: #ffffff;
-    background-color: #464646;
-    margin-right: 10px;}
-    
-    
-.botoner-redes ul li:hover{
+    margin-right: 10px;
+}
+
+i{
+    display: inline;
+    width: 40px;
+    height: 50px;
+}    
+
+ul li a i:hover{
     background-color: #bda45a;
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
     transition: 6ms;
 }
