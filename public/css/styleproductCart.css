@@ -2,10 +2,14 @@
 * { box-sizing: border-box }
 
 *{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif; color: #ebebeb;
 }
 
 
+
+* {color: white
+}
+  
 
 header .logo-logo{
     position: relative;

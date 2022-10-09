@@ -11,12 +11,12 @@ footer{
 
 footer ul.social-botons li{
     display: inline;
-        border-radius: 50%;
-        font-size: 50px;
-        align-items: center;
-        line-height: 2;color: #ffffff;
-        background-color: #464646;
-        margin-right: 10px;}
+    border-radius: 50%;
+    font-size: 50px;
+    align-items: center;
+    line-height: 2;color: #ffffff;
+    background-color: #464646;
+    margin-right: 10px;}
     
     
     footer ul.social-botons li a:hover{

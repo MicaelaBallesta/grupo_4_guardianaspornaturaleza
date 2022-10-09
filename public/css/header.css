@@ -9,31 +9,27 @@
     width: 100%;
     height: 15vh;
     position:fixed;
-    z-index: 50;
     background-color:#24303c;
     border-bottom: 2px;
-    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
-    transform: translateY(100%, 0);
-    transition-duration: 0.6s;
-
   }
+
   /* mobile */ 
   
-  .p-menu1, .menu1{
-    display: none;
+  .p-menu1{
+    display:none
   }
   
   .logo img {
     margin-left: 4px;
-    margin-top:4px;
-    width: 8vw;
-    height: 14vh;
+    margin-top:18px;
+    width: 6vw;
+    height: 10vh;
   }
   
   .titulo{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
-    color: white;
+    color: rgb(180, 221, 197);
   }
   
   .logo-titulo{
@@ -80,18 +76,21 @@
     text-transform: uppercase;
     font-size: medium;
     margin-bottom: 2px;
+    border-radius: 2px;
   }
   .box-nav-completo-fullscreen a.boton-dona:hover{ 
-    background-color:rgb(104, 60, 250);
+    background-color:rgb(145, 210, 185);
+    color:black;
   }
   
   .box-nav-completo-fullscreen  a.boton-tienda:hover{
-    background-color: rgb(104, 60, 250);
+    background-color: rgb(145, 210, 185);
+    color:black;
   }
   
   
   .box-nav-completo-fullscreen a:hover{
-    color:rebeccapurple;
+    color:rgb(145, 210, 185);
   }
   
   .register {
@@ -99,8 +98,6 @@
   right:-80%;
    
   }
-  
-  
   
   .register a{
     font-size: 16px;

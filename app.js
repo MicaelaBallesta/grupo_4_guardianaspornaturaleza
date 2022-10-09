@@ -104,3 +104,8 @@ app.get("/productos", (req,res) => {
     app.get("/productsEditForm", (req,res) => {
         let productsEditForm = path.join(__dirname, '/views/productsEditForm.ejs') 
         res.render(productsEditForm) }); 
+
+
+        app.get("/listadoProductos", (req,res) => {
+            let listadoProductos = path.join(__dirname, '/views/listadoProductos.ejs') 
+            res.render(listadoProductos) }); 
