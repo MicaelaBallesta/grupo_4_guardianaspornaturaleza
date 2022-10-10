@@ -1,9 +1,42 @@
+// ************ Require's ************
 const express = require('express');
+const path = require('path');
+const methodOverride = require('method-override'); // Para poder usar los métodos PUT y DELETE
+
+// ************ express() - (don't touch) ************
+const app = express();
+
+// ************ Middlewares - (don't touch) ************
+app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /public
+app.use(express.urlencoded({ extended: true })); // Para que pueda recibir el body de los formularios??
+app.use(express.json()); // Para que pueda recibir el body de los formularios??
+app.use(methodOverride('_method')); // Para poder usar los métodos PUT y DELETE
+
+// ************ Template Engine - (don't touch) ************
+app.set('view engine', 'ejs'); // Define que el motor que utilizamos es EJS
+app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
+
+// ************ Route System require and use() - (don't touch) ************
+const mainRouter = require('./routes/main'); // Rutas main
+const productsRouter = require('./routes/products'); // Rutas /products
+
+app.use('/products', productsRouter);
+app.use('/', mainRouter);
+
+// ************ Set the server to listen - (don't touch) ************
+app.listen(3003, () => {
+  console.log("Servidor funcionando en http://localhost:3003")
+})
+
+
+
+
+/* const express = require('express');
 const app = express();
 const path = require('path')
 app.use(express.static('public'));
 
-/*let rutasProductos = require ('./src/routes/products');*/
+/*let rutasProductos = require ('./src/routes/products');
 
 app.set ('view engine', 'ejs'); 
 
@@ -19,7 +52,7 @@ app.listen(3000, ()=>{
 // para cada uno de los archivos de rutas que vayamos haciendo. ej Productos/crear reaccionan aca. 
 // No olvidar app.use y el requiere correspondiente: ej: let rutasProductos = require ('./routes/productos.js');
 
-/*app.use ('/productos', rutasProductos);*/
+/*app.use ('/productos', rutasProductos);
 
 app.get('/', (req,res)=>{
 	res.render(__dirname + '/views/index.ejs');
@@ -108,4 +141,5 @@ app.get("/productos", (req,res) => {
 
         app.get("/listadoProductos", (req,res) => {
             let listadoProductos = path.join(__dirname, '/views/listadoProductos.ejs') 
-            res.render(listadoProductos) }); 
+            res.render(listadoProductos) }); */ 
+
