@@ -14,11 +14,11 @@ app.use(methodOverride('_method')); // Para poder usar los métodos PUT y DELETE
 
 // ************ Template Engine - (don't touch) ************
 app.set('view engine', 'ejs'); // Define que el motor que utilizamos es EJS
-app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
+app.set('views', path.join(__dirname, './src/views')); // Define la ubicación de la carpeta de las Vistas
 
 // ************ Route System require and use() - (don't touch) ************
-const mainRouter = require('./routes/main'); // Rutas main
-const productsRouter = require('./routes/products'); // Rutas /products
+const mainRouter = require('./src/routes/main'); // Rutas main
+const productsRouter = require('./src/routes/products'); // Rutas /products
 
 app.use('/products', productsRouter);
 app.use('/', mainRouter);
