@@ -7,7 +7,8 @@ const methodOverride = require('method-override'); // Para poder usar los métod
 const app = express();
 
 // ************ Middlewares - (don't touch) ************
-app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /public
+/*app.use(express.static(path.join(__dirname, './public')));*/ // Necesario para los archivos estáticos en el folder /public
+app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true })); // Para que pueda recibir el body de los formularios??
 app.use(express.json()); // Para que pueda recibir el body de los formularios??
 app.use(methodOverride('_method')); // Para poder usar los métodos PUT y DELETE
