@@ -7,8 +7,8 @@
        "correo": "tamararodriguez@gmail.com",
        "celular":1188776600,
        "telefono":,
-       "contraseña":bycrypt,
-       "confirmacionContraseña": bycrypt,
+       "contraseña":,
+       "confirmacionContraseña": ,
 
     },
 
@@ -20,8 +20,8 @@
         "correo": "lucasmoreno@gmail.com",
         "celular":1122556644,
         "telefono":42665533,
-        "contraseña":bycrypt,
-        "confirmacionContraseña": bycrypt,
+        "contraseña":,
+        "confirmacionContraseña": ,
  
      },
      {
@@ -32,8 +32,8 @@
         "correo": "sofiasaenz@gmail.com",
         "celular":1177889966,
         "telefono":,
-        "contraseña":bycrypt,
-        "confirmacionContraseña": bycrypt,
+        "contraseña":,
+        "confirmacionContraseña": ,
  
      },
      {
@@ -44,8 +44,8 @@
         "correo": "tomasrodriguez@gmail.com",
         "celular":1155663344,
         "telefono":42665533,
-        "contraseña":bycrypt,
-        "confirmacionContraseña": bycrypt,
+        "contraseña":,
+        "confirmacionContraseña": ,
  
      },
      {
@@ -56,8 +56,8 @@
         "correo": "carlostema@gmail.com",
         "celular":1177889966,
         "telefono":46553322,
-        "contraseña":bycrypt,
-        "confirmacionContraseña": bycrypt,
+        "contraseña":,
+        "confirmacionContraseña": ,
  
      },
      {
@@ -68,8 +68,8 @@
         "correo": "solertobias@gmail.com",
         "celular":1188556633,
         "telefono":,
-        "contraseña":bycrypt,
-        "confirmacionContraseña": bycrypt,
+        "contraseña":,
+        "confirmacionContraseña": ,
  
      },
      {
@@ -80,11 +80,10 @@
         "correo": "micaelatorres@gmail.com",
         "celular":1188776600,
         "telefono":,
-        "contraseña":bycrypt,
-        "confirmacionContraseña": bycrypt,
+        "contraseña":,
+        "confirmacionContraseña": ,
+    }
  
-     }
 
 
 ]
-

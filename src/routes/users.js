@@ -1,10 +1,10 @@
-/*const express = require('express');
-const usersController = require('../controllers/usersController');
+// ************ Require's ************
+const express = require('express');
+const router = express.Router();
 
-var router = express.Router();
+// ************ Controller Require ************
+const usersController = require('../controllers/userController');
 
-router.get('/iniciosesion' , usersController.index);
-router.post('/iniciosesion' , usersController.login);
+router.get('/', usersController.register); 
 
 module.exports = router;
-*/

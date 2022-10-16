@@ -1,4 +1,16 @@
+
 [ {
+    
+    "id":0,
+    "nombreProducto":"Chalina Wichi",
+    "historia": " Hecha a mano por María y Estela",
+    "image": "chalina_tejida_wichi.jpg",
+    "comunidad": "wichi",
+    "categoria": "textil",
+    "caracteristicas":"1x60 colores ",
+    "precio": 1800
+
+},{
     
     "id":1,
     "nombreProducto":"Chalina Wichi",
@@ -70,7 +82,7 @@
 
 },
 {
-    "id":6,
+    "id":7,
     "nombreProducto":"Tabla de madera naturaleza marina",
     "historia": " Diseños distintos  ",
     "image": "tabla_madera_toba.jpg",
@@ -78,12 +90,10 @@
     "categoria": "textil",
     "caracteristicas":"1x60 colores ",
     "precio": 1800
-
 }
 
 
 
 
 ]
-
 

@@ -12,29 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <%- include ("./partials/headear") %>
-
-   
+    
  
     <section class="register">
-        <h4>Registrate en Guardianas</h4>
-        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Completar con tu nombre" required maxlength="30">
-        <input class="controls" type="text" name="apellido" id="apellido" placeholder="Completar con tu apellido" maxlength="30"    required>
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Por ej. martin@gmail.com" maxlength="25" required>
-        <input class="controls" type="number" name="celular" id="celular" placeholder="teléfono celular ej.1155223366" maxlength="15" required >
-        <input class="controls" type="number" name="telefono" id="telefono" placeholder="Teléfono de contacto" maxlength="15" >
-        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
-        <input class="controls" type="password" name="confirmacionContraseña" id="confirmacionContraseña" placeholder="Confirmar contraseña">
+        <h4>Ingresá a tu cuenta </h4>
+        <form action="/login" method="post"> 
+            <label for="email"></label>
+            <input class="controls" type="email" name="email" id="email" placeholder="Email">
+            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+            <input class="boton" type="submit" value="Ingresar">
+            <p><a href="#">¿Olvidaste tu contraseña? </a></p>
         <!--confirmar la contraseña-->
-        <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a></p>
+        <p><a href="/register">¿No tenés cuenta?  Creá tu cuenta</a></p>
         <input class="boton" type="submit" value="Registrarse">
         <!--boton para registrarse que cambie de color y redireccione-->
-        <p><a href="#">Ya tengo cuenta</a></p>
+      
+    </form>
     </section>
 
-    <footer <%- include ("./partials/footer") %>>
 
-    </footer>
 </body>
-         
+         <!--footer-->
 </html>

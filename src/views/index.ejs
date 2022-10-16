@@ -1,44 +1,22 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
-   
-    <%- include('./src/views/partials/head.ejs')  %>
-    <link rel="stylesheet" href="/css/home.css"/>
-  </head>
-
-<body>
-
-  <%- include('./src/views/partials/header.ejs')  %>     
-
-
-  <!DOCTYPE html>
-<html lang="es">
-<head>
-
-
-	<meta charset="utf-8">
-	<title>Guardianas por Naturaleza</title>
-	<meta name="description" content="El primer Ecomerce , con sentido social">
-	<meta name="author" content="www.guardianas.com.ar">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianas por naturaleza</title>
+    <link rel="stylesheet" href="/css/index.css"> 
+    <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
+  </head>   
     
 
+  <body>
+
+    <%- include('partials/header') %>    
   
-	<link rel="stylesheet" href="index.css">
-	
-	<!-- CSS only -->
-    
-
-	
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	
-
-
-</head>
-
-<body>
-    <main>
+      <main>
 
         <div class="listado-redes">
           <ul>
@@ -48,6 +26,7 @@
 
           </ul>
         </div>
+
         <div>
             <div class="carousel">
               <ul class="slides">
@@ -57,7 +36,7 @@
                     <h2 class="text-1">
                     Guardianas de saberes y <br>
                      de nuestra tierra</h2>
-                    <img src="/public/images/banner_1.png">
+                    <img src="images/banner_1.png">
                     
                   </div>
                   <div class="carousel-controls">
@@ -74,7 +53,7 @@
                   <div class="slide-image">
                     <h2 class="text-2"> De objetos únicos y milenarios. 
                     </h2>
-                    <img src="/public/images/banner_2.png">
+                    <img src="images/banner_2.png">
                   </div>
                   <div class="carousel-controls">
                     <label for="img-1" class="prev-slide">
@@ -90,7 +69,7 @@
                   <div class="slide-image">
                     <h2 class="text-3"> <hr>
                     Somos guardianas de un mundo + JUSTO <br> Somos GUARDIANAS POR NATURALEZA </h2>
-                    <img src="/public/images/bannner.jpg">
+                    <img src="images/bannner.jpg">
                   </div>
                   <div class="carousel-controls">
                     <label for="img-2" class="prev-slide">
@@ -110,15 +89,15 @@
             </div>
           </div>
 
-<div class="div-tienda-online">
-    <img src="Mi proyecto (3).png" alt="dibujo de artesania" width="200px" height="250px">
-   <a href="/tienda"> Conocé la tienda </a>
-   <a href="/tienda" class="tienda">TIENDA </a>
-</div>
+        <div class="div-tienda-online">
+          <img src="" alt="dibujo de artesania" width="200px" height="250px">
+          <a href="/tienda"> Conocé la tienda </a>
+          <a href="/tienda" class="tienda">TIENDA </a>
+        </div>
 
 
     <div class="historias-nosotras">
-        <img src="/public/images/Maria_cortada.jpg" alt="María, artesana" >
+        <img src="images/Maria_cortada.jpg" alt="María, artesana" >
         <div class="box-flex-2">
             <p> Ella es María, mestiza, mitad nórdica mitad mapuche, <br>
             María aprendió a realizar artesanías en platería de mano <br>
@@ -126,9 +105,9 @@
             de Los Toldos, Provincia de Buenos Aires. 
     <br> 
     <br>
-            Trabajan con alpaca y, agrega, con mucho amor, <br>
+            Trabajan con alpaca y <br>
             tratando de conservar la simbología y las técnicas tradicionales <br>
-             pero adecuando los modelos para que sean accesibles a todos los <br>
+             pero adecuando los modelos para que sean accesibles a todos. <br>
             “La artesanía enriquece mucho a la cultura, nosotros hacemos arte. Esto tiene <br>
              un precio espiritual, la platería mapuche simboliza la femineidad, <br>
               ya que las retrafes siempre fueron mujeres</p>
@@ -148,7 +127,7 @@
           <span class="card__category"> JUJUY</span>
           <h3 class="card__title">Hechas a Mano</h3>
           <div>
-            <img src="/public/images/banner_1.png" width= "400px" height="400px" alt="">
+            <img src="images/banner_1.png" width= "400px" height="400px" alt="">
           </div>
 
           <div class="card"></div>
@@ -156,7 +135,7 @@
           <span class="card__category"> SALTA</span>
           <h3 class="card__title">Madera</h3>
           <div>
-            <img src="/public/images/banner_2.png" width= "400px" height="400px" alt="">
+            <img src="images/banner_2.png" width= "400px" height="400px" alt="">
           </div>
 
           <div class="card"></div>
@@ -164,7 +143,7 @@
           <span class="card__category"> WICHIS</span>
           <h3 class="card__title">NATURALEZA</h3>
           <div>
-            <img src="/public/images/banner_3.jpg" width= "400px" height="400px" alt="">
+            <img src="images/banner_3.jpg" width= "400px" height="400px" alt="">
           </div>
           
     
@@ -176,6 +155,10 @@
           
           </div>
 
+      
+            <%- include('partials/footer') %>
+ 
+		  
 
 
 
