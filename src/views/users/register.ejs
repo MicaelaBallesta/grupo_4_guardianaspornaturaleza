@@ -12,22 +12,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
  
     <section class="register">
-        <h4>Ingresá a tu cuenta </h4>
-        <form action="/login" method="post"> 
-            <label for="email"></label>
-            <input class="controls" type="email" name="email" id="email" placeholder="Email">
+        <h4>Registrate en guardianas</h4>
+        <form action="/login" method="post">
+            <label for="nombres y apellidos"></label>
+            <input class="controls" type="text" name="nombres y apellidos" id="nombres y apellidos" placeholder="Nombre y apellido">
+            <label for="correo"></label>
+            <input class="controls" type="email" name="correo" id="correo" placeholder="E-mail">
+            <label for="numero de contacto"></label>
+            <input class="controls" type="number" name="numero de contacto" id="numero de contacto" placeholder="Telefono de contacto">
+            <label for="contraseña"></label>
             <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
-            <input class="boton" type="submit" value="Ingresar">
-            <p><a href="#">¿Olvidaste tu contraseña? </a></p>
+            <label for="contraseña"></label>
+            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Confirmar contraseña">
         <!--confirmar la contraseña-->
-        <p><a href="/register">¿No tenés cuenta?  Creá tu cuenta</a></p>
-        <input class="boton" type="submit" value="Registrarse">
+            <p>Estoy de acuerdo con los <a href="#">Términos y Condiciones</a></p>
+            <input class="boton" type="submit" value="Registrarse">
         <!--boton para registrarse que cambie de color y redireccione-->
-      
-    </form>
+            <p><a href="/login">Ya tengo cuenta</a></p>
+        </form>
     </section>
 
 
