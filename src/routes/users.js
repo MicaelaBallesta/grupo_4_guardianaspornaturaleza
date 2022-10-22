@@ -5,6 +5,6 @@ const router = express.Router();
 // ************ Controller Require ************
 const usersController = require('../controllers/userController');
 
-router.get('/', usersController.register); 
-
+router.get('/register', usersController.register); 
+router.get('/login', usersController.login); 
 module.exports = router;

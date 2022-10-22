@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianas por naturaleza</title>
+    <link rel="stylesheet" href="/css/productsList.css"> 
+    <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
+  </head>   
+    
+
+  <body>
+
+    <%- include('partials/header') %>    
+
+    <div>  
+        <div>
+             <h2> Los mejores productos artesanales de Argentina</h2>
+            <h3>Con tu compra ayudas a miles de mujeres artesanas <br> Llevando un producto único, ecológico y de comercio justo </h3>
+        </div>
+
+        <div>
+            <h3> El cambio es posible </h3>
+        </div>
+
+        <div>
+        <h2> Artesanías únicas, artesanías con historia</h2>
+        </div>
+
+    </div> 
+
+    <div class="box-padre-productslist">
+        <section class="product-box">
+            <a href="/products/detail/<%= product.id %>">
+                <figure class="product-box_image">
+                    <img src="/images/products/<%= product.image %>" alt="imagen de producto">
+                </figure>
+                <article class="product-box_data">
+                    <h2><%= product.nombreProducto %></h2>
+                    <span><%= product.comunidad %> </span>
+                    <p><%= product.caracteristicas %></p>
+                    <i class="fas fa-truck"></i>
+                </article>
+            </a>
+        </section>
+        <section class="product-box">
+            <a href="/products/detail/<%= product.id %>">
+                <figure class="product-box_image">
+                    <img src="/images/products/<%= product.image %>" alt="imagen de producto">
+                </figure>
+                <article class="product-box_data">
+                    <h2><%= product.nombreProducto %></h2>
+                    <span><%= product.comunidad %> </span>
+                    <p><%= product.caracteristicas %></p>
+                    <i class="fas fa-truck"></i>
+                </article>
+            </a>
+        </section>
+
+
+
