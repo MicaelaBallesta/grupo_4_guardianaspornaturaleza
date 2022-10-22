@@ -24,8 +24,8 @@ const userRouter = require('./src/routes/users');
 
 app.use('/', mainRouter);
 app.use('/products', productsRouter);
-app.use('/', userRouter);
-app.use('/', userRouter);
+app.use('/register', userRouter);
+app.use('/login', userRouter);
 
 // ************ Set the server to listen - (don't touch) ************
 app.listen(3003, () => {

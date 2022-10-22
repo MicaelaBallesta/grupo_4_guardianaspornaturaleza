@@ -27,7 +27,7 @@ const controller = {
 
 	// Create - Form to create
 	create: (req, res) => {
-		res.render('productCreateForm')
+		res.render('productsCreateForm')
 	},
 	
 	// Create -  Method to store
@@ -40,7 +40,7 @@ const controller = {
 			nombreProducto: req.body.nombreProducto,
 			historia: req.body.historia,
 			image: req.file ? req.file.filename : "default-image.png",
-			comunidad:(req.body.comunidad),
+			comunidad:req.body.comunidad,
 			categoria: req.body.categoria,
 			caracteristicas: req.body.caracteristicas,
 			precio: parseInt(req.body.precio)
@@ -85,7 +85,7 @@ const controller = {
 		products[indice] = productToSave;
 		let productosAGuardar = JSON.stringify(products, null, " ");
 		fs.writeFileSync(productsFilePath, productosAGuardar);
-		res.redirect("/")
+		res.redirect("/productslist")
 	},
 
 	// Delete - Delete one product from DB
