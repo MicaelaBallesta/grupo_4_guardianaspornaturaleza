@@ -14,51 +14,57 @@
 
   <body>
 
-    <%- include('partials/header') %>    
+    <%- include('partials/header') %>  
 
-    <div>  
-        <div>
-             <h2> Los mejores productos artesanales de Argentina</h2>
-            <h3>Con tu compra ayudas a miles de mujeres artesanas <br> Llevando un producto único, ecológico y de comercio justo </h3>
+    <main class="cuadro">
+
+        <div class="catalogo">
+                <div class="subcatalogo">
+                    <h3>CERÁMICA</h3>
+                    <ul>
+                        <li>OTRO PRODUCTO </li>
+                        <li>otro producto2</li>
+                        <li>otro producto3</li>
+                    </ul>
+                </div>
+                <div class="subcatalogo">
+                    <h3>TEXTILES</h3>
+                    <ul>
+                        <li>otro producto1</li>
+                        <li>otro producto2</li>
+                        <li>otro producto3</li>
+                    </ul>
+                </div>
+                <div class="subcatalogo">
+                    <h3>MADERA</h3>
+                    <ul>
+                        <li>otro producto1</li>
+                        <li>otro producto2</li>
+                        <li>otro producto3</li>
+                    </ul>
+                </div>
         </div>
-
-        <div>
-            <h3> El cambio es posible </h3>
-        </div>
-
-        <div>
-        <h2> Artesanías únicas, artesanías con historia</h2>
-        </div>
-
-    </div> 
-
-    <div class="box-padre-productslist">
-        <section class="product-box">
-            <a href="/products/detail/<%= product.id %>">
-                <figure class="product-box_image">
-                    <img src="/images/products/<%= product.image %>" alt="imagen de producto">
-                </figure>
-                <article class="product-box_data">
-                    <h2><%= product.nombreProducto %></h2>
-                    <span><%= product.comunidad %> </span>
-                    <p><%= product.caracteristicas %></p>
-                    <i class="fas fa-truck"></i>
-                </article>
-            </a>
+            
+        <br>
+        
+        <section class="product-list">
+            <div class="product-item">
+                <% if (product) { %>  
+                <img src="<%= product.image %>" alt="<%= product.nombreProducto %>" width="200px"/>
+                <p><%= product.nombreProducto %></p>
+                <strong>$<%= product.precio %></strong><br>
+                <em><a href="#">Agregar al carrito</a></em>
+            </div>
+            <% } %>
+           
         </section>
-        <section class="product-box">
-            <a href="/products/detail/<%= product.id %>">
-                <figure class="product-box_image">
-                    <img src="/images/products/<%= product.image %>" alt="imagen de producto">
-                </figure>
-                <article class="product-box_data">
-                    <h2><%= product.nombreProducto %></h2>
-                    <span><%= product.comunidad %> </span>
-                    <p><%= product.caracteristicas %></p>
-                    <i class="fas fa-truck"></i>
-                </article>
-            </a>
-        </section>
-
-
-
+        </main>  
+        <selection>
+            <i class="fa-solid fa-arrow-left-long"></i>
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </selection>
+    
+        <%- include('./partials/footer') %>
+        
+    </body>
+    </html>
