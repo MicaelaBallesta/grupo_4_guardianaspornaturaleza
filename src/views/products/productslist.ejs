@@ -11,22 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
   </head>   
     
-
   <body>
 
-    <%- include('partials/header') %>  
 
+    <h3 class="products-title"> Conseguí artesanías perfectas y únicas </h3>
+     
     <main class="cuadro">
-
+        
         <div class="catalogo">
                 <div class="subcatalogo">
                     <h3>CERÁMICA</h3>
                     <ul>
-                        <li>OTRO PRODUCTO </li>
+                        <li>products.image</li>
                         <li>otro producto2</li>
                         <li>otro producto3</li>
                     </ul>
                 </div>
+                
                 <div class="subcatalogo">
                     <h3>TEXTILES</h3>
                     <ul>
@@ -35,6 +36,7 @@
                         <li>otro producto3</li>
                     </ul>
                 </div>
+                
                 <div class="subcatalogo">
                     <h3>MADERA</h3>
                     <ul>
@@ -48,23 +50,23 @@
         <br>
         
         <section class="product-list">
-            <div class="product-item">
-                <% if (product) { %>  
-                <img src="<%= product.image %>" alt="<%= product.nombreProducto %>" width="200px"/>
-                <p><%= product.nombreProducto %></p>
-                <strong>$<%= product.precio %></strong><br>
+            <div class="product-box">
+                <% if (products) { %>  
+                <img src="<%= products.image %>" alt="<%= products.nombreProducto %>" width="200px" class="product-box_image"/> 
+                <p class="product-box_data"><%= products.nombreProducto %></p>
+                <strong>$<%= products.precio %></strong><br>
                 <em><a href="#">Agregar al carrito</a></em>
             </div>
             <% } %>
            
         </section>
-        </main>  
+    </main>  
         <selection>
             <i class="fa-solid fa-arrow-left-long"></i>
             <i class="fa-solid fa-arrow-right-long"></i>
         </selection>
     
-        <%- include('./partials/footer') %>
+        <%- include('../partials/footer') %>
         
     </body>
     </html>

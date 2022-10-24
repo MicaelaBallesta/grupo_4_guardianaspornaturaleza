@@ -1,105 +1,36 @@
+/*====== Products ======*/
 * {
     margin: 0;
     padding: 0;
+    font-family: "Raleway", sans-serif;
     box-sizing: border-box;
-    font-family: "Noto sans", sans-serif;
-   
-}
-.html,body{
-    height:100vh;
-}
-body {
-    background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-@media only screen and (max-device-width: 767px) {
-    body {
-         background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
-         color: #FFF;
-     }
-}
-@media only screen and (max-width: 767px) {
-    body {
-         background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
-         color: #FFF;
-         }
-}
+  }
 
+.products-title{
+    margin-top:15%;
+    font-size: 2.4em;
+    font-weight: 400;
+    color: var(--gray);
+      
+}  
 
-/// CSS 
-
-.cuadro{   
-    max-width: 1100px;
-    width: 90%;
-    height: 85%;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px 15px 5px;
-    background: #24303c;
-    color: white;
-    box-shadow: 7px 13px 37px #000;
+.cuadro{
+    width: 80%;
 }
 
 .catalogo{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    margin-top:10%;
+    margin:5px,5px;
+    height: auto;
+
+}
+
+.subcatalogo {
     width: 15%;
-    text-align: center;
-    border: 3px solid #98ff96;
-    border-radius: 25px;
-    margin-bottom: 2%;
-}
-.subcatalogo{
-    display: block;
-    width: 90%;
-    padding: 5px 0 0;
-    margin-bottom: 10px;
-}
-.product-list{
-    width: 82%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.product-item{
-    border: 1px solid rgb(204, 198, 198);
-    width: 22%;
-    margin: 1%;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.indiv img{
-    width: 100%;
-    margin-left: 20%;
-    margin-top: 4%;
-    border: 1px solid rgb(204, 198, 198) 
-}
-
-/// CSS 
-.register {
-    width: 400px ;
-    background: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: "Noto sans", sans-serif;
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-}
-.register h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-.controls {
-    width: 100%;
+    height: 15%;
     background: #24303c;
     padding: 10px;
     border-radius: 4px;
@@ -109,26 +40,95 @@ body {
     font-size: 18px;
     color: white;
 }
-.register p {
-    height: 40px;
-    text-align: center;
-    font-size: 15px;
-    line-height: 40px;
-}
-.register a {
-    color: white;
-    text-decoration: none;
-}
-.register a:hover {
-    color: white;
-    text-decoration: underline;
-}
-.register .boton {
+
+
+
+.products-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .products-title {
+    font-size: 2.4em;
+    font-weight: 400;
+    color: var(--gray);
+  }
+  
+  .product-box {
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 300ms;
+    margin: 20px 0;
+  }
+  
+  .product-box a {
+    display: block;
+  }
+  
+  .product-box_image {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  
+  .product-box_data {
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .product-box_data h2 {
+    font-size: 2.4em;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  .product-box_data span {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--green);
+    margin: 0 0 0 10px;
+  }
+  
+  .product-box_data p {
+    font-size: 1.5em;
     width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-}
+    color: var(--gray);
+    margin: 0;
+    height: 0;
+    transition: 300ms;
+    overflow: hidden;
+  }
+  
+  .product-box_data i {
+    color: var(--green);
+    font-size: 1.8em;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+  }
+  
+  .product-box:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .product-box:hover p {
+    height: 40px;
+    margin-top: 15px;
+  }
+  
+  .product-box:hover i {
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px var(--green);
+  }
