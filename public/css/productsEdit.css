@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+.html,body{
+  height:100vh;
+}
+body {
+  background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 767px) {
+  body {
+       background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
+       color: #FFF;
+   }
+}
+@media only screen and (max-width: 767px) {
+  body {
+       background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
+       color: #FFF;
+       }
+}
+
+.container-edit{
+  display: flex;
+  flex-direction: column;
+    width: 700px ;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "Noto sans", sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+
+.col-12 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.col-12:hover{
+  color: white;
+}
+
+.form-input{
+  width: 60%;
+  background: #24303c;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "Noto sans", sans-serif ;
+  font-size: 18px;
+  color: white;
+}
+.form-label {
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+textarea.form-input {
+  min-height: 140px;
+  resize: vertical;
+  padding: 15px;
+}
+
+.buy-now-button{
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+

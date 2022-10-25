@@ -1,104 +1,82 @@
-
-
-[ {
-    
-    "id":0,
-    "nombreProducto":"Chalina Wichi",
-    "historia": " Hecha a mano por María y Estela",
-    "image": "chalina_tejida_wichi.jpg",
-    "comunidad": "wichi",
-    "categoria": "textil",
-    "caracteristicas":"1x60 colores ",
-    "precio": 1800
-
-},{
-    
-    "id":1,
-    "nombreProducto":"Chalina Wichi",
-    "historia": " Hecha a mano por María y Estela",
-    "image": "chalina_tejida_wichi.jpg",
-    "comunidad": "wichi",
-    "categoria": "textil",
-    "caracteristicas":"1x60 colores ",
-    "precio": 1800
-
-},
-
-{
-    "id":2,
-    "nombreProducto":"Panera Wichi",
-    "historia": " Hermosa panera fsfsfsffssf",
-    "image": "panera_tejida.jpg",
-    "comunidad": "wichi",
-    "categoria": "textil",
-    "caracteristicas":"1x60 colores ",
-    "precio": 1500
-
-},
-
-{
-    "id":3,
-    "nombreProducto":"Bolsa de compras tejido chaguar",
-    "historia": " Hermosa bolso tejido a chaguar  ",
-    "image": "bolso_chaguar.jpg",
-    "comunidad": "wichi",
-    "categoria": "textil",
-    "caracteristicas":"1x60 colores ",
-    "precio": 2000
-
-},
-
-{
-    "id":4,
-    "nombreProducto":"Vasija Cerámica",
-    "historia": " Vasija de cerámica hecha a mano, pintada con ...  ",
-    "image": "artesania-ceramica.jpg",
-    "comunidad": "wichi",
-    "categoria": "ceramica",
-    "caracteristicas":"distintos tamaños, colores",
-    "precio": 2000
-
-},
-{
-    "id":5,
-    "nombreProducto":"Tejido toba decorativo",
-    "historia": "Hermoso tejido por Luisa ",
-    "image": "mesa_tejido_toba.jpg",
-    "comunidad": "toba",
-    "categoria": "textil",
-    "caracteristicas":"1x60 colores ",
-    "precio": 3000
-
-},
-
-{
-    "id":6,
-    "nombreProducto":"Tabla de madera naturaleza marina",
-    "historia": " Diseños distintos  ",
-    "image": "tabla_madera_toba.jpg",
-    "comunidad": "toba",
-    "categoria": "madera",
-    "caracteristicas":"1x60 colores ",
-    "precio": 1800
-
-},
-{
-    "id":7,
-    "nombreProducto":"Tabla de madera naturaleza marina",
-    "historia": " Diseños distintos  ",
-    "image": "tabla_madera_toba.jpg",
-    "comunidad": "wichi",
-    "categoria": "textil",
-    "caracteristicas":"1x60 colores ",
-    "precio": 1800
-}
-
-
-
-
+[
+ {
+  "id": 0,
+  "nombreProducto": "Chalina Wichi",
+  "historia": " Hecha a mano por María y Estela",
+  "image": "chalina_tejida_wichi.jpg",
+  "comunidad": "wichi",
+  "categoria": "textil",
+  "caracteristicas": "1x60 colores ",
+  "precio": 1800
+ },
+ {
+  "id": 1,
+  "nombreProducto": "Chalina Wichi",
+  "historia": " Hecha a mano por María y Estela",
+  "image": "chalina_tejida_wichi.jpg",
+  "comunidad": "",
+  "categoria": "",
+  "caracteristicas": " Hecha a mano por María y Estela",
+  "precio": 1800
+ },
+ {
+  "id": 2,
+  "nombreProducto": "Panera Wichi",
+  "historia": " Hermosa panera fsfsfsffssf",
+  "image": "panera_tejida.jpg",
+  "comunidad": "wichi",
+  "categoria": "textil",
+  "caracteristicas": "1x60 colores ",
+  "precio": 1500
+ },
+ {
+  "id": 3,
+  "nombreProducto": "Bolsa de compras tejido chaguar",
+  "historia": " Hermosa bolso tejido a chaguar  ",
+  "image": "bolso_chaguar.jpg",
+  "comunidad": "wichi",
+  "categoria": "textil",
+  "caracteristicas": "1x60 colores ",
+  "precio": 2000
+ },
+ {
+  "id": 4,
+  "nombreProducto": "Vasija Cerámica",
+  "historia": " Vasija de cerámica hecha a mano, pintada con ...  ",
+  "image": "artesania-ceramica.jpg",
+  "comunidad": "wichi",
+  "categoria": "ceramica",
+  "caracteristicas": "distintos tamaños, colores",
+  "precio": 2000
+ },
+ {
+  "id": 5,
+  "nombreProducto": "Tejido toba decorativo",
+  "historia": "Hermoso tejido por Luisa ",
+  "image": "mesa_tejido_toba.jpg",
+  "comunidad": "toba",
+  "categoria": "textil",
+  "caracteristicas": "1x60 colores ",
+  "precio": 3000
+ },
+ {
+  "id": 6,
+  "nombreProducto": "Tabla de madera naturaleza marina",
+  "historia": " Diseños distintos  ",
+  "image": "tabla_madera_toba.jpg",
+  "comunidad": "toba",
+  "categoria": "madera",
+  "caracteristicas": "1x60 colores ",
+  "precio": 1800
+ },
+ {
+  "id": 7,
+  "nombreProducto": "Tabla de madera naturaleza marina",
+  "historia": " Diseños distintos  ",
+  "image": "tabla_madera_toba.jpg",
+  "comunidad": "wichi",
+  "categoria": "textil",
+  "caracteristicas": "1x60 colores ",
+  "precio": 1800
+ }
 ]
-
-
-
-
-

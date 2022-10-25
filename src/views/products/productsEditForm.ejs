@@ -1,90 +1,89 @@
-
-<!DOCTYPE html>
-<html lang="es">
-	<%- include('./head.ejs')  %>
-<!-- <head>
-
-  <link rel="stylesheet" href="/public/css/index.css"/>
-</head> --> 
+<html>
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Inicia sesión en Guardianas</title>
-      <link rel="stylesheet" href="css/styleRegister.css">
+      <title>Guardianas por naturaleza</title>
+      <link rel="stylesheet" href="/css/productsEdit.css">
       <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
   </head>
 
-<body>
-
-    <header>
-    </header>
-
-    <div class="principal">
-        <div class="row">
-            <h2 class="title-form-create">Estás editando la artesanía: <"product.nombreProducto"></h2>
-        </div>
-    </div>
-    <div class="title-form-create">
-		<form method="POST" action="/productsEditForm">
-
+        <body>
+           
       
-           
-			<div class="/edit">
-                <div class="form-container-label">
-                    <label for="nombreProducto" class="form-label">Nombre de la artesanía:</label>
-                    <input type="text" id="nombreProducto" class="form-input" name="nombreProducto" placeholder="product.nombreProducto">
+
+            <div class="container-edit">
+               
+                <div class="colum-container">
+                    <div class="col-12">
+                        <h2 class="products-title">Estás editando: <i><%= productToEdit.nombreProducto %></i></h2>
+                    </div>
                 </div>
-            <div class="form-container-label">
-                    <label for="comunidad" class="form-label">Comunidad:</label>
-                    <input type="text" id="autor" class="form-input" name="comunidad" placeholder="product.comunidad">
-            </div>
-            <div class="form-container-label">
-                <label for="categoria" class="form-label">Categoría:</label>
-                <input type="text" id="categoria" class="form-input" name="categoria" placeholder="product.categoria">
-            </div>
-            <div class="form-container-label">
-                <label for="precio" class="form-label">Precio:</label>
-                <input type="text" id="precio" class="form-input" name="precio"  placeholder="product.precio">
+
+                <div class="col-12">
+                    <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
+                        
+                        <div class="row-product-detail">
+                            
+                            <div class="col-12">
+                                <label for="nombreProducto" class="form-label">Nombre del producto: </label>
+                                <input type="text" value="<%= productToEdit.nombreProducto %>" id="nombreProducto" name="nombreProducto" placeholder="Ej: Bolso de arpillera" class="form-input">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="historia" class="form-label">Historias de artesanas:</label>
+                                <textarea name="historia" id="historia" class="form-input"><%= productToEdit.historia %></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="image" class="form-label">Subí las imágenes del producto</label>
+                                <input type="file" name="image" id="image" class="form-input">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="comunidad" class="form-label">Comunidad de artesanas:</label>
+                                <select name="comunidad" id="comunidad" class="form-input">
+                                    <option value="">Elegí la tuya</option>
+                                    <option value="toba" <%= productToEdit.comunidad  %> >Toba</option>
+                                    <option value="wichi" <%= productToEdit.ccomunidad %> >Wichi</option>
+                                </select>
+                            </div>
+
+                            
+                            <div class="col-12">
+                                <label for="categoria" class="form-label">Categoría:</label>
+                                <select name="categoria" id="categoria" class="form-input">
+                                    <option value="">Elegí la clase de artesanía</option>
+                                    <option value="madera" <%= productToEdit.categoria  %> >Madera</option>
+                                    <option value="ceramica" <%= productToEdit.categoria %> >Cerámica</option>
+                                    <option value="textil" <%= productToEdit.categoria %> >Textil</option>
+
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="caracteristicas" class="form-label">Caracteristicas:</label>
+                                <textarea name="caracteristicas" id="caracteristicas" class="form-input"><%= productToEdit.historia %></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="precio" class="form-label">Precio del producto:</label>
+                                <input type="number" value="<%= productToEdit.precio %>" id="precio" name="precio" placeholder="Ej: $1500" class="form-input">
+                            </div>
+                        
+                            <div class="col-12">
+                                <button type="submit" class="buy-now-button">Edita el producto</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        
             </div>
            
-            <div class="form-container-label">
-                <label for="categoria" class="form-label">SELECCIONE CATEGORIA</label>
-                <select name="categoria" class="form-input" id="categoria" style="width: 100%; border: 2px solid #464646;">
-                    <option value="recomendados" aria-placeholder="CATEGORIA">Recomendados</option>
-                    <option value="mas vendidos">Mas vendidos</option>
-                    <option value="novedades">Novedades</option>
-                </select>
-            </div>
-            <div class="form-container-label">
-                <label for="Caracteristicas">Caracteristica de la artesanía:</label>
-                <textarea name="Caracteristicas" class="form-text" id="Caracteristicas"  style="width: 100%; border: 2px solid #464646;" placeholder="product.Caracteristicas"></textarea>
-            </div>
-            <div>
-                <label for="image" class="form-label" style="font-size: 1.0em;
-                color: #464646;
-                text-transform: uppercase;
-                display: flex;
-                margin: 2vw;">Imagen:</label>
-                <input type="file" name="image" id="image" class="form-input">
-            </div>
-            <div class="form-container-label">
-                <button type="submit" class="boton1">Guardar cambios</button>
-            </div>
-            </div>
-        </form>
-    </div>
-</form>
-</div>
-
-    <footer>
-		<%- include('./footer.ejs')  %>
-    </footer>
-
-</body>
+        </body>	
 
 
 </html>
