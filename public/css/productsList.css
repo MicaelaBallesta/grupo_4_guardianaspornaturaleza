@@ -6,43 +6,102 @@
     box-sizing: border-box;
   }
 
-.products-title{
-    margin-top:15%;
-    font-size: 2.4em;
-    font-weight: 400;
-    color: var(--gray);
-      
-}  
 
-.cuadro{
-    width: 80%;
+a:link{
+    text-decoration: none;
+    color: #24303c;
+}
+
+.titulo{
+display: block;
+text-align: center;
+color: black;
+font-size: 100px;
+margin-top:10%;
+text-transform: uppercase;
+
+}
+
+.parrafo-header{
+  margin-top:2%;
+  text-align: center;
+  color: #24303c;
+  font-size: 20px;
 }
 
 .catalogo{
     display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin-top:10%;
-    margin:5px,5px;
-    height: auto;
+    justify-content:space-between;
+    margin-top:5%;
+   align-items: center;
+   flex-direction: nowrap;
+   width: 80vw;
+   margin-left: 10%;
 
 }
 
 .subcatalogo {
-    width: 15%;
-    height: 15%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: "Noto sans", sans-serif ;
-    font-size: 18px;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px, 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-family: "Noto sans", sans-serif ;
+  font-size: 18px;
+
+}
+
+.subcatalogo a{
+  color: #24303c;
+  margin-bottom: 2%;
+  text-align: center;
+
+}
+
+.imagenes-catalogo{
+  display: flex;
+}
+
+.titulo-productslist{
+  font-size: 25px;
+  text-align: left;
+  margin-left: 5%;
+  color: rgb(180, 221, 197);
+  margin-bottom: 5%;
+}
+
+.box-products-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 80vw;
+  margin-left: 10%;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.product-box .product-name, .agregar-carrito{
+  color:#24303c;
+}
+.fa-cart-shopping {
+  color: green;
+  font-size: 1.8em;
+  text-align: center;
+  position: relative;
+  top: -20px;
+  right: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
 }
 
 
-
+/*
 .products-wrapper {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -131,4 +190,4 @@
   .product-box:hover i {
     transform: rotate(360deg);
     box-shadow: 0 0 5px var(--green);
-  }
+  } */

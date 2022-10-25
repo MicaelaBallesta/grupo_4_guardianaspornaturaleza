@@ -13,51 +13,106 @@
     
   <body>
 
+    <%- include('../partials/header') %>
 
-    <h3 class="products-title"> Conseguí artesanías perfectas y únicas </h3>
-     
-    <main class="cuadro">
         
-        <div class="catalogo">
-                <div class="subcatalogo">
-                    <h3>CERÁMICA</h3>
-                    <ul>
-                        <li>products.image</li>
-                        <li>otro producto2</li>
-                        <li>otro producto3</li>
-                    </ul>
-                </div>
+        <a href="#" class="pre-header"> Home / Conocé nuestras artesanías </a>
+            <h3 class="titulo">Artesanías únicas, con historia propia </h3>
+                <p class="parrafo-header"> Estamos comprometidos con el cuidado de la naturaleza <br> Ayudamos a las artesanas Argentinas a vivir de su trabajo a tráves del comercio justo.  <br> Sabemos que buscas productos perfectos, y por eso naturales :) <br> Por todo eso y más, ya sos parte de esta hermosa comunidad de ¡Guardianas x naturaleza! </p>
+
+
+            <main class="box-main">
+                <div class="catalogo">
+                    <div class="subcatalogo">
+                        <a href="/products" target="_blank" rel="noopener noreferrer">CERÁMICA</a> 
+                            <div class="imagenes-catalogo">
+                                <a href="#"><img src="/images/4.jpg" alt="" width="200px" height="200px"></a>
+                                <a href="#"><img src="/images/4.jpg" alt="" width="200px" height="200px"></a>
+                            </div>
+                          
+                    </div>
                 
-                <div class="subcatalogo">
-                    <h3>TEXTILES</h3>
-                    <ul>
-                        <li>otro producto1</li>
-                        <li>otro producto2</li>
-                        <li>otro producto3</li>
-                    </ul>
-                </div>
+                    <div class="subcatalogo">
+                        <a href="/products" target="_blank" rel="noopener noreferrer">TEXTILES</a> 
+                      
+                        <div class="imagenes-catalogo">
+                            <a href="#"><img src="/images/carteraChaguar.jpg" alt="" width="200px" height="200px"></a>
+                            <a href="#"><img src="/images/artesania1.jpg" alt="" width="200px" height="200px"></a>
+                        </div>
+                          
+                    </div>
                 
-                <div class="subcatalogo">
-                    <h3>MADERA</h3>
-                    <ul>
-                        <li>otro producto1</li>
-                        <li>otro producto2</li>
-                        <li>otro producto3</li>
-                    </ul>
+                    <div class="subcatalogo">
+                        <a href="/products" target="_blank" rel="noopener noreferrer">MADERA</a> 
+                      
+                        <div class="imagenes-catalogo">
+                            <a href="#"><img src="/images/maderaartesania.jpg" alt="" width="200px" height="200px"></a>
+                            <a href="#"><img src="/images/maderaartesania1.jpg" alt="" width="200px" height="200px"></a>
+                        </div>
+                          
+                    </div>
                 </div>
-        </div>
             
         <br>
         
         <section class="product-list">
-            <div class="product-box">
-                <% if (products) { %>  
-                <img src="<%= products.image %>" alt="<%= products.nombreProducto %>" width="200px" class="product-box_image"/> 
-                <p class="product-box_data"><%= products.nombreProducto %></p>
-                <strong>$<%= products.precio %></strong><br>
-                <em><a href="#">Agregar al carrito</a></em>
+
+            <div class="titulo-productslist">
+                <h3> Todas nuestras artesanías </h3>
             </div>
-            <% } %>
+                <div class="box-products-list"> 
+                    <div class="product-box">
+                
+                        <img src="images/maderaartesania.jpg" alt="<%= products.nombreProducto %>" width="200px" class="product-image"/> 
+                        <a href="#" class="product-name">Cucharas de madera</a>
+                        <strong>200$</strong><br>
+                        <em><a class="agregar-carrito" href="#">Agregar al carrito</a></em> <i class="fa-solid fa-cart-shopping"></i>
+                
+                    </div>
+                    <div class="product-box">
+                
+                        <img src="images/maderaartesania.jpg" alt="<%= products.nombreProducto %>" width="200px" class="product-image"/> 
+                        <a href="#" class="product-name">Cucharas de madera</a>
+                        <strong>200$</strong><br>
+                        <em><a class="agregar-carrito" href="#">Agregar al carrito</a></em> <i class="fa-solid fa-cart-shopping"></i>
+                
+                    </div>
+                    <div class="product-box">
+                
+                        <img src="images/maderaartesania.jpg" alt="<%= products.nombreProducto %>" width="200px" class="product-image"/> 
+                        <a href="#" class="product-name">Cucharas de madera</a>
+                        <strong>200$</strong><br>
+                        <em><a class="agregar-carrito" href="#">Agregar al carrito</a></em> <i class="fa-solid fa-cart-shopping"></i>
+                
+                    </div>
+                    <div class="product-box">
+                
+                        <img src="images/maderaartesania.jpg" alt="<%= products.nombreProducto %>" width="200px" class="product-image"/> 
+                        <a href="#" class="product-name">Cucharas de madera</a>
+                        <strong>200$</strong><br>
+                        <em><a class="agregar-carrito" href="#">Agregar al carrito</a></em> <i class="fa-solid fa-cart-shopping"></i>
+                
+                    </div>
+                    <div class="product-box">
+                
+                        <img src="images/maderaartesania.jpg" alt="<%= products.nombreProducto %>" width="200px" class="product-image"/> 
+                        <a href="#" class="product-name">Cucharas de madera</a>
+                        <strong>200$</strong><br>
+                        <em><a class="agregar-carrito" href="#">Agregar al carrito</a></em> <i class="fa-solid fa-cart-shopping"></i>
+                
+                    </div>
+
+
+                </div>
+
+                <div class="product-box">
+                    <% if (products) { %>  
+                    <img src="<%= products.image %>" alt="<%= products.nombreProducto %>" width="200px" class="product-image"/> 
+                    <p class="product-title"><%= products.nombreProducto %></p>
+                    <strong>$<%= products.precio %></strong><br>
+                    <em><a class="agregar-carrito" href="#">Agregar al carrito</a></em> <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <% } %>
            
         </section>
     </main>  
@@ -66,7 +121,6 @@
             <i class="fa-solid fa-arrow-right-long"></i>
         </selection>
     
-        <%- include('../partials/footer') %>
         
     </body>
     </html>
