@@ -1,62 +1,89 @@
-<!DOCTYPE html>
-<html lang="es">
-<!-- Include Head -->
-<%- include('./head.ejs')  %>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianas por naturaleza</title>
+    <link rel="stylesheet" href="/css/productsEdit-create-.css"> 
+    <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
+  </head>   
+
 
 <body>
-	<!-- Header -->
 
-	<!-- /Header -->
 
-	<div class="container products-wrapper">
-		<div class="row">
+	<div class="container-products">
+		
+		<div>
 			<div class="col-12">
 				<h2 class="products-title">Formulario de creación de productos</h2>
 			</div>
 		</div>
+		
 		<div class="col-12">
 			<form action="/products" method="POST" enctype="multipart/form-data">
-				<div class="row product-detail">
-					<div class="col-12 col-md-6">
-						<label for="name" class="form-label">Nombre del producto:</label>
-						<input type="text" id="name" name="name" placeholder="Ej: Artesanía en barro" class="form-input">
-					</div>
-					<div class="col-12 col-md-6">
-						<label for="price" class="form-label">Precio del producto:</label>
-						<input type="number" id="price" name="price" placeholder="Ej: 5678" class="form-input">
-					</div>
-					<div class="col-12 col-md-6">
-						<label for="discount" class="form-label">Descuento:</label>
-						<input type="number" id="discount" name="discount" placeholder="Ej: 15" class="form-input">
-					</div>
-					<div class="col-12 col-md-6">
-						<label for="category" class="form-label">Categoría:</label>
-						<select name="category" id="category" class="form-input">
-							<option value="">Elegí</option>
-							<option value="in-sale">En oferta</option>
-							<option value="visited">Últimos agregados</option>
-						</select>
-					</div>
+				
+				<div class="row-product">
+					
 					<div class="col-12">
-						<label for="description" class="form-label">Descipción:</label>
-						<textarea name="description" id="description" class="form-input"></textarea>
+						<label for="nombreProducto" class="form-label">Nombre de la artesanía: </label>
+						<input type="text" id="nombreProducto" name="nombreProducto" placeholder="Ej: Bolso de arpillera" class="form-input">
 					</div>
+
 					<div class="col-12">
-						<label for="image" class="form-label">Imagen:</label>
+						<label for="historia" class="form-label">Historias de artesanas:</label>
+						<textarea name="historia" id="historia" class="form-input"></textarea>
+					</div>
+
+					<div class="col-12">
+						<label for="image" class="form-label">Subí las imágenes del producto aquí</label>
 						<input type="file" name="image" id="image" class="form-input">
 					</div>
+
 					<div class="col-12">
-						<button type="submit" class="buy-now-button">Guardar producto</button>
+						<label for="comunidad" class="form-label">Comunidad de artesanas:</label>
+						<select name="comunidad" id="comunidad" class="form-input">
+							<option value="">Elegí la tuya</option>
+							<option value="toba"> >Toba</option>
+							<option value="wichi"> >Wichi</option>
+						</select>
+					</div>
+
+					
+					<div class="col-12">
+						<label for="categoria" class="form-label">Categoría:</label>
+						<select name="categoria" id="categoria" class="form-input">
+							<option value="">Elegí la clase de artesanía</option>
+							<option value="madera">Madera</option>
+							<option value="ceramica">Cerámica</option>
+							<option value="textil">Textil</option>
+
+						</select>
+					</div>
+
+					<div class="col-12">
+						<label for="caracteristicas" class="form-label">Caracteristicas:</label>
+						<textarea name="caracteristicas" id="caracteristicas" class="form-input"></textarea>
+					</div>
+
+					<div class="col-12">
+						<label for="precio" class="form-label">Precio de la artesanía</label>
+						<input type="number" id="precio" name="precio" placeholder="Ej: $1500" class="form-input">
+					</div>
+				
+					<div class="col-12">
+						<button type="submit" class="buy-now-button">Creaste el producto</button>
 					</div>
 				</div>
 			</form>
 		</div>
 
 	</div>
-	<!-- /todos los productos -->
+	
 
-	<!-- footer -->
-    <%- include('./footer.ejs')  %>
-	<!-- /footer -->
+	
 </body>	
 </html>

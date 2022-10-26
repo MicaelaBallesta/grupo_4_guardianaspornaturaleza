@@ -27,7 +27,7 @@ body {
        }
 }
 
-.container-edit{
+.container-products{
   display: flex;
   flex-direction: column;
     width: 700px ;
@@ -71,7 +71,7 @@ body {
 }
 
 textarea.form-input {
-  min-height: 140px;
+  min-height: 50px;
   resize: vertical;
   padding: 15px;
 }

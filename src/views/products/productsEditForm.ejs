@@ -1,23 +1,24 @@
 <html>
+    
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Guardianas por naturaleza</title>
-      <link rel="stylesheet" href="/css/productsEdit.css">
+      <link rel="stylesheet" href="/css/productsEdit-create-.css">
       <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
   </head>
-
+  
         <body>
            
-      
+        
 
-            <div class="container-edit">
+            <div class="container-products">
                
-                <div class="colum-container">
+                <div>
                     <div class="col-12">
                         <h2 class="products-title">Estás editando: <i><%= productToEdit.nombreProducto %></i></h2>
                     </div>
@@ -26,10 +27,10 @@
                 <div class="col-12">
                     <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
                         
-                        <div class="row-product-detail">
+                        <div class="row-product">
                             
                             <div class="col-12">
-                                <label for="nombreProducto" class="form-label">Nombre del producto: </label>
+                                <label for="nombreProducto" class="form-label">Nombre de la artesanía: </label>
                                 <input type="text" value="<%= productToEdit.nombreProducto %>" id="nombreProducto" name="nombreProducto" placeholder="Ej: Bolso de arpillera" class="form-input">
                             </div>
 
@@ -39,7 +40,7 @@
                             </div>
 
                             <div class="col-12">
-                                <label for="image" class="form-label">Subí las imágenes del producto</label>
+                                <label for="image" class="form-label">Subí las imágenes del producto aquí</label>
                                 <input type="file" name="image" id="image" class="form-input">
                             </div>
 
@@ -48,7 +49,7 @@
                                 <select name="comunidad" id="comunidad" class="form-input">
                                     <option value="">Elegí la tuya</option>
                                     <option value="toba" <%= productToEdit.comunidad  %> >Toba</option>
-                                    <option value="wichi" <%= productToEdit.ccomunidad %> >Wichi</option>
+                                    <option value="wichi" <%= productToEdit.comunidad %> >Wichi</option>
                                 </select>
                             </div>
 
@@ -70,7 +71,7 @@
                             </div>
 
                             <div class="col-12">
-                                <label for="precio" class="form-label">Precio del producto:</label>
+                                <label for="precio" class="form-label">Precio de la artesanía</label>
                                 <input type="number" value="<%= productToEdit.precio %>" id="precio" name="precio" placeholder="Ej: $1500" class="form-input">
                             </div>
                         
