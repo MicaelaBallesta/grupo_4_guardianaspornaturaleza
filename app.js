@@ -21,10 +21,15 @@ app.set('views', path.join(__dirname, './src/views')); // Define la ubicación d
 const mainRouter = require('./src/routes/main'); // Rutas main
 const productsRouter = require('./src/routes/products'); // Rutas /products
 const userRouter = require('./src/routes/users'); 
+//const webRouter = require ('./src/routes/web');
+//const adminRouter = require ('./src/routes/admin');
+
 
 app.use('/', mainRouter);
 app.use('/', userRouter);
 app.use('/products', productsRouter);
+//app.use('/', webRouter);
+//app.use('/administrador', adminRouter);
 
 
 // ************ Set the server to listen - (don't touch) ************
