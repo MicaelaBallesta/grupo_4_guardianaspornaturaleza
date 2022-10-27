@@ -58,7 +58,7 @@ const controller = {
 		let id = req.params.id
 		let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 		let productToEdit = products.find(product => product.id == id)
-		res.render('../views/products/productsEditForm', {productToEdit})
+		res.render('/products', {productToEdit})
 	},
 	// Update - Method to update
 	proccesEdit: (req, res) => {
@@ -85,7 +85,7 @@ const controller = {
 		products[indice] = productToSave;
 		let productosAGuardar = JSON.stringify(products, null, " ");
 		fs.writeFileSync(productsFilePath, productosAGuardar);
-		res.redirect('../views/products/productslist')
+		res.redirect('/products')
 	},
 
 	// Delete - Delete one product from DB

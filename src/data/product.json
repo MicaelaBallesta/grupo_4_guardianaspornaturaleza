@@ -32,12 +32,12 @@
  {
   "id": 3,
   "nombreProducto": "Bolsa de compras tejido chaguar",
-  "historia": " Hermosa bolso tejido a chaguar  ",
+  "historia": "Lo hizo maria dsf",
   "image": "bolso_chaguar.jpg",
   "comunidad": "wichi",
-  "categoria": "textil",
-  "caracteristicas": "1x60 colores ",
-  "precio": 2000
+  "categoria": "",
+  "caracteristicas": "Lo hizo maria dsfsdf",
+  "precio": 500
  },
  {
   "id": 4,
@@ -78,5 +78,15 @@
   "categoria": "textil",
   "caracteristicas": "1x60 colores ",
   "precio": 1800
+ },
+ {
+  "id": 8,
+  "nombreProducto": "bolso de pana",
+  "historia": "asdfaffa",
+  "image": "default-image.png",
+  "comunidad": "toba",
+  "categoria": "ceramica",
+  "caracteristicas": "asdasd",
+  "precio": 1526
  }
 ]
