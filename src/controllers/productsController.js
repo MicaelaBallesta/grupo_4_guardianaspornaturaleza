@@ -50,7 +50,7 @@ const controller = {
 		let productosAGuardar = JSON.stringify(products, null, " ");
 		fs.writeFileSync(productsFilePath, productosAGuardar);
 
-		res.redirect('../views/products/productslist');
+		res.redirect('/products');
 	},
 
 	// Update - Form to edit
