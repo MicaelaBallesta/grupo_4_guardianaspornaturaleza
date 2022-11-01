@@ -75,21 +75,20 @@ text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 80vw;
+  width: 100%;
   margin-left: 10%;
 }
 
-.product-box {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
+.product-box{
+  width: 800px;
+  height:auto;
 }
 
 .product-box .product-name{
   color:#24303c;
 }
 
-.product-box .agregar-carrito{
+.agregar-carrito{
   color:#24303c;
   cursor: pointer;
 }

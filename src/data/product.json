@@ -21,12 +21,12 @@
  },
  {
   "id": 2,
-  "nombreProducto": "Panera Wichi",
+  "nombreProducto": "Bolso wichi",
   "historia": " Hermosa panera fsfsfsffssf",
   "image": "panera_tejida.jpg",
-  "comunidad": "wichi",
-  "categoria": "textil",
-  "caracteristicas": "1x60 colores ",
+  "comunidad": "",
+  "categoria": "",
+  "caracteristicas": " Hermosa panera fsfsfsffssf",
   "precio": 1500
  },
  {
@@ -34,10 +34,10 @@
   "nombreProducto": "Bolsa de compras tejido chaguar",
   "historia": "Lo hizo maria dsf",
   "image": "bolso_chaguar.jpg",
-  "comunidad": "wichi",
+  "comunidad": "",
   "categoria": "",
-  "caracteristicas": "Lo hizo maria dsfsdf",
-  "precio": 500
+  "caracteristicas": "Lo hizo maria dsf",
+  "precio": 600
  },
  {
   "id": 4,
