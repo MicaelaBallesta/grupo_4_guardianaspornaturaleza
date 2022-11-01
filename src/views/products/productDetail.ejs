@@ -1,145 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Guardianas x naturaleza</title>
-    <link rel="stylesheet" href="css/styleproductDetail.css">
-    <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Guardianas x naturaleza</title>
+        <link rel="stylesheet" href="css/styleproductDetail.css">
+        <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
+    </head>
+        <body>
 
-</head>
-<body>
-//hacer detail 
+            <%- include('../partials/header') %>    
 
-<%- include('../partials/header') %>    
-
-    <header>
-            <div class="header-celu">
-                <div class="logo-header">
-                         <img src="images/isologo verde.png" alt="Guardianas por naturaleza" class="logo-img">
-                </div>
-        
-                <div class="menu-hamburguesa">
-                    <i class="fa-solid fa-bars"></i>
-                </div>    
-
-                <div>
-                    <a href="/tienda" class="boton-tienda">TIENDA</a>
-                
-                    <a href="/donaciones" class="boton-dona">DONÁ</a>
-                </div>       
-            </div>
-            
-         <div class="icono-carrito">
-            <i class="fa-solid fa-cart-shopping"></i>
-         </div>
-
-         <div class="cambio-de-idioma">
-                <form class="cambio-de-idioma" action="/productDetail" method="get">
-                    <select name="idiomas" id="idiomas">
-                    <option value="Eligió español"> Español </option>
-                    <option value="Eligió inglés"> English </option>
-                    </select>
-                </form>    
-        </div>
-
-        <nav class="navegador-principal">
-            <ul>
-                <li class="home"> <a href="/"> HOME </li></a>
-                <li class="nosotros"> <a href="/nosotros"> NOSOTROS </li></a>
-                <li class="impacto"> <a href="/impacto"> IMPACTO </li></a>
-                <li class="conoce-tu-huella"> <a href="/tuhuella"> CONOCÉ TU HUELLA </li></a>
-                <li class="catalogo"> <a href="/catalogo"> CATÁLOGO</li></a>
-            </ul>
-        </nav>
-
-            <div>
-                <ul class="login-registrate">
-                    <li> <a href="/login"></a> Log in </li>
-                    <li> <a href="/register"></a> Crea tu cuenta en guardianas </li>
-                </ul>
-            </div>
-
-           
-        <div class="buscador-de-productos">
-            <label for="buscador-productos"> Artesanías únicas </label>
-            <input type="text" name="buscador-productos" id="buscador" placeholder="   Carteras,ollas,tazas"><i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-
-    </header>
     
-        <div class="volver">
-            <a href="/views/index.html"> HOME/ #Nombre del producto elegido</a>
-        </div>
 
-
-    <main>
-        <div class="icono-manito-redes">
-            <i class="fa-solid fa-hand-dots"></i>
-            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-
-        <div class="div-nombre-producto">
-            <p class="nombre-producto"> Bowl cerámica </p>
-        </div>
-
-        <article class="producto">
-            <div class="fotos">
-                <img src="/images/bowl.jpg"  alt="producto a" class="foto-principal">
-                <img src="/images/2.jpg" alt="bowl" class="foto-2">
-                <img src="/images/3.jpg" alt="bowl" class="foto-3">
-                <img src="/images/4.jpg" alt="bowl" class="foto-4">
-            </div>
            
-        
-            <div class="puntos-debajo-de-foto-principal"> 
-                <i class="fa-regular fa-circle-small"></i>
-                <i class="fa-regular fa-circle-small"></i>
-            </div>
-        <div class="desc-price">
-            <p class="descripcion"> Descripcion corta del producto </p>
-            <p class="price"> $1500 </p>
-        </div>
-            <!--hacer botones css-->
-            <div class="comprar-carrito">
-                <a href="#" class="agregar-al-carrito"> Agregar al carrito </a>
-                <a href="#" class="boton-comprar"> Comprar</a>
-            </div>
+                <div class="buscador-de-productos">
+                    <label for="buscador-productos"> Artesanías únicas </label>
+                        <input type="text" name="buscador-productos" id="buscador" placeholder="   Carteras,ollas,tazas"><i class="fa-solid fa-magnifying-glass"></i>
+                </div>
 
-        </article>
-    </main>
 
-        <div class="otras-artesanias">
-        <p> ¡Artesanías únicas de la naturaleza a tu mano! </p>
-        <!--Tienen que ir pasando de a una por pantalla a medida que crece la pantalla se ajusta al tamaño >>--> 
-        <img src="/images/2.jpg" width="200px" heigh="200" alt="foto1" class="mas-productos">
-        <img src="/images/4.jpg"  width="200px" heigh="200" alt="foto2" class="mas-productos2">
-        <img src="/images/artesania-ceramica.jpg" alt="foto 3" class="mas-productos3">
-        <img src="/images/bowl.jpg" alt="foto 4" class="mas-productos4">
-        </div>
+    
+                    <div class="volver">
+                        <a href="/views/index.html"> HOME/ #Nombre del producto elegido</a>
+                    </div>
 
-        <section class="boton-donacion">
-            <a  href="/donaciones" class="pagina-donaciones">Sumate con tu donación</a>  
-            <!--boton con css -->
-<<<<<<< HEAD
-              
-=======
-        </section>
->>>>>>> refs/remotes/origin/main
 
-        <section class="boton-tienda">
-            <a  href="#" class="pagina-tienda"> Conocé nuestra tienda
-                 ¡No te pierdas nada! </a>
-             <!--hacer boton con css-->
-        </section>
+                        <main>
+                            <div class="icono-manito-redes">
+                                <i class="fa-solid fa-hand-dots"></i>
+                                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
 
+                            <section class="producto">
+                                <div>
+                                    <img src="<%= product.image %>" alt="<%= product.nombreProducto %>" width="200px" class="product-image"/> 
+                                    <a href="#" class="product-name">Cucharas de madera</a>
+                                    <strong>200$</strong><br>
+                                    <p><%= product.historia %></p>
+                                    <em><a class="agregar-carrito" href="#">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></a></em> 
+                                </div>
+                        </main>
+
+                                <!--     <div class="otras-artesanias">
+                                        <p> ¡Conocé todas nuestras artesanías! </p>
+        <!--Tienen que ir pasando de a una por pantalla a medida que crece la pantalla se ajusta al tamaño >> 
+                                        <img src="<%= products.image %>" width="200px" heigh="200" alt="foto1">
+                                        <img src="<%= products.image %>"  width="200px" heigh="200" alt="foto2" >
+                                        <img src="<%= products.image %>" alt="" >
+                                        <img src="<%= products.image %>" alt="">
+                                    </div>
+
+                                        <section class="boton-donacion">
+                                            <a  href="/donaciones" class="pagina-donaciones">Sumate con tu donación</a>  
+            <!--boton con css 
+                                            <section class="boton-tienda">
+                                                <a  href="#" class="pagina-tienda"> Conocé nuestra tienda
+                                                ¡No te pierdas nada! </a>
+             <!--hacer boton con css
+                                            </section>
+                                       
   
-</body>
+        </body>
 </html>

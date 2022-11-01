@@ -58,7 +58,7 @@ const controller = {
 		let id = req.params.id
 		let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 		let productToEdit = products.find(product => product.id == id)
-		res.render('/products', {productToEdit})
+		res.render('../views/products/productDetail', {productToEdit})
 	},
 	// Update - Method to update
 	proccesEdit: (req, res) => {
