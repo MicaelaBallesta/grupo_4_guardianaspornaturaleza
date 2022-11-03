@@ -26,38 +26,23 @@
 
     
                     <div class="volver">
-                        <a href="/views/index.html"> HOME/ #Nombre del producto elegido</a>
+                        <a href="/views/index.html"> HOME/ <%= products.nombreProducto %></a>
                     </div>
 
 
                         <main>
-                            <div class="icono-manito-redes">
-                                <i class="fa-solid fa-hand-dots"></i>
-                                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                            </div>
-
+                           
                             <section class="producto">
                                 <div>
                                     <img src="<%= product.image %>" alt="<%= product.nombreProducto %>" width="200px" class="product-image"/> 
-                                    <a href="#" class="product-name">Cucharas de madera</a>
-                                    <strong>200$</strong><br>
+                                    <a href="#" class="product-name"><%= product.nombreProducto %></a>
+                                    <strong><%= product.precio %></strong><br>
                                     <p><%= product.historia %></p>
                                     <em><a class="agregar-carrito" href="#">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></a></em> 
                                 </div>
                         </main>
 
-                                <!--     <div class="otras-artesanias">
-                                        <p> ¡Conocé todas nuestras artesanías! </p>
-        <!--Tienen que ir pasando de a una por pantalla a medida que crece la pantalla se ajusta al tamaño >> 
-                                        <img src="<%= products.image %>" width="200px" heigh="200" alt="foto1">
-                                        <img src="<%= products.image %>"  width="200px" heigh="200" alt="foto2" >
-                                        <img src="<%= products.image %>" alt="" >
-                                        <img src="<%= products.image %>" alt="">
-                                    </div>
-
+                        
                                         <section class="boton-donacion">
                                             <a  href="/donaciones" class="pagina-donaciones">Sumate con tu donación</a>  
             <!--boton con css 
@@ -68,5 +53,5 @@
                                             </section>
                                        
   
-        </body>
+        </body> -->
 </html>
