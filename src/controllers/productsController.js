@@ -10,6 +10,8 @@ const controller = {
 	// Root - Show all products
 	index: (req, res) => {
 		let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+		console.log(products)
+		console.log("funcionado")
 		res.render('../views/products/productslist', {
 			products
 		})

@@ -1,9 +1,9 @@
 [
  {
   "id": 0,
-  "nombreProducto": "Chalina Wichi",
+  "nombreProducto": "Aros madera",
   "historia": " Hecha a mano por María y Estela",
-  "image": "chalina_tejida_wichi.jpg",
+  "image": "aros_madera.jpg",
   "comunidad": "wichi",
   "categoria": "textil",
   "caracteristicas": "1x60 colores ",
@@ -11,12 +11,12 @@
  },
  {
   "id": 1,
-  "nombreProducto": "Chalina Wichi",
+  "nombreProducto": "Vasija clásica",
   "historia": " Hecha a mano por María y Estela",
-  "image": "chalina_tejida_wichi.jpg",
+  "image": "3.jpg",
   "comunidad": "",
   "categoria": "",
-  "caracteristicas": " Hecha a mano por María y Estela",
+  "caracteristicas": "Hecha a mano por María y Estela",
   "precio": 1800
  },
  {
@@ -33,7 +33,7 @@
   "id": 3,
   "nombreProducto": "Bolsa de compras tejido chaguar",
   "historia": "Lo hizo maria dsf",
-  "image": "bolso_chaguar.jpg",
+  "image": "carteraChaguar.jpg",
   "comunidad": "wichi",
   "categoria": "",
   "caracteristicas": "Lo hizo maria dsfsdf",
@@ -88,5 +88,15 @@
   "categoria": "ceramica",
   "caracteristicas": "asdasd",
   "precio": 1526
+ },
+ {
+  "id": 9,
+  "nombreProducto": "jsdjshds",
+  "historia": "sdsdjs",
+  "image": "default-image.png",
+  "comunidad": "toba",
+  "categoria": "madera",
+  "caracteristicas": "xcx",
+  "precio": 1899
  }
 ]

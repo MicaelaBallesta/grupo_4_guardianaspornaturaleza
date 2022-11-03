@@ -64,13 +64,13 @@
                 <div class="box-products-list">
 
                         <div class="product-box">
-                            <% for(let i = 0; i < products.length; i++) { %>
-                            <img src="<%= products.image %>" alt="<%= products.nombreProducto %>" width="200px" class="product-image"/> 
+                            <% products.map (products => { %>
+                            <img src="/images/<%= products.image %>" alt="<%= products.nombreProducto %>" width="200px" class="product-image"/> 
                             <p class="product-name"><%= products.nombreProducto %></p>
                             <p class="precio">$<%= products.precio %></p><br>
                             <em><a class="agregar-carrito" href="#">Agregar al carrito</a></em> <i class="fa-solid fa-cart-shopping"></i>
                             </div>
-                            <% } %>
+                            <% } ) %>
 
                         </div>
                    
