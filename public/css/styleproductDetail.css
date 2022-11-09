@@ -4,27 +4,80 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+@media only screen and (max-device-width: 767px) {
+    body {
+         background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
+         color: #FFF;
+     }
+}
+@media only screen and (max-width: 767px) {
+    body {
+         background-image: url(../images/pueblos_indigenas_mexico.jpg_673822677.webp);
+         color: #FFF;
+         }
+}
+
+
+.agregar-carrito a:link{
+    text-decoration: none;
+}
+
 
 .producto-box{ 
 display: flex;
 flex-direction: column;
+width: 30%;
+padding: 30px;
+margin: auto;
+margin-top: 100px;
+border-radius: 4px;
+font-family: "Noto sans", sans-serif;
+color: black;
+box-shadow: 7px 13px 37px #000;
+background-color: white;
 }
+
 
 .product-name{ 
     color: black;
     z-index: 10;
+    font-size: 30px;
+    
 }
-.agregar-carrito{
-    color: black;
-}
-.editar, .borrar {
+.image{
     display: flex;
 }
+.agregar-carrito{
+    margin-bottom: 5%;
+    padding:10px ;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 5%;
+    width: 500px;
+    color:white;
+}
+
+.agregar-carrito:hover{
+    background-color: green;
+    color: white;
+   
+   
+}
+
+
 
 .boton-editar, .boton-borrar{
-    padding: 5px;
+    padding: 10px;
     border-radius: 20%;
     border: 1px solid white;
     color: white;
-    background-color: rgb(110, 163, 247);
+    background-color:orange;
+    width: 200px;
 }
