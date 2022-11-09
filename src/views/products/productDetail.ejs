@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Guardianas x naturaleza</title>
-        <link rel="stylesheet" href="css/styleproductDetail.css">
+        <link rel="stylesheet" href="/css/styleproductDetail.css">
         <script src="https://kit.fontawesome.com/ff0b18be1c.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,10 +49,17 @@
                                     
                                     </div>
                                     
-                                    <div>
-                                        <a href="/" class="boton-borrar">Borrar</a>
-                                        <a href="/products/detail/<%=product.id%>" class="boton-editar">Editar</a>
-                                    </div>
+                                    <div class="caja-edicion-borrar">
+                                        <div class="editar">
+                                            <button class="boton-editar">
+                                                <a href="/products/edit/<%= product.id %>">Editar</a>
+                                            </button>
+                                        </div>
+                                        <div class="borrar">
+                                            <form class="form-boton-borar" action="/products/delete/<%= product.id %>?_method=DELETE" method="POST" enctype="multipart/form-data" style="display:inline-flex">
+                                                <button class="boton-borrar" type="submit">Borrar</button>
+                                            </form>                        
+                                        </div>
                             </div>
                       
 </html>           

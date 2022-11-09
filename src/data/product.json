@@ -20,16 +20,6 @@
   "precio": 1800
  },
  {
-  "id": 2,
-  "nombreProducto": "Bolsa de compras tejido chaguar",
-  "historia": "Lo hizo María y sus nietas",
-  "image": "carteraChaguar.jpg",
-  "comunidad": "wichi",
-  "categoria": "textil",
-  "caracteristicas": "Colores naturales",
-  "precio": 600
- },
- {
   "id": 3,
   "nombreProducto": "Vasija Cerámica",
   "historia": " Vasija de cerámica hecha a mano por Antonio",
