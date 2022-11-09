@@ -55,7 +55,7 @@
   "historia": " Diseños distintos  ",
   "image": "bowl.jpg",
   "comunidad": "wichi",
-  "categoria": "textil",
+  "categoria": "ceramica",
   "caracteristicas": "colores pasteles",
   "precio": 2300
  },
@@ -71,32 +71,22 @@
  },
  {
   "id": 8,
-  "nombreProducto": "Penera de carandillo",
+  "nombreProducto": "Panera de carandillo",
   "historia": "Hecho por las familias de comunidad toba",
   "image": "paneraCarandillo.jpg",
   "comunidad": "toba",
-  "categoria": "madera",
+  "categoria": "textil",
   "caracteristicas": "tamaños diveros",
   "precio": 1899
- },
- {
-  "id": 9,
-  "nombreProducto": "",
-  "historia": "",
-  "image": "default-image.png",
-  "comunidad": "",
-  "categoria": "",
-  "caracteristicas": "",
-  "precio": null
- },
- {
-  "id": 10,
-  "nombreProducto": "Zx",
-  "historia": "",
-  "image": "default-image.png",
-  "comunidad": "",
-  "categoria": "",
-  "caracteristicas": "",
-  "precio": null
  }
+ {
+    "id": 9,
+    "nombreProducto": "Bolso chaguar",
+    "historia": "Hecho por las familias de comunidad toba",
+    "image": "carteraChaguar1.jpg",
+    "comunidad": "toba",
+    "categoria": "textil",
+    "caracteristicas": "tamaños diversos",
+    "precio": 1899
+   }
 ]

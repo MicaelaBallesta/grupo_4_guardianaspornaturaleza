@@ -71,7 +71,9 @@ background-color: white;
    
 }
 
-
+.caja-edicion-borrar{
+    display: flex;
+}
 
 .boton-editar, .boton-borrar{
     padding: 10px;
