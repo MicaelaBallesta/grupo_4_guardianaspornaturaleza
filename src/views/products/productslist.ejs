@@ -62,10 +62,9 @@
             </div>
 
                 <div class="box-products-list">
-                    <% for(let i = 0; i < products.length; i++) { %>
+                   
                         <div class="product-box">
-<<<<<<< HEAD
-                            <% products.map (products => { %>
+                            <% { %>  <% products.map (products => { %>
                             <img src="/images/<%= products.image %>" alt="<%= products.nombreProducto %>" width="200px" class="product-image"/> 
                             <p class="product-name"><%= products.nombreProducto %></p>
                             <p class="precio">$<%= products.precio %></p><br>
@@ -73,13 +72,11 @@
                             </div>
                             <% } ) %>
 
-=======
                             
                             <img src="<%= products.image %>" alt="<%= products.nombreProducto %>" width="200px" class="product-image"/>
                             <p class="product-name"><%= products.nombreProducto %></p>
                             <p class="precio">$<%= products.precio %></p><br>
                             <em><a class="agregar-carrito" href="#">Agregar al carrito</a></em> <i class="fa-solid fa-cart-shopping"></i>
->>>>>>> c841ee5091ca974c162ae83ddcca6b7db6db11dd
                         </div>
                         </div><% } %>
                    
