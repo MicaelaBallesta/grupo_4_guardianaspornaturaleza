@@ -23,14 +23,19 @@ const productsRouter = require('./src/routes/products'); // Rutas /products
 const userRouter = require('./src/routes/users'); 
 //const webRouter = require ('./src/routes/web');
 //const adminRouter = require ('./src/routes/admin');
+//const registerRouter = require("./src/routes/register");
 
 
 app.use('/', mainRouter);
+//app.use('/register', registerRouter);
 app.use('/', userRouter);
 app.use('/products', productsRouter);
 //app.use('/', webRouter);
 //app.use('/administrador', adminRouter);
-
+app.use((req, res, next) => {
+    res.status(404).render('not-found');
+    next();
+})
 
 // ************ Set the server to listen - (don't touch) ************
 app.listen(3003, () => {
