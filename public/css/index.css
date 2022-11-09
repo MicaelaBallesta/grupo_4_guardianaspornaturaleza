@@ -61,21 +61,21 @@
   
   .slide-image .text-2{
       font-size: 36px;
-      color: rgb(12, 12, 12);
+      color: rgb(255, 255, 255);
       z-index: 50;
       position:absolute;
-      top:25%;
-      left: 5%;
+      top:30%;
+    right:10%;
   
   
       }
   
       .slide-image .text-3{
-      font-size: 36px;
-      color: rgb(247, 243, 243);
+      font-size: 30px;
+      color: rgb(20, 119, 29);
       z-index: 50;
       position:absolute;
-      top:50%;
+      top:60%;
       left:30%;
       }
   
