@@ -15,43 +15,27 @@
 
             <%- include('../partials/header') %>    
 
-    
-
-           
-                <div class="buscador-de-productos">
-                    <label for="buscador-productos"> Artesanías únicas </label>
-                        <input type="text" name="buscador-productos" id="buscador" placeholder="   Carteras,ollas,tazas"><i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-
-
-    
-                    <div class="volver">
-                        <a href="/views/index.html"> HOME/ <%= products.nombreProducto %></a>
-                    </div>
-
-
-                        <main>
-                           
-                            <section class="producto">
-                                <div>
-                                    <img src="<%= product.image %>" alt="<%= product.nombreProducto %>" width="200px" class="product-image"/> 
-                                    <a href="#" class="product-name"><%= product.nombreProducto %></a>
-                                    <strong><%= product.precio %></strong><br>
-                                    <p><%= product.historia %></p>
-                                    <em><a class="agregar-carrito" href="#">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></a></em> 
-                                </div>
-                        </main>
-
-                        
-                                        <section class="boton-donacion">
-                                            <a  href="/donaciones" class="pagina-donaciones">Sumate con tu donación</a>  
-            <!--boton con css 
-                                            <section class="boton-tienda">
-                                                <a  href="#" class="pagina-tienda"> Conocé nuestra tienda
-                                                ¡No te pierdas nada! </a>
-             <!--hacer boton con css
-                                            </section>
+                            <div class="producto-box">
+ 
+        
+                                    <div class="product-name">
+                                        <p ><%= product.nombreProducto %></p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="/images/<%= product.image %>" alt="<%= product.nombreProducto %>" width="400px" height="400px" class="product-image"/>
+                                    </div> 
+                                    <div class="precio">
+                                        <p ><STRONg>$<%= product.precio %></STRONg></p><br>
+                                    </div>
+                                    <div class="agregar-carrito">
+                                        <em><a  href="#">Agregar al carrito</a></em> <i class="fa-solid fa-cart-shopping"></i>
+                                    
+                                    </div>
+                                    <div>
+                                        <a href="/" class="boton-borrar">Borrar</a>
+                                        <a href="/products/detail/<%=product.id%>" class="boton-editar">Editar</a>
+                                    </div>
+                            </div>
+                      
+</html>           
                                        
-  
-        </body> -->
-</html>
