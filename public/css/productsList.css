@@ -74,7 +74,6 @@ text-transform: uppercase;
 .box-products-list{
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
   width: 100%;
   margin-left: 5%;
   margin-right: 5%;
@@ -85,8 +84,7 @@ text-transform: uppercase;
   flex-direction: column;
   width: 200px;
   height:auto;
-  border-radius: 5px;
-  color: #24303c;
+  border-radius: 2px;
 }
 
 .product-box .product-name{
