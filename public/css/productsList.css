@@ -76,12 +76,17 @@ text-transform: uppercase;
   justify-content: space-between;
   flex-wrap: nowrap;
   width: 100%;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .product-box{
-  width: 800px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
   height:auto;
+  border-radius: 5px;
+  color: #24303c;
 }
 
 .product-box .product-name{
