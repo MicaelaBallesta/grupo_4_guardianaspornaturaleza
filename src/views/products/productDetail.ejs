@@ -24,13 +24,32 @@
                                     <div class="image">
                                         <img src="/images/<%= product.image %>" alt="<%= product.nombreProducto %>" width="400px" height="400px" class="product-image"/>
                                     </div> 
+                                
+                                    <div>
+                                        <p><%= product.comunidad %></p>
+                                    </div>
+
+                                    <div> 
+                                        <p><%= product.historia %></p>
+                                    </div>  
+
+                                    <div>
+                                        <p><%= product.caracteristicas %></p>
+                                    </div>
+
+                                    <div>
+                                        <p><%= product.categoria %></p>
+                                    </div>
+
                                     <div class="precio">
                                         <p ><STRONg>$<%= product.precio %></STRONg></p><br>
                                     </div>
+
                                     <div class="agregar-carrito">
-                                        <em><a  href="#">Agregar al carrito</a></em> <i class="fa-solid fa-cart-shopping"></i>
+                                      <a  href="#">Agregar al carrito</a> <i class="fa-solid fa-cart-shopping"></i>
                                     
                                     </div>
+                                    
                                     <div>
                                         <a href="/" class="boton-borrar">Borrar</a>
                                         <a href="/products/detail/<%=product.id%>" class="boton-editar">Editar</a>
