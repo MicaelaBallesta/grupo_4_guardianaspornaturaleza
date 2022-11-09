@@ -88,5 +88,25 @@
   "categoria": "madera",
   "caracteristicas": "tamaños diveros",
   "precio": 1899
+ },
+ {
+  "id": 9,
+  "nombreProducto": "",
+  "historia": "",
+  "image": "default-image.png",
+  "comunidad": "",
+  "categoria": "",
+  "caracteristicas": "",
+  "precio": null
+ },
+ {
+  "id": 10,
+  "nombreProducto": "Zx",
+  "historia": "",
+  "image": "default-image.png",
+  "comunidad": "",
+  "categoria": "",
+  "caracteristicas": "",
+  "precio": null
  }
 ]
