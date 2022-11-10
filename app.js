@@ -35,12 +35,12 @@ app.use('/products', productsRouter);
 app.use((req, res, next) => {
     res.status(404).render('not-found');
     next();
-})
+});
 
 // ************ Set the server to listen - (don't touch) ************
 app.listen(3003, () => {
   console.log("Servidor funcionando en http://localhost:3003")
-})
+});
 
 
 
